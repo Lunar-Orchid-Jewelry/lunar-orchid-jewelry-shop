@@ -1,29 +1,46 @@
 @import "tailwindcss";
 
-.debug {
-    @apply border border-red-500
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Bad+Script&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* FontAwesome import */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* Custom theme values — replaces the tailwind.config script from page29.html */
+@theme {
+    /* Custom fonts */
+    --font-family-cinzel: '"Cinzel Decorative"', serif;
+    --font-family-bad-script: '"Bad Script"', cursive;
+    --font-family-josefin: '"Josefin Slab"', sans-serif;
+
+    /* Custom colors */
+    --color-primary: #c9a84c;
+    --color-primary-hover: #b8943f;
+    --color-dark: #121212;
+    --color-dark-card: #1e1e1e;
+    --color-dark-border: #333333;
+    --color-secondary: #1a1a1a;
+
+    /* Custom shadows */
+    --shadow-card: 0 2px 15px rgba(0, 0, 0, 0.08);
+    --shadow-card-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-.container-main {
-    width: 100%;
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
 
-    @media (width >=40rem) {
-        max-width: 36rem;
-    }
+/* Global defaults */
+body {
+    font-family: var(--font-family-josefin);
+}
 
-    @media (width >=48rem) {
-        max-width: 40rem;
-    }
+/* === Utility classes that map to the font-family config === */
+.font-cinzel {
+    font-family: var(--font-family-cinzel);
+}
 
-    @media (width >=64rem) {
-        max-width: 48rem;
-    }
-
-    @media (width >=80rem) {
-        max-width: 64rem;
-    }
-
-    @media (width >=96rem) {
-        max-width: 80rem;
-    }
+.font-bad-script {
+    font-family: var(--font-bad-script);
 }

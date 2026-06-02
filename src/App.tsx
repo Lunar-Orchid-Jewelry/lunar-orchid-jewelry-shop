@@ -8,11 +8,11 @@ function App() {
     <>
       <div className="bg-white font-josefin text-gray-800">
         {/* === NAVBAR === */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-dark shadow-lg">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <a href="#">
                   <img src="src/assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry" className="h-12 w-auto" />
                 </a>
@@ -43,18 +43,15 @@ function App() {
               {/* Hamburger Button (Mobile) */}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="lg:hidden hamburger flex flex-col justify-center items-center w-10 h-10"
+                className="lg:hidden flex flex-col justify-center items-center w-10 h-10 text-white"
                 aria-label="Toggle navigation"
               >
-                <span />
-                <span />
-                <span />
-                <span />
+                Menu
               </button>
             </div>
 
             {/* Mobile Menu */}
-            <div className={`${menuOpen ? 'open' : ''} mobile-menu lg:hidden bg-dark border-t border-dark-border`}>
+            <div className={`${menuOpen ? 'max-h-125' : ''} max-h-0 overflow-hidden lg:hidden bg-dark border-t border-dark-border`}>
               <ul className="py-4 space-y-4 text-center">
                 <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Home</a></li>
                 <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Necklaces</a></li>
@@ -121,7 +118,7 @@ function App() {
         </section>
 
         {/* === SHOP BY PRODUCT (Dark Section) === */}
-        <section className="bg-dark py-16 lg:py-24">
+        <section className="bg-black py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="font-cinzel text-white text-3xl sm:text-4xl lg:text-5xl mb-4">
@@ -145,7 +142,7 @@ function App() {
                 { img: 'src/assets/images/faire-magic-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
                 { img: 'src/assets/images/amethyst-whisper-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
               ].map((item, i) => (
-                <div key={i} className="product-card">
+                <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="bello-opal-sterling-silver-galaxy-pendant.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
                       <img src={item.img} alt="Sterling Silver Bello Opal Necklace Pendant" className="w-full h-48 lg:h-64 object-cover" />
@@ -177,7 +174,7 @@ function App() {
                 { img: 'src/assets/images/photoroom-20260129.webp' },
                 { img: 'src/assets/images/orange-agate-copper-cuff.webp' },
               ].map((item, i) => (
-                <div key={i} className="product-card">
+                <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="bello-opal-sterling-silver-galaxy-pendant.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
                       <img src={item.img} alt="Sterling Silver Bello Opal Necklace Pendant" className="w-full h-48 lg:h-64 object-cover" />
@@ -209,7 +206,7 @@ function App() {
                 { img: 'src/assets/images/silver-rose-ring-1.webp' },
                 { img: 'src/assets/images/photoroom-20260102.webp' },
               ].map((item, i) => (
-                <div key={i} className="product-card">
+                <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="bello-opal-sterling-silver-galaxy-pendant.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
                       <img src={item.img} alt="Sterling Silver Bello Opal Necklace Pendant" className="w-full h-48 lg:h-64 object-cover" />
@@ -252,7 +249,7 @@ function App() {
                 { img: 'src/assets/images/ocean-goddess-3.webp', name: 'Goddess Spiral Bracelet', desc: 'Sterling Silver Wrapped Bello Opal', price: '$349' },
                 { img: 'src/assets/images/ocean-goddess-4.webp', name: 'Oceanic Roots', desc: 'Patina Copper Wrapped Sea Glass', price: '$55' },
               ].map((item, i) => (
-                <div key={i} className="product-card">
+                <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="rose-gold-ammonite-fossil-pendant.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
                       <img src={item.img} alt="Ocean Goddess Collection" className="w-full h-48 lg:h-64 object-cover" />
@@ -280,7 +277,7 @@ function App() {
                 { img: 'src/assets/images/forest-nymph-3.webp', name: 'Crystal Bead Rings' },
                 { img: 'src/assets/images/forest-nymph-4.webp', name: 'Rose Rings' },
               ].map((item, i) => (
-                <div key={i} className="product-card">
+                <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="shop-all-rings.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
                       <img src={item.img} alt="" className="w-full h-48 lg:h-64 object-cover" />
@@ -297,7 +294,7 @@ function App() {
         {/* === DRAGON SLAYER === */}
         <section className="bg-white py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="category-line py-4 mb-8 text-center">
+            <div className="border-y border-[#e0e0e0] py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Dragon Slayer</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
@@ -307,7 +304,7 @@ function App() {
                 { img: 'src/assets/images/dragon-slayer-3.webp', name: 'Rose Rings' },
                 { img: 'src/assets/images/dragon-slayer-4.webp', name: 'Crystal Bead Rings' },
               ].map((item, i) => (
-                <div key={i} className="product-card">
+                <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="shop-all-rings.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
                       <img src={item.img} alt="" className="w-full h-48 lg:h-64 object-cover" />
@@ -398,15 +395,15 @@ function App() {
                 </div>
                 <div>
                   <label htmlFor="name" className="block text-sm font-josefin text-dark mb-1">Full Name</label>
-                  <input type="text" name="name" id="name" className="form-input w-full px-4 py-2 font-josefin text-base" placeholder="" />
+                  <input type="text" name="name" id="name" className="border focus:shadow transition w-full px-4 py-2 font-josefin text-base" placeholder="" />
                 </div>
                 <div>
                   <label htmlFor="email-field" className="block text-sm font-josefin text-dark mb-1">Email Address</label>
-                  <input type="email" name="email1" id="email-field" className="form-input w-full px-4 py-2 font-josefin text-base" placeholder="" />
+                  <input type="email" name="email1" id="email-field" className="border focus:shadow transition w-full px-4 py-2 font-josefin text-base" placeholder="" />
                 </div>
                 <div>
                   <label htmlFor="textarea" className="block text-sm font-josefin text-dark mb-1">Message</label>
-                  <textarea name="textarea" id="textarea" rows={5} className="form-input w-full px-4 py-2 font-josefin text-base" />
+                  <textarea name="textarea" id="textarea" rows={5} className="border focus:shadow transition w-full px-4 py-2 font-josefin text-base" />
                 </div>
                 <div className="text-center">
                   <button type="submit" className="bg-primary text-white px-8 py-3 font-josefin text-base hover:bg-primary-hover transition-colors rounded-sm">
@@ -445,7 +442,7 @@ function App() {
                 <h6 className="font-cinzel text-lg mb-4">
                   <a href="gallery.html" className="text-white hover:text-primary transition-colors">Gallery</a>
                 </h6>
-                <div className="insta-grid">
+                <div className="grid grid-cols-3 gap-2">
                   {[
                     'src/assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp',
                     'src/assets/images/hawk-eye.webp',
@@ -454,7 +451,7 @@ function App() {
                     'src/assets/images/img-659120large-369x478.webp',
                     'src/assets/images/icon-369x492.webp',
                   ].map((img, i) => (
-                    <div key={i} className="insta-grid-item">
+                    <div key={i} className="hover:scale-105 hover:transition-transform">
                       <a href="gallery.html">
                         <img src={img} alt="Jewelry Gallery Item" className="aspect-square" />
                       </a>
