@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./index.css"
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,7 +14,7 @@ function Home() {
               {/* Logo */}
               <div className="shrink-0">
                 <a href="#">
-                  <img src="src/assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry" className="h-12 w-auto" />
+                  <img src="assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry" className="h-12 w-auto" />
                 </a>
               </div>
 
@@ -51,7 +52,7 @@ function Home() {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`${menuOpen ? 'max-h-125' : ''} max-h-0 overflow-hidden lg:hidden bg-dark border-t border-dark-border`}>
+            <div className={`${menuOpen ? 'max-h-125' : ''} max-h-0 transition-all overflow-hidden lg:hidden bg-dark border-t border-dark-border`}>
               <ul className="py-4 space-y-4 text-center">
                 <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Home</a></li>
                 <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Necklaces</a></li>
@@ -77,7 +78,7 @@ function Home() {
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12 lg:py-20">
               {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center lg:justify-end">
-                <img src="src/assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry Logo" className="max-w-full h-auto object-contain lg:max-w-md" />
+                <img src="assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry Logo" className="max-w-full h-auto object-contain lg:max-w-md" />
               </div>
 
               {/* Title & CTA */}
@@ -111,7 +112,7 @@ function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="w-full max-w-5xl">
-                <img src="src/assets/images/copper-amethyst-cuff.webp" alt="Copper Amethyst Cuff" className="w-full h-auto object-cover rounded-sm" />
+                <img src="assets/images/copper-amethyst-cuff.webp" alt="Copper Amethyst Cuff" className="w-full h-auto object-cover rounded-sm" />
               </div>
             </div>
           </div>
@@ -136,11 +137,11 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6">
               {[
-                { img: 'src/assets/images/forest-pearl-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
-                { img: 'src/assets/images/sacred-alignment-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
-                { img: 'src/assets/images/cosmic-oasis-3.webp', name: 'Cosmic Oasis', price: '$PRICE' },
-                { img: 'src/assets/images/faire-magic-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
-                { img: 'src/assets/images/amethyst-whisper-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
+                { img: 'assets/images/forest-pearl-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
+                { img: 'assets/images/sacred-alignment-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
+                { img: 'assets/images/cosmic-oasis-3.webp', name: 'Cosmic Oasis', price: '$PRICE' },
+                { img: 'assets/images/faire-magic-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
+                { img: 'assets/images/amethyst-whisper-icon.webp', name: 'Cosmic Oasis', price: '$PRICE' },
               ].map((item, i) => (
                 <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="bello-opal-sterling-silver-galaxy-pendant.html" className="block">
@@ -169,10 +170,10 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {[
-                { img: 'src/assets/images/photoroom-20260116.webp' },
-                { img: 'src/assets/images/copper-amethyst-cuff-copy.webp' },
-                { img: 'src/assets/images/photoroom-20260129.webp' },
-                { img: 'src/assets/images/orange-agate-copper-cuff.webp' },
+                { img: 'assets/images/photoroom-20260116.webp' },
+                { img: 'assets/images/copper-amethyst-cuff-copy.webp' },
+                { img: 'assets/images/photoroom-20260129.webp' },
+                { img: 'assets/images/orange-agate-copper-cuff.webp' },
               ].map((item, i) => (
                 <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="bello-opal-sterling-silver-galaxy-pendant.html" className="block">
@@ -201,10 +202,10 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {[
-                { img: 'src/assets/images/copper-rose-ring-16.webp' },
-                { img: 'src/assets/images/icon-4.webp' },
-                { img: 'src/assets/images/silver-rose-ring-1.webp' },
-                { img: 'src/assets/images/photoroom-20260102.webp' },
+                { img: 'assets/images/copper-rose-ring-16.webp' },
+                { img: 'assets/images/icon-4.webp' },
+                { img: 'assets/images/silver-rose-ring-1.webp' },
+                { img: 'assets/images/photoroom-20260102.webp' },
               ].map((item, i) => (
                 <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="bello-opal-sterling-silver-galaxy-pendant.html" className="block">
@@ -244,10 +245,10 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {[
-                { img: 'src/assets/images/ocean-goddess-1.webp', name: 'Eternal Current', desc: 'Rose Gold Plated Copper Wrapped Ammonite', price: '$125' },
-                { img: 'src/assets/images/ocean-goddess-2.webp', name: 'Goddess Spiral Ring', desc: 'Silver Plated Copper Woven', price: '$78' },
-                { img: 'src/assets/images/ocean-goddess-3.webp', name: 'Goddess Spiral Bracelet', desc: 'Sterling Silver Wrapped Bello Opal', price: '$349' },
-                { img: 'src/assets/images/ocean-goddess-4.webp', name: 'Oceanic Roots', desc: 'Patina Copper Wrapped Sea Glass', price: '$55' },
+                { img: 'assets/images/ocean-goddess-1.webp', name: 'Eternal Current', desc: 'Rose Gold Plated Copper Wrapped Ammonite', price: '$125' },
+                { img: 'assets/images/ocean-goddess-2.webp', name: 'Goddess Spiral Ring', desc: 'Silver Plated Copper Woven', price: '$78' },
+                { img: 'assets/images/ocean-goddess-3.webp', name: 'Goddess Spiral Bracelet', desc: 'Sterling Silver Wrapped Bello Opal', price: '$349' },
+                { img: 'assets/images/ocean-goddess-4.webp', name: 'Oceanic Roots', desc: 'Patina Copper Wrapped Sea Glass', price: '$55' },
               ].map((item, i) => (
                 <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="rose-gold-ammonite-fossil-pendant.html" className="block">
@@ -272,10 +273,10 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {[
-                { img: 'src/assets/images/forest-nymph-1.webp', name: 'Goddess Spiral Ring' },
-                { img: 'src/assets/images/forest-nymph-2.webp', name: 'Patina Copper Agate Spiral Ring' },
-                { img: 'src/assets/images/forest-nymph-3.webp', name: 'Crystal Bead Rings' },
-                { img: 'src/assets/images/forest-nymph-4.webp', name: 'Rose Rings' },
+                { img: 'assets/images/forest-nymph-1.webp', name: 'Goddess Spiral Ring' },
+                { img: 'assets/images/forest-nymph-2.webp', name: 'Patina Copper Agate Spiral Ring' },
+                { img: 'assets/images/forest-nymph-3.webp', name: 'Crystal Bead Rings' },
+                { img: 'assets/images/forest-nymph-4.webp', name: 'Rose Rings' },
               ].map((item, i) => (
                 <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="shop-all-rings.html" className="block">
@@ -299,10 +300,10 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {[
-                { img: 'src/assets/images/dragon-slayer-1.webp', name: 'Goddess Spiral Ring' },
-                { img: 'src/assets/images/dragon-slayer-2.webp', name: 'Patina Copper Agate Spiral Ring' },
-                { img: 'src/assets/images/dragon-slayer-3.webp', name: 'Rose Rings' },
-                { img: 'src/assets/images/dragon-slayer-4.webp', name: 'Crystal Bead Rings' },
+                { img: 'assets/images/dragon-slayer-1.webp', name: 'Goddess Spiral Ring' },
+                { img: 'assets/images/dragon-slayer-2.webp', name: 'Patina Copper Agate Spiral Ring' },
+                { img: 'assets/images/dragon-slayer-3.webp', name: 'Rose Rings' },
+                { img: 'assets/images/dragon-slayer-4.webp', name: 'Crystal Bead Rings' },
               ].map((item, i) => (
                 <div key={i} className="rounded-b-md hover:shadow-lg hover:scale-105 transition">
                   <a href="shop-all-rings.html" className="block">
@@ -324,7 +325,7 @@ function Home() {
             <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
               <div className="w-full lg:w-1/2">
                 <div className="overflow-hidden rounded-sm">
-                  <img src="src/assets/images/dsc-8646-768x1152.webp" alt="Robin - Creator of Lunar Orchid Jewelry" className="w-full h-auto object-cover" />
+                  <img src="assets/images/dsc-8646-768x1152.webp" alt="Robin - Creator of Lunar Orchid Jewelry" className="w-full h-auto object-cover" />
                 </div>
               </div>
               <div className="w-full lg:w-1/2">
@@ -364,7 +365,7 @@ function Home() {
                 <div className="w-full lg:w-1/2">
                   <div className="overflow-hidden rounded-lg">
                     <a href="donation.html">
-                      <img src="src/assets/images/img-2319-1138x854.webp" alt="Thank you for donating!" className="w-full h-auto object-cover rounded-lg" />
+                      <img src="assets/images/img-2319-1138x854.webp" alt="Thank you for donating!" className="w-full h-auto object-cover rounded-lg" />
                     </a>
                   </div>
                 </div>
@@ -444,12 +445,12 @@ function Home() {
                 </h6>
                 <div className="grid grid-cols-3 gap-2">
                   {[
-                    'src/assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp',
-                    'src/assets/images/hawk-eye.webp',
-                    'src/assets/images/img-588520copy-899x1154.webp',
-                    'src/assets/images/seaglass20eye20wrap-369x492.webp',
-                    'src/assets/images/img-659120large-369x478.webp',
-                    'src/assets/images/icon-369x492.webp',
+                    'assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp',
+                    'assets/images/hawk-eye.webp',
+                    'assets/images/img-588520copy-899x1154.webp',
+                    'assets/images/seaglass20eye20wrap-369x492.webp',
+                    'assets/images/img-659120large-369x478.webp',
+                    'assets/images/icon-369x492.webp',
                   ].map((img, i) => (
                     <div key={i} className="hover:scale-105 hover:transition-transform">
                       <a href="gallery.html">
@@ -474,9 +475,9 @@ function Home() {
             </div>
             <div className="flex flex-col lg:flex-row gap-12 justify-center">
               {[
-                { date: 'MAY 4, 2021 / BODY MASSAGE', title: 'AROMATIC OILS FOR FACE AND BODY', author: 'By Loreen Walsh', img: 'src/assets/images/features13.webp' },
-                { date: 'MAY 4, 2021 / BODY MASSAGE', title: 'AROMATIC OILS FOR FACE AND BODY', author: 'By Loreen Walsh', img: 'src/assets/images/features14.webp' },
-                { date: 'MAY 4, 2021 / BODY MASSAGE', title: 'AROMATIC OILS FOR FACE AND BODY', author: 'By Loreen Walsh', img: 'src/assets/images/features15.webp' },
+                { date: 'MAY 4, 2021 / BODY MASSAGE', title: 'AROMATIC OILS FOR FACE AND BODY', author: 'By Loreen Walsh', img: 'assets/images/features13.webp' },
+                { date: 'MAY 4, 2021 / BODY MASSAGE', title: 'AROMATIC OILS FOR FACE AND BODY', author: 'By Loreen Walsh', img: 'assets/images/features14.webp' },
+                { date: 'MAY 4, 2021 / BODY MASSAGE', title: 'AROMATIC OILS FOR FACE AND BODY', author: 'By Loreen Walsh', img: 'assets/images/features15.webp' },
               ].map((item, i) => (
                 <div key={i} className="w-full lg:w-[33%] text-center">
                   <div className="overflow-hidden rounded-sm">

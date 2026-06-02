@@ -2,13 +2,13 @@ import { useState } from 'react'
 import "./index.css"
 
 const slides = [
-  { img: 'src/assets/images/cosmic-oasis-1.webp', alt: 'Cosmic Oasis - View 1' },
-  { img: 'src/assets/images/untitled-artwork-8.webp', alt: 'Cosmic Oasis - View 2' },
-  { img: 'src/assets/images/cosmic-oasis-7.webp', alt: 'Cosmic Oasis - View 3' },
-  { img: 'src/assets/images/cosmic-oasis.webp', alt: 'Cosmic Oasis - View 4' },
-  { img: 'src/assets/images/cosmic-oasis-10.webp', alt: 'Cosmic Oasis - View 5' },
-  { img: 'src/assets/images/cosmic-oasis-4.webp', alt: 'Cosmic Oasis - View 6' },
-  { img: 'src/assets/images/cosmic-oasis-18-copy.webp', alt: 'Cosmic Oasis - View 7' },
+  { img: 'assets/images/cosmic-oasis-1.webp', alt: 'Cosmic Oasis - View 1' },
+  { img: 'assets/images/untitled-artwork-8.webp', alt: 'Cosmic Oasis - View 2' },
+  { img: 'assets/images/cosmic-oasis-7.webp', alt: 'Cosmic Oasis - View 3' },
+  { img: 'assets/images/cosmic-oasis.webp', alt: 'Cosmic Oasis - View 4' },
+  { img: 'assets/images/cosmic-oasis-10.webp', alt: 'Cosmic Oasis - View 5' },
+  { img: 'assets/images/cosmic-oasis-4.webp', alt: 'Cosmic Oasis - View 6' },
+  { img: 'assets/images/cosmic-oasis-18-copy.webp', alt: 'Cosmic Oasis - View 7' },
 ]
 
 function Product() {
@@ -35,7 +35,7 @@ function Product() {
           <div className="flex items-center justify-between h-16">
             <div className="shrink-0">
               <a href="#">
-                <img src="src/assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry" className="h-12 w-auto" />
+                <img src="/src/assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry" className="h-12 w-auto" />
               </a>
             </div>
             <div className="hidden lg:flex items-center space-x-8">
@@ -193,9 +193,9 @@ function Product() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { img: 'src/assets/images/forest-nymph-4.webp', link: 'shop-all-rings.html', label: 'Shop Rings' },
-              { img: 'src/assets/images/dragon-slayer-3.webp', link: 'shop-all-bracelets.html', label: 'Shop Bracelets' },
-              { img: 'src/assets/images/forest-pearl-icon.webp', link: 'shop-necklace-pendants.html', label: 'Shop Necklaces' },
+              { img: 'assets/images/forest-nymph-4.webp', link: 'shop-all-rings.html', label: 'Shop Rings' },
+              { img: 'assets/images/dragon-slayer-3.webp', link: 'shop-all-bracelets.html', label: 'Shop Bracelets' },
+              { img: 'assets/images/forest-pearl-icon.webp', link: 'shop-necklace-pendants.html', label: 'Shop Necklaces' },
             ].map((cat, i) => (
               <div key={i} className="category-card bg-white overflow-hidden rounded-sm shadow-card cursor-pointer">
                 <a href={cat.link}>
@@ -216,7 +216,8 @@ function Product() {
                   </div>
                 </a>
               </div>
-            ))}
+            ))
+            }
           </div>
         </div>
       </section>
@@ -248,7 +249,7 @@ function Product() {
               <h6 className="font-cinzel text-lg mb-4">
                 <a href="gallery.html" className="text-white hover:text-primary transition-colors">Gallery</a>
               </h6>
-              <div className="insta-grid">
+              <div className="grid grid-cols-6 gap-2">
                 {[
                   'assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp',
                   'assets/images/hawk-eye.webp',
@@ -257,9 +258,9 @@ function Product() {
                   'assets/images/img-659120large-369x478.webp',
                   'assets/images/icon-369x492.webp',
                 ].map((img, i) => (
-                  <div key={i} className="insta-grid-item">
+                  <div key={i} className="hover:scale-105 transition">
                     <a href="gallery.html">
-                      <img src={img} alt="Jewelry Gallery Item" className="aspect-square" />
+                      <img src={img} alt="Jewelry Gallery Item" className="aspect-square object-cover" />
                     </a>
                   </div>
                 ))}
