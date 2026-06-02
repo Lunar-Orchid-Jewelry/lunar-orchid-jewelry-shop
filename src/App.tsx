@@ -4,15 +4,18 @@ import { BrowserRouter } from 'react-router'
 import { Route } from "react-router"
 import { Routes } from "react-router"
 import Product from "./Product"
+import Navbar from "./Navbar"
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="product" element={<Product />} />
-        </Routes>
+        <Navbar>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="product" element={<Product />} />
+          </Routes>
+        </Navbar>
       </BrowserRouter>
     </>
   )

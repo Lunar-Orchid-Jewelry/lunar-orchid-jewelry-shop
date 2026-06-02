@@ -29,61 +29,6 @@ function Product() {
 
   return (
     <>
-      {/* === NAVBAR === */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-dark shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="shrink-0">
-              <a href="#">
-                <img src="/src/assets/images/lunar-orchid-logo.png" alt="Lunar Orchid Jewelry" className="h-12 w-auto" />
-              </a>
-            </div>
-            <div className="hidden lg:flex items-center space-x-8">
-              <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Home</a>
-              <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Necklaces</a>
-              <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Bracelets</a>
-              <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Rings</a>
-              <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Gallery</a>
-            </div>
-            <div className="hidden lg:flex items-center space-x-4">
-              <a href="#" className="text-white p-2 hover:text-primary transition-colors" aria-label="Instagram">
-                <i className="fab fa-instagram text-lg" />
-              </a>
-              <a href="#" className="text-white p-2 hover:text-primary transition-colors" aria-label="Pinterest">
-                <i className="fab fa-pinterest text-lg" />
-              </a>
-              <a href="#" className="text-white p-2 hover:text-primary transition-colors" aria-label="Facebook">
-                <i className="fab fa-facebook text-lg" />
-              </a>
-            </div>
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden hamburger flex flex-col justify-center items-center w-10 h-10"
-              aria-label="Toggle navigation"
-            >
-              <span />
-              <span />
-              <span />
-              <span />
-            </button>
-          </div>
-          <div className={`${menuOpen ? 'max-h-500' : ''} max-h-0 transition lg:hidden bg-dark border-t border-dark-border`}>
-            <ul className="py-4 space-y-4 text-center">
-              <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Home</a></li>
-              <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Necklaces</a></li>
-              <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Bracelets</a></li>
-              <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Rings</a></li>
-              <li><a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors block">Gallery</a></li>
-            </ul>
-            <div className="flex justify-center space-x-6 pb-4">
-              <a href="#" className="text-white p-2 hover:text-primary transition-colors" aria-label="Instagram"><i className="fab fa-instagram text-lg" /></a>
-              <a href="#" className="text-white p-2 hover:text-primary transition-colors" aria-label="Pinterest"><i className="fab fa-pinterest text-lg" /></a>
-              <a href="#" className="text-white p-2 hover:text-primary transition-colors" aria-label="Facebook"><i className="fab fa-facebook text-lg" /></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       <div className="h-16" />
 
       {/* === PRODUCT SECTION === */}
