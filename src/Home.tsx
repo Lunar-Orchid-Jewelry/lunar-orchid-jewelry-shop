@@ -19,6 +19,7 @@ function Home() {
 
               {/* Desktop Nav */}
               <div className="hidden lg:flex items-center space-x-8">
+                <a href="/product" className="text-white text-lg font-josefin hover:text-primary transition-colors">Product</a>
                 <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Home</a>
                 <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Necklaces</a>
                 <a href="#" className="text-white text-lg font-josefin hover:text-primary transition-colors">Bracelets</a>
