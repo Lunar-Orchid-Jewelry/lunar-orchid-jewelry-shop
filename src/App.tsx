@@ -10,12 +10,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="product" element={<Product />} />
-          </Routes>
-        </Navbar>
+        <div className="bg-primary">
+          <Navbar>
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path="product" element={<Product />} />
+            </Routes>
+          </Navbar>
+        </div>
       </BrowserRouter>
     </>
   )
