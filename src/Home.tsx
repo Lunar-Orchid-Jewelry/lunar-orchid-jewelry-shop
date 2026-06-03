@@ -77,115 +77,25 @@ function Home() {
         </section>
 
         {/* === NECKLACES === */}
-        <section className="bg-primary py-12 lg:py-16 debug">
-          <div className="max-w-7xl mx-auto debug">
-            <div className="category-line p-4 mb-8 text-center debug">
-              <p className="text-4xl font-bad-script text-white">Necklaces</p>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 debug">
-              {necklaceList.map((item, ix) => {
-                const it = { ix, ...item };
-                return <ProductTile item={it} />;
-              })}
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <a
-              href="gallery.html"
-              className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
-            >
-              More Necklaces
-            </a>
-          </div>
-        </section>
+        <Collection
+          title="Necklaces"
+          button="More Necklaces"
+          productTileList={necklaceList}
+        />
 
         {/* === BRACELETS === */}
-        <section className="bg-primary py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="category-line py-4 mb-8 text-center">
-              <p className="text-2xl font-josefin text-dark">Bracelets</p>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {braceletList.map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
-                >
-                  <a
-                    href="bello-opal-sterling-silver-galaxy-pendant.html"
-                    className="block"
-                  >
-                    <div className="overflow-hidden rounded-sm mb-3">
-                      <img
-                        src={item.img}
-                        alt="Sterling Silver Bello Opal Necklace Pendant"
-                        className="w-full h-48 lg:h-64 object-cover"
-                      />
-                    </div>
-                    <h4 className="text-secondary text-base font-josefin text-center mb-1">
-                      Cosmic Oasis
-                    </h4>
-                    <p className="text-dark text-lg font-josefin text-center">
-                      $PRICE
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <a
-              href="gallery.html"
-              className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
-            >
-              More Bracelets
-            </a>
-          </div>
-        </section>
+        <Collection
+          title="Bracelets"
+          button="More Bracelets"
+          productTileList={braceletList}
+        />
 
         {/* === RINGS === */}
-        <section className="bg-primary py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="category-line py-4 mb-8 text-center">
-              <p className="text-2xl font-josefin text-dark">Rings</p>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {ringList.map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
-                >
-                  <a
-                    href="bello-opal-sterling-silver-galaxy-pendant.html"
-                    className="block"
-                  >
-                    <div className="overflow-hidden rounded-sm mb-3">
-                      <img
-                        src={item.img}
-                        alt="Sterling Silver Bello Opal Necklace Pendant"
-                        className="w-full h-48 lg:h-64 object-cover"
-                      />
-                    </div>
-                    <h4 className="text-secondary text-base font-josefin text-center mb-1">
-                      Cosmic Oasis
-                    </h4>
-                    <p className="text-dark text-lg font-josefin text-center">
-                      $PRICE
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <a
-              href="gallery.html"
-              className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
-            >
-              More Rings
-            </a>
-          </div>
-        </section>
+        <Collection
+          title="Rings"
+          button="More Rings"
+          productTileList={ringList}
+        />
 
         {/* === SHOP BY COLLECTION (Dark Section) === */}
         <section className="bg-primary py-16 lg:py-24">
@@ -786,21 +696,24 @@ const vikingqueenList = [
   },
 ];
 
+{
+  /* === PRODUCT TILE COMPONENT === */
+}
 type ProductTileProps = {
+  ix: number;
   item: ProductTileItem;
 };
 
 type ProductTileItem = {
-  ix: number;
   img: string;
   name: string;
   price: string;
 };
 
-const ProductTile = ({ item }: ProductTileProps) => {
+const ProductTile = ({ ix, item }: ProductTileProps) => {
   return (
     <>
-      <div key={item.ix} className=" rounded-xl hover:shadow-lg ">
+      <div key={ix} className="rounded-xl hover:shadow-lg ">
         <a
           href="bello-opal-sterling-silver-galaxy-pendant.html"
           className="block"
@@ -820,6 +733,43 @@ const ProductTile = ({ item }: ProductTileProps) => {
           </p>
         </a>
       </div>
+    </>
+  );
+};
+
+{
+  /* === COLLECTION COMPONENT === */
+}
+
+type CollectionProps = {
+  title: string;
+  button: string;
+  productTileList: ProductTileItem[];
+};
+
+const Collection = (props: CollectionProps) => {
+  return (
+    <>
+      <section className="bg-primary py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="category-line p-4 mb-8 text-center">
+            <p className="text-4xl font-bad-script text-white">{props.title}</p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {props.productTileList.map((item, ix) => (
+              <ProductTile ix={ix} item={item} />
+            ))}
+          </div>
+        </div>
+        <div className="text-center mt-8">
+          <a
+            href="gallery.html"
+            className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
+          >
+            {props.button}
+          </a>
+        </div>
+      </section>
     </>
   );
 };
