@@ -14,12 +14,12 @@
     --font-family-josefin: '"Josefin Slab"', sans-serif;
 
     /* Custom colors */
-    --color-primary: #c9a84c;
+    --color-primary: #42334e;
     --color-primary-hover: #b8943f;
     --color-dark: #121212;
     --color-dark-card: #1e1e1e;
     --color-dark-border: #333333;
-    --color-secondary: #1a1a1a;
+    --color-secondary: #627f98;
 
     /* Custom shadows */
     --shadow-card: 0 2px 15px rgba(0, 0, 0, 0.08);

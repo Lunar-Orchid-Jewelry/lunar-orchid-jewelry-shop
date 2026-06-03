@@ -8,7 +8,7 @@ function Home() {
         <div className="h-16" />
 
         {/* === HERO / HEADER === */}
-        <section className="bg-[#2c2432]">
+        <section className="bg-(--color-primary)">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12 lg:py-20">
               {/* Logo Image */}
@@ -22,21 +22,21 @@ function Home() {
 
               {/* Title & CTA */}
               <div className="w-full lg:w-[65%] text-center lg:text-left">
-                <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6">
+                <h1 className="font-family-cinzel text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6">
                   Lunar Orchid Jewelry
                 </h1>
-                <h3 className="font-bad-script text-xl sm:text-2xl text-gray-100 mb-4 leading-relaxed">
+                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-100 mb-4 leading-relaxed">
                   <p>Earthly Inspired</p>
                   <p>Hand Made</p>
                   <p>Uniquely Imperfect</p>
                 </h3>
-                <h4 className="font-bad-script text-base sm:text-lg text-gray-100 mb-8 leading-relaxed">
+                <h4 className="font-bad-script text-base text-center sm:text-lg text-gray-100 mb-8 leading-relaxed">
                   <p>Float among the mystical and the magical</p>
                 </h4>
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                   <a
                     href="#"
-                    className="inline-block bg-[#627f98]} text-white px-8 py-3 font-josefin text-base hover:bg-primary-hover transition-colors rounded-sm"
+                    className="inline-block bg-[color-secondary]} text-white px-8 py-3 font-josefin text-base hover:bg-primary-hover transition-colors rounded-sm"
                   >
                     Shop by Product
                   </a>
@@ -53,7 +53,7 @@ function Home() {
         </section>
 
         {/* === ARTICLE01 - Feature Image === */}
-        <section className="bg-white py-12">
+        <section className="bg-(--color-primary) py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="w-full max-w-5xl">
@@ -68,7 +68,7 @@ function Home() {
         </section>
 
         {/* === SHOP BY PRODUCT (Dark Section) === */}
-        <section className="bg-black py-16 lg:py-24">
+        <section className="bg-(--color-primary) py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="font-cinzel text-white text-3xl sm:text-4xl lg:text-5xl mb-4">
@@ -79,7 +79,7 @@ function Home() {
         </section>
 
         {/* === NECKLACES === */}
-        <section className="bg-white py-12 lg:py-16">
+        <section className="bg-(--color-primary) py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="category-line py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Necklaces</p>
@@ -141,7 +141,7 @@ function Home() {
           <div className="text-center mt-8">
             <a
               href="gallery.html"
-              className="inline-block bg-primary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
+              className="inline-block bg-(--color-secondary) text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
             >
               More Necklaces
             </a>
@@ -149,7 +149,7 @@ function Home() {
         </section>
 
         {/* === BRACELETS === */}
-        <section className="bg-white py-12 lg:py-16">
+        <section className="bg-(--color-primary) py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="category-line py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Bracelets</p>
@@ -190,7 +190,7 @@ function Home() {
           <div className="text-center mt-8">
             <a
               href="gallery.html"
-              className="inline-block bg-primary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
+              className="inline-block bg-(--color-secondary) text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
             >
               More Bracelets
             </a>
@@ -198,7 +198,7 @@ function Home() {
         </section>
 
         {/* === RINGS === */}
-        <section className="bg-white py-12 lg:py-16">
+        <section className="bg-(--color-primary) py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="category-line py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Rings</p>
@@ -239,7 +239,7 @@ function Home() {
           <div className="text-center mt-8">
             <a
               href="gallery.html"
-              className="inline-block bg-primary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
+              className="inline-block bg-(--color-secondary) text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
             >
               More Rings
             </a>
@@ -247,7 +247,7 @@ function Home() {
         </section>
 
         {/* === SHOP BY COLLECTION (Dark Section) === */}
-        <section className="bg-dark py-16 lg:py-24">
+        <section className="bg-(--color-primary) py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="font-cinzel text-white text-3xl sm:text-4xl lg:text-5xl mb-4">
@@ -258,7 +258,7 @@ function Home() {
         </section>
 
         {/* === OCEAN GODDESS === */}
-        <section className="bg-white py-12 lg:py-16">
+        <section className="bg-(--color-primary) py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="category-line py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Ocean Goddess</p>
@@ -322,7 +322,7 @@ function Home() {
         </section>
 
         {/* === FOREST NYMPH === */}
-        <section className="bg-white py-12 lg:py-16">
+        <section className="bg-(--color-primary) py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="category-line py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Forest Nymph</p>
@@ -372,7 +372,7 @@ function Home() {
         </section>
 
         {/* === DRAGON SLAYER === */}
-        <section className="bg-white py-12 lg:py-16">
+        <section className="bg-(--color-primary) py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="border-y border-[#e0e0e0] py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Dragon Slayer</p>
@@ -422,7 +422,7 @@ function Home() {
         </section>
 
         {/* === ABOUT THE CREATOR === */}
-        <section className="bg-dark py-16 lg:py-24">
+        <section className="bg-(--color-primary) py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
               <div className="w-full lg:w-1/2">
@@ -463,7 +463,7 @@ function Home() {
         </section>
 
         {/* === DONATION SECTION === */}
-        <section className="bg-white py-16 lg:py-24">
+        <section className="bg-(--color-primary) py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -504,7 +504,7 @@ function Home() {
         </section>
 
         {/* === CONTACT FORM === */}
-        <section className="bg-white py-16 lg:py-24">
+        <section className="bg-(--color-primary) py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-xl mx-auto">
               <div className="text-center mb-8">
@@ -601,7 +601,7 @@ function Home() {
         </section>
 
         {/* === FOOTER === */}
-        <footer className="bg-dark text-white py-12 lg:py-16">
+        <footer className="bg-(--color-primary) text-white py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="w-full lg:w-1/2">
