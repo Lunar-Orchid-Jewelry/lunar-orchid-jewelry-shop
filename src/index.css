@@ -11,12 +11,9 @@
 
     /* Custom colors */
     --color-primary: #42334e;
-    --color-primary-hover: #b8943f;
     --color-dark: #121212;
-    --color-dark-card: #1e1e1e;
-    --color-dark-border: #333333;
     --color-secondary: #627f98;
-    --color-secondary-hover: #627f98;
+    --color-accent: #92a7b9;
 
     /* Custom shadows */
     --shadow-card: 0 2px 15px rgba(0, 0, 0, 0.08);

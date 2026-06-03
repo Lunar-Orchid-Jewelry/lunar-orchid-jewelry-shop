@@ -98,7 +98,7 @@ function Navbar({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Menu */}
           <div
-            className={`${menuOpen ? "max-h-125" : ""} max-h-0 transition-all overflow-hidden lg:hidden bg-dark border-t border-dark-border`}
+            className={`${menuOpen ? "max-h-125" : ""} max-h-0 transition-all overflow-hidden lg:hidden bg-accent border-t border-dark-border`}
           >
             <ul className="py-4 space-y-4 text-center">
               <li>

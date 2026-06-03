@@ -36,13 +36,13 @@ function Home() {
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                   <a
                     href="#"
-                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-primary-hover transition-colors rounded-sm"
+                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
                   >
                     Shop by Product
                   </a>
                   <a
                     href="#"
-                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-primary-hover transition-colors rounded-sm"
+                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
                   >
                     Shop by Collection
                   </a>
