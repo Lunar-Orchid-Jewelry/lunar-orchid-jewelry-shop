@@ -83,28 +83,7 @@ function Home() {
               <p className="text-4xl font-bad-script text-white">Necklaces</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 debug">
-              {[
-                {
-                  img: "assets/images/forest-pearl-icon.webp",
-                  name: "Cosmic Oasis",
-                  price: "$PRICE",
-                },
-                {
-                  img: "assets/images/sacred-alignment-icon.webp",
-                  name: "Cosmic Oasis",
-                  price: "$PRICE",
-                },
-                {
-                  img: "assets/images/cosmic-oasis-3.webp",
-                  name: "Cosmic Oasis",
-                  price: "$PRICE",
-                },
-                {
-                  img: "assets/images/faire-magic-icon.webp",
-                  name: "Cosmic Oasis",
-                  price: "$PRICE",
-                },
-              ].map((item, ix) => {
+              {necklaceList.map((item, ix) => {
                 const it = { ix, ...item };
                 return <ProductTile item={it} />;
               })}
@@ -127,12 +106,7 @@ function Home() {
               <p className="text-2xl font-josefin text-dark">Bracelets</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {[
-                { img: "assets/images/photoroom-20260116.webp" },
-                { img: "assets/images/copper-amethyst-cuff-copy.webp" },
-                { img: "assets/images/photoroom-20260129.webp" },
-                { img: "assets/images/orange-agate-copper-cuff.webp" },
-              ].map((item, i) => (
+              {braceletList.map((item, i) => (
                 <div
                   key={i}
                   className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
@@ -176,12 +150,7 @@ function Home() {
               <p className="text-2xl font-josefin text-dark">Rings</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {[
-                { img: "assets/images/copper-rose-ring-16.webp" },
-                { img: "assets/images/icon-4.webp" },
-                { img: "assets/images/silver-rose-ring-1.webp" },
-                { img: "assets/images/photoroom-20260102.webp" },
-              ].map((item, i) => (
+              {ringList.map((item, i) => (
                 <div
                   key={i}
                   className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
@@ -236,32 +205,7 @@ function Home() {
               <p className="text-2xl font-josefin text-dark">Ocean Goddess</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {[
-                {
-                  img: "assets/images/ocean-goddess-1.webp",
-                  name: "Eternal Current",
-                  desc: "Rose Gold Plated Copper Wrapped Ammonite",
-                  price: "$125",
-                },
-                {
-                  img: "assets/images/ocean-goddess-2.webp",
-                  name: "Goddess Spiral Ring",
-                  desc: "Silver Plated Copper Woven",
-                  price: "$78",
-                },
-                {
-                  img: "assets/images/ocean-goddess-3.webp",
-                  name: "Goddess Spiral Bracelet",
-                  desc: "Sterling Silver Wrapped Bello Opal",
-                  price: "$349",
-                },
-                {
-                  img: "assets/images/ocean-goddess-4.webp",
-                  name: "Oceanic Roots",
-                  desc: "Patina Copper Wrapped Sea Glass",
-                  price: "$55",
-                },
-              ].map((item, i) => (
+              {oceangoddessList.map((item, i) => (
                 <div
                   key={i}
                   className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
@@ -280,9 +224,7 @@ function Home() {
                     <h4 className="text-primary text-base font-josefin text-center mb-1">
                       {item.name}
                     </h4>
-                    <p className="text-gray-500 text-sm font-josefin text-center mb-1">
-                      {item.desc}
-                    </p>
+
                     <p className="text-dark text-lg font-josefin text-center">
                       {item.price}
                     </p>
@@ -300,24 +242,7 @@ function Home() {
               <p className="text-2xl font-josefin text-dark">Forest Nymph</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {[
-                {
-                  img: "assets/images/forest-nymph-1.webp",
-                  name: "Goddess Spiral Ring",
-                },
-                {
-                  img: "assets/images/forest-nymph-2.webp",
-                  name: "Patina Copper Agate Spiral Ring",
-                },
-                {
-                  img: "assets/images/forest-nymph-3.webp",
-                  name: "Crystal Bead Rings",
-                },
-                {
-                  img: "assets/images/forest-nymph-4.webp",
-                  name: "Rose Rings",
-                },
-              ].map((item, i) => (
+              {forestnymphList.map((item, i) => (
                 <div
                   key={i}
                   className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
@@ -343,31 +268,14 @@ function Home() {
           </div>
         </section>
 
-        {/* === DRAGON SLAYER === */}
+        {/* === VIKING QUEEN === */}
         <section className="bg-primary py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="border-y border-[#e0e0e0] py-4 mb-8 text-center">
               <p className="text-2xl font-josefin text-dark">Dragon Slayer</p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {[
-                {
-                  img: "assets/images/dragon-slayer-1.webp",
-                  name: "Goddess Spiral Ring",
-                },
-                {
-                  img: "assets/images/dragon-slayer-2.webp",
-                  name: "Patina Copper Agate Spiral Ring",
-                },
-                {
-                  img: "assets/images/dragon-slayer-3.webp",
-                  name: "Rose Rings",
-                },
-                {
-                  img: "assets/images/dragon-slayer-4.webp",
-                  name: "Crystal Bead Rings",
-                },
-              ].map((item, i) => (
+              {vikingqueenList.map((item, i) => (
                 <div
                   key={i}
                   className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
@@ -740,15 +648,155 @@ function Home() {
   );
 }
 
+const necklaceList = [
+  {
+    img: "assets/images/forest-pearl-icon.webp",
+    name: "Cosmic Oasis",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/sacred-alignment-icon.webp",
+    name: "Cosmic Oasis",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/cosmic-oasis-3.webp",
+    name: "Cosmic Oasis",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/faire-magic-icon.webp",
+    name: "Cosmic Oasis",
+    price: "$PRICE",
+  },
+];
+
+const braceletList = [
+  {
+    img: "assets/images/photoroom-20260116.webp",
+    name: "Bracelet1",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    name: "Bracelet2",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/photoroom-20260129.webp",
+    name: "Bracelet3",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/orange-agate-copper-cuff.webp",
+    name: "Bracelet4",
+    price: "$PRICE",
+  },
+];
+
+const ringList = [
+  {
+    img: "assets/images/photoroom-20260116.webp",
+    name: "Ring1",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    name: "Ring2",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/photoroom-20260129.webp",
+    name: "Ring3",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/orange-agate-copper-cuff.webp",
+    name: "Ring4",
+    price: "$PRICE",
+  },
+];
+
+const oceangoddessList = [
+  {
+    img: "assets/images/photoroom-20260116.webp",
+    name: "OG1",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    name: "OG2",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/photoroom-20260129.webp",
+    name: "Ring3",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/orange-agate-copper-cuff.webp",
+    name: "OG4",
+    price: "$PRICE",
+  },
+];
+
+const forestnymphList = [
+  {
+    img: "assets/images/photoroom-20260116.webp",
+    name: "FN1",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    name: "FN2",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/photoroom-20260129.webp",
+    name: "FN3",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/orange-agate-copper-cuff.webp",
+    name: "FN4",
+    price: "$PRICE",
+  },
+];
+
+const vikingqueenList = [
+  {
+    img: "assets/images/photoroom-20260116.webp",
+    name: "VQ1",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    name: "VQ2",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/photoroom-20260129.webp",
+    name: "VQ3",
+    price: "$PRICE",
+  },
+  {
+    img: "assets/images/orange-agate-copper-cuff.webp",
+    name: "VQ4",
+    price: "$PRICE",
+  },
+];
+
 type ProductTileProps = {
   item: ProductTileItem;
 };
+
 type ProductTileItem = {
   ix: number;
   img: string;
   name: string;
   price: string;
 };
+
 const ProductTile = ({ item }: ProductTileProps) => {
   return (
     <>
