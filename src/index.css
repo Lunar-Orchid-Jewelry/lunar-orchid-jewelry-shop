@@ -39,6 +39,10 @@ body {
     font-family: var(--font-bad-script);
 }
 
+.debug {
+    @apply border border-red-500;
+}
+
 .container-main {
     width: 100%;
 
