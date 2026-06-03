@@ -10,9 +10,9 @@ function Home() {
         {/* === HERO / HEADER === */}
         <section className="bg-primary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12 lg:py-20">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12">
               {/* Logo Image */}
-              <div className="w-[30%] lg:w-[35%] flex justify-center lg:justify-end">
+              <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <img
                   src="assets/images/lunar-orchid-logo.png"
                   alt="Lunar Orchid Jewelry Logo"
@@ -33,16 +33,16 @@ function Home() {
                 <h4 className="font-bad-script text-base text-center sm:text-lg text-gray-100 mb-8 leading-relaxed">
                   <p>Float among the mystical and the magical</p>
                 </h4>
-                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                <div className="flex flex-wrap gap-4 justify-center">
                   <a
                     href="#"
-                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
+                    className="inline-block bg-secondary text-white px-5 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
                   >
                     Shop by Product
                   </a>
                   <a
                     href="#"
-                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
+                    className="inline-block bg-secondary text-white px-5 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
                   >
                     Shop by Collection
                   </a>
@@ -52,15 +52,15 @@ function Home() {
           </div>
         </section>
 
-        {/* === ARTICLE01 - Feature Image === */}
+        {/* === IMAGE - Feature Image === */}
         <section className="bg-primary py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center">
-              <div className="w-full max-w-5xl">
+              <div className="w-full max-w-5xl ">
                 <img
                   src="assets/images/copper-amethyst-cuff.webp"
                   alt="Copper Amethyst Cuff"
-                  className="w-full h-auto object-cover rounded-sm"
+                  className="w-full h-auto object-cover rounded-2xl"
                 />
               </div>
             </div>
@@ -68,23 +68,19 @@ function Home() {
         </section>
 
         {/* === SHOP BY PRODUCT (Dark Section) === */}
-        <section className="bg-primary py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <h1 className="font-cinzel text-white text-3xl sm:text-4xl lg:text-5xl mb-4">
-                Shop by Product
-              </h1>
-            </div>
-          </div>
+        <section className="bg-primary py-8">
+          <h1 className="font-cinzel text-white text-lg text-center ">
+            Shop by Product
+          </h1>
         </section>
 
         {/* === NECKLACES === */}
-        <section className="bg-primary py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="category-line py-4 mb-8 text-center">
-              <p className="text-2xl font-josefin text-dark">Necklaces</p>
+        <section className="bg-primary py-12 lg:py-16 debug">
+          <div className="max-w-7xl mx-auto debug">
+            <div className="category-line p-4 mb-8 text-center debug">
+              <p className="text-4xl font-bad-script text-white">Necklaces</p>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 debug">
               {[
                 {
                   img: "assets/images/forest-pearl-icon.webp",
@@ -106,25 +102,17 @@ function Home() {
                   name: "Cosmic Oasis",
                   price: "$PRICE",
                 },
-                {
-                  img: "assets/images/amethyst-whisper-icon.webp",
-                  name: "Cosmic Oasis",
-                  price: "$PRICE",
-                },
               ].map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
-                >
+                <div key={i} className=" rounded-xl hover:shadow-lg ">
                   <a
                     href="bello-opal-sterling-silver-galaxy-pendant.html"
                     className="block"
                   >
-                    <div className="overflow-hidden rounded-sm mb-3">
+                    <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
                       <img
                         src={item.img}
                         alt="Sterling Silver Bello Opal Necklace Pendant"
-                        className="w-full h-48 lg:h-64 object-cover"
+                        className="aspect-square w-full h-auto object-cover"
                       />
                     </div>
                     <h4 className="text-secondary text-base font-josefin text-center mb-1">
