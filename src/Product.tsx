@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import "./index.css"
+import Footer from './Footer'
 
 const slidesList = [
   { img: 'assets/images/cosmic-oasis-1.webp', alt: 'Cosmic Oasis - View 1' },
@@ -39,7 +40,7 @@ const Carousel = ({ slides }: CarouselProps) => {
   return (
     <>
       <div className="w-full lg:w-[55%]">
-        <div className="relative overflow-hidden rounded-sm debug">
+        <div className="relative overflow-hidden rounded-lg">
 
           {/* Main Image */}
           <img
@@ -49,16 +50,16 @@ const Carousel = ({ slides }: CarouselProps) => {
             className="w-full h-auto object-cover"
           />
 
-          <div className="absolute top-0 left-0 h-full w-40 flex flex-row debug hover:bg-white hover:opacity-50" onClick={() => goPrev()}>
+          <div className="absolute top-0 left-0 h-full w-40 flex flex-row hover:bg-white hover:opacity-50 active:opacity-70" onClick={() => goPrev()}>
             {/* TODO left arrow */}
-            <div className="self-center mx-auto p-2 debug">
+            <div className="self-center mx-auto p-2">
               Prev
             </div>
           </div>
 
-          <div className="absolute top-0 right-0 h-full w-40 flex flex-row debug hover:bg-white hover:opacity-50" onClick={() => goNext()}>
+          <div className="absolute top-0 right-0 h-full w-40 flex flex-row hover:bg-white hover:opacity-50 active:opacity-70" onClick={() => goNext()}>
             {/* TODO right arrow */}
-            <div className="self-center mx-auto p-2 debug">
+            <div className="self-center mx-auto p-2">
               Next
             </div>
           </div>
@@ -71,7 +72,7 @@ const Carousel = ({ slides }: CarouselProps) => {
               key={i}
               src={slide.img}
               alt={slide.alt}
-              className={`thumb w-16 h-16 object-cover cursor-pointer border-2 ${i === activeSlide
+              className={`thumb w-16 h-16 rounded-md hover:scale-105 transition object-cover cursor-pointer border-2 ${i === activeSlide
                 ? 'border-primary opacity-100'
                 : 'border-transparent opacity-60 hover:opacity-100'
                 } transition-all duration-300`}
@@ -139,69 +140,6 @@ const ShopByProduct = ({ products }: ShopByProductProps) => {
   )
 }
 
-type FooterProps = {
-  galleryItems: GalleryItem[],
-}
-
-type GalleryItem = {
-  img: string,
-}
-
-const galleryItems = [
-  { img: "assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp" },
-  { img: "assets/images/hawk-eye.webp" },
-  { img: "assets/images/img-588520copy-899x1154.webp" },
-  { img: "assets/images/seaglass20eye20wrap-369x492.webp" },
-  { img: "assets/images/img-659120large-369x478.webp" },
-  { img: "assets/images/icon-369x492.webp" },
-]
-
-const Footer = ({ galleryItems }: FooterProps) => {
-  return (
-    <>
-      <footer className="bg-dark text-white py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-12">
-            <div className="w-full lg:w-1/2">
-              <div className="flex flex-col md:flex-row gap-8">
-                <div className="md:w-1/2">
-                  <h3 className="font-cinzel text-lg leading-relaxed" style={{ fontWeight: 'normal' }}>
-                    Lunar Orchid <br />Jewelry
-                  </h3>
-                </div>
-                <div className="md:w-1/2">
-                  <ul className="space-y-2 font-josefin">
-                    <li><a href="index.html#About" className="text-white hover:text-primary transition-colors">About</a></li>
-                    <li><a href="shop-necklace-pendants.html" className="text-white hover:text-primary transition-colors">Necklaces</a></li>
-                    <li><a href="shop-all-bracelets.html" className="text-white hover:text-primary transition-colors">Bracelets</a></li>
-                    <li><a href="shop-all-rings.html" className="text-white hover:text-primary transition-colors">Rings</a></li>
-                    <li><a href="help-and-policies.html" className="text-white hover:text-primary transition-colors">FAQ and Policies</a></li>
-                    <li><a href="index.html#help" className="text-white hover:text-primary transition-colors">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="w-full lg:w-1/2">
-              <h6 className="font-cinzel text-lg mb-4">
-                <a href="gallery.html" className="text-white hover:text-primary transition-colors">Gallery</a>
-              </h6>
-              <div className="grid grid-cols-6 gap-2">
-                {galleryItems.map((item, i) => (
-                  <div key={i} className="hover:scale-105 transition">
-                    <a href="gallery.html">
-                      <img src={item.img} alt="Jewelry Gallery Item" className="aspect-square object-cover" />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </>
-  )
-}
-
 function Product() {
   return (
     <>
@@ -251,7 +189,7 @@ function Product() {
                     href="https://buy.stripe.com/6oU6oJfa7aiKctBbvd7Re0a"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-secondary-hover transition-colors rounded-sm"
+                    className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent hover:scale-105 opacity-100 active:opacity-70 transition rounded-sm"
                   >
                     Buy Now with Stripe!
                   </a>
@@ -275,7 +213,7 @@ function Product() {
       <ShopByProduct products={productList} />
 
       {/* === FOOTER === */}
-      <Footer galleryItems={galleryItems} />
+      <Footer />
     </>
   )
 }
