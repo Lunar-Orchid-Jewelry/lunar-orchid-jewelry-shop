@@ -7,7 +7,7 @@ function Navbar({ children }: { children: React.ReactNode }) {
   return (
     <>
       {/* === NAVBAR === */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-(--color-secondary) shadow-lg">
+      <nav className="fixed top-2 left-0 right-0 z-50 bg-secondary opacity-90 shadow-lg container-main mx-auto rounded-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}

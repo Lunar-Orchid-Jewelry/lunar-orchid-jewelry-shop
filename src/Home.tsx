@@ -3,7 +3,7 @@ import "./index.css";
 function Home() {
   return (
     <>
-      <div className="bg-white font-josefin text-white">
+      <div className="font-josefin text-white">
         {/* Spacer for fixed nav */}
         <div className="h-16" />
 
