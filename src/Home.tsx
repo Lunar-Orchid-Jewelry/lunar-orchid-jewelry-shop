@@ -25,11 +25,13 @@ function Home() {
                 <h1 className="font-family-cinzel text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6">
                   Lunar Orchid Jewelry
                 </h1>
+
                 <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-100 mb-4 leading-relaxed">
                   <p>Earthly Inspired</p>
                   <p>Hand Made</p>
                   <p>Uniquely Imperfect</p>
                 </h3>
+
                 <h4 className="font-bad-script text-base text-center sm:text-lg text-gray-100 mb-8 leading-relaxed">
                   <p>Float among the mystical and the magical</p>
                 </h4>
