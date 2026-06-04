@@ -5,8 +5,7 @@ import { Route } from "react-router"
 import { Routes } from "react-router"
 import Navbar from "./Navbar"
 import Products from "./products/Products"
-import { cosmicOasis, productPages } from "./products/data"
-import Product from "./products/Product"
+import { productItems } from "./products/data"
 
 const App = () => {
   return (
@@ -15,8 +14,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="product" element={<Product key={0} item={cosmicOasis} />} />
-          <Route path="products/:productId" element={<Products pages={productPages} />} />
+          <Route path="/products/:productId" element={<Products items={productItems} />} />
         </Routes>
       </BrowserRouter>
     </>

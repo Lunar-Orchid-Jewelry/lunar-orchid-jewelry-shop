@@ -30,9 +30,6 @@ export const cosmicOasis: ProductItem = {
   ],
 }
 
-export const productPages = [
-  {
-    path: "cosmic-oasis",
-    item: cosmicOasis,
-  }
-]
+export const productItems: Record<string, ProductItem> = {
+  "cosmic-oasis": cosmicOasis,
+}

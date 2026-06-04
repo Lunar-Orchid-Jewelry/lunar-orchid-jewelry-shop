@@ -130,7 +130,6 @@ const ShopByProduct = ({ products }: ShopByProductProps) => {
 }
 
 export type ProductProps = {
-  key: string | number,
   item: ProductItem,
 }
 
@@ -143,10 +142,10 @@ export type ProductItem = {
   carouselSlides: CarouselSlide[],
 }
 
-const Product = ({ key, item }: ProductProps) => {
+const Product = ({ item }: ProductProps) => {
   return (
     <>
-      <div key={key} className="bg-primary pt-20">
+      <div key={item.path} className="bg-primary pt-20">
 
         {/* === PRODUCT SECTION === */}
         <section className="py-12 lg:py-20">

@@ -1,27 +1,33 @@
-import { Route } from "react-router"
 import type { ProductItem } from "./Product"
 import Product from "./Product"
+import { useParams } from "react-router"
 
 export type ProductsProps = {
-  pages: ProductPage[],
+  items: Record<string, ProductItem>,
 }
 
-export type ProductPage = {
-  path: string,
-  item: ProductItem,
-}
-
-const Products = ({ pages }: ProductsProps) => {
+// Page to show if the URL points to anything invalid, i.e. 404
+const ProductFallback = () => {
   return (
     <>
-      {
-        pages.map(({ path, item }, ix) => {
-          const product = <Product key={ix} item={item} />
-          return <Route path={path} element={product} />;
-        })
-      }
+      <h1>Oops, we didn't find that page, but take a look at these other items!</h1>
     </>
   )
+}
+
+const Products = ({ items }: ProductsProps) => {
+  const params = useParams();
+  if (!params.productId) {
+    return <ProductFallback />
+  }
+
+  const item = items[params.productId];
+  if (!item) {
+    return <ProductFallback />
+  }
+
+  const product = <Product item={item} />
+  return product
 }
 
 export default Products
