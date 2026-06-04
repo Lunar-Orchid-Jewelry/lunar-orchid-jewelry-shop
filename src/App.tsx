@@ -6,7 +6,7 @@ import { Routes } from "react-router"
 import Product from "./Product"
 import Navbar from "./Navbar"
 
-function App() {
+const App = () => {
   return (
     <>
       <BrowserRouter>

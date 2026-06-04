@@ -140,7 +140,7 @@ const ShopByProduct = ({ products }: ShopByProductProps) => {
   )
 }
 
-function Product() {
+const Product = () => {
   return (
     <>
       <div className="h-16" />

@@ -1,6 +1,6 @@
 import "./index.css";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <div className="font-josefin text-white">

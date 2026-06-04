@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
 
-function Navbar({ children }: { children: React.ReactNode }) {
+const Navbar = ({ children }: { children: React.ReactNode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
