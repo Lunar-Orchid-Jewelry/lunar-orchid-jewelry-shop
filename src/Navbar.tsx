@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router";
 
-const Navbar = ({ children }: { children: React.ReactNode }) => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -12,9 +11,9 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="shrink-0">
-              <a href="#">
+              <a href="/">
                 <img
-                  src="assets/images/lunar-orchid-logo.png"
+                  src="/assets/images/lunar-orchid-logo.png"
                   alt="Lunar Orchid Jewelry"
                   className="h-12 w-auto"
                 />
@@ -23,12 +22,12 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
 
             {/* Desktop Nav */}
             <div className="lg:flex items-center space-x-8">
-              <Link
-                to="product"
+              <a
+                href="product"
                 className="text-white text-md font-josefin hover:text-primary transition-colors"
               >
                 Product
-              </Link>
+              </a>
               <a
                 href="#"
                 className="text-white text-md font-josefin hover:text-primary transition-colors"
@@ -168,8 +167,6 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </nav>
-
-      {children}
     </>
   );
 }

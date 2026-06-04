@@ -1,6 +1,7 @@
 import type { ProductItem } from "./Product"
 
 export const cosmicOasis: ProductItem = {
+  path: "cosmic-oasis",
   title: "Cosmic Oasis · Sterling Silver Wire Wrapped Bello Opal Necklace Pendant",
   paragraphs: [
     `This vibrant Bello Opal was shaped and polished by hand, and wrapped meticulously in a
@@ -17,21 +18,21 @@ export const cosmicOasis: ProductItem = {
     opals may not hold the same astrological significance as natural opals.`
   ],
   materials: `Bello Opal, Sterling Silver Wire, Caffeine`,
+  price: "$349",
   carouselSlides: [
-    { img: 'assets/images/cosmic-oasis-1.webp', alt: 'Cosmic Oasis - View 1' },
-    { img: 'assets/images/untitled-artwork-8.webp', alt: 'Cosmic Oasis - View 2' },
-    { img: 'assets/images/cosmic-oasis-7.webp', alt: 'Cosmic Oasis - View 3' },
-    { img: 'assets/images/cosmic-oasis.webp', alt: 'Cosmic Oasis - View 4' },
-    { img: 'assets/images/cosmic-oasis-10.webp', alt: 'Cosmic Oasis - View 5' },
-    { img: 'assets/images/cosmic-oasis-4.webp', alt: 'Cosmic Oasis - View 6' },
-    { img: 'assets/images/cosmic-oasis-18-copy.webp', alt: 'Cosmic Oasis - View 7' },
+    { img: '/assets/images/cosmic-oasis-1.webp', alt: 'Cosmic Oasis - View 1' },
+    { img: '/assets/images/untitled-artwork-8.webp', alt: 'Cosmic Oasis - View 2' },
+    { img: '/assets/images/cosmic-oasis-7.webp', alt: 'Cosmic Oasis - View 3' },
+    { img: '/assets/images/cosmic-oasis.webp', alt: 'Cosmic Oasis - View 4' },
+    { img: '/assets/images/cosmic-oasis-10.webp', alt: 'Cosmic Oasis - View 5' },
+    { img: '/assets/images/cosmic-oasis-4.webp', alt: 'Cosmic Oasis - View 6' },
+    { img: '/assets/images/cosmic-oasis-18-copy.webp', alt: 'Cosmic Oasis - View 7' },
   ],
-  price: "$349"
 }
 
 export const productPages = [
   {
-    path: "/cosmic-oasis",
+    path: "cosmic-oasis",
     item: cosmicOasis,
   }
 ]

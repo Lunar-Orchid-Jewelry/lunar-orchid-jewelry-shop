@@ -1,14 +1,11 @@
-import "./index.css";
 
 const Home = () => {
   return (
     <>
-      <div className="font-josefin text-white">
-        {/* Spacer for fixed nav */}
-        <div className="h-16" />
+      <div className="bg-primary pt-20 font-josefin text-white">
 
         {/* === HERO / HEADER === */}
-        <section className="bg-primary">
+        <section>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12">
               {/* Logo Image */}
@@ -561,21 +558,29 @@ const Home = () => {
 const necklaceList = [
   {
     img: "assets/images/forest-pearl-icon.webp",
+    alt: "Sterling Silver Bello Opal Necklace Pendant",
+    link: "cosmic-oasis",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
     img: "assets/images/sacred-alignment-icon.webp",
+    alt: "",
+    link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
     img: "assets/images/cosmic-oasis-3.webp",
+    alt: "",
+    link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
     img: "assets/images/faire-magic-icon.webp",
+    alt: "",
+    link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
@@ -584,21 +589,29 @@ const necklaceList = [
 const braceletList = [
   {
     img: "assets/images/photoroom-20260116.webp",
+    alt: "",
+    link: "",
     name: "Bracelet1",
     price: "$PRICE",
   },
   {
     img: "assets/images/copper-amethyst-cuff-copy.webp",
+    alt: "",
+    link: "",
     name: "Bracelet2",
     price: "$PRICE",
   },
   {
     img: "assets/images/photoroom-20260129.webp",
+    alt: "",
+    link: "",
     name: "Bracelet3",
     price: "$PRICE",
   },
   {
     img: "assets/images/orange-agate-copper-cuff.webp",
+    alt: "",
+    link: "",
     name: "Bracelet4",
     price: "$PRICE",
   },
@@ -607,21 +620,29 @@ const braceletList = [
 const ringList = [
   {
     img: "assets/images/photoroom-20260116.webp",
+    alt: "",
+    link: "",
     name: "Ring1",
     price: "$PRICE",
   },
   {
     img: "assets/images/copper-amethyst-cuff-copy.webp",
+    alt: "",
+    link: "",
     name: "Ring2",
     price: "$PRICE",
   },
   {
     img: "assets/images/photoroom-20260129.webp",
+    alt: "",
+    link: "",
     name: "Ring3",
     price: "$PRICE",
   },
   {
     img: "assets/images/orange-agate-copper-cuff.webp",
+    alt: "",
+    link: "",
     name: "Ring4",
     price: "$PRICE",
   },
@@ -630,21 +651,29 @@ const ringList = [
 const oceangoddessList = [
   {
     img: "assets/images/photoroom-20260116.webp",
+    alt: "",
+    link: "",
     name: "OG1",
     price: "$PRICE",
   },
   {
     img: "assets/images/copper-amethyst-cuff-copy.webp",
+    alt: "",
+    link: "",
     name: "OG2",
     price: "$PRICE",
   },
   {
     img: "assets/images/photoroom-20260129.webp",
+    alt: "",
+    link: "",
     name: "Ring3",
     price: "$PRICE",
   },
   {
     img: "assets/images/orange-agate-copper-cuff.webp",
+    alt: "",
+    link: "",
     name: "OG4",
     price: "$PRICE",
   },
@@ -653,21 +682,29 @@ const oceangoddessList = [
 const forestnymphList = [
   {
     img: "assets/images/photoroom-20260116.webp",
+    alt: "",
+    link: "",
     name: "FN1",
     price: "$PRICE",
   },
   {
     img: "assets/images/copper-amethyst-cuff-copy.webp",
+    alt: "",
+    link: "",
     name: "FN2",
     price: "$PRICE",
   },
   {
     img: "assets/images/photoroom-20260129.webp",
+    alt: "",
+    link: "",
     name: "FN3",
     price: "$PRICE",
   },
   {
     img: "assets/images/orange-agate-copper-cuff.webp",
+    alt: "",
+    link: "",
     name: "FN4",
     price: "$PRICE",
   },
@@ -676,21 +713,29 @@ const forestnymphList = [
 const vikingqueenList = [
   {
     img: "assets/images/photoroom-20260116.webp",
+    alt: "",
+    link: "",
     name: "VQ1",
     price: "$PRICE",
   },
   {
     img: "assets/images/copper-amethyst-cuff-copy.webp",
+    alt: "",
+    link: "",
     name: "VQ2",
     price: "$PRICE",
   },
   {
     img: "assets/images/photoroom-20260129.webp",
+    alt: "",
+    link: "",
     name: "VQ3",
     price: "$PRICE",
   },
   {
     img: "assets/images/orange-agate-copper-cuff.webp",
+    alt: "",
+    link: "",
     name: "VQ4",
     price: "$PRICE",
   },
@@ -706,7 +751,9 @@ type ProductTileProps = {
 
 type ProductTileItem = {
   img: string;
+  alt: string;
   name: string;
+  link: string;
   price: string;
 };
 
@@ -715,13 +762,13 @@ const ProductTile = ({ ix, item }: ProductTileProps) => {
     <>
       <div key={ix} className="rounded-xl hover:shadow-lg ">
         <a
-          href="bello-opal-sterling-silver-galaxy-pendant.html"
+          href={item.link}
           className="block"
         >
           <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
             <img
               src={item.img}
-              alt="Sterling Silver Bello Opal Necklace Pendant"
+              alt={item.alt}
               className="aspect-square w-full h-auto object-cover"
             />
           </div>

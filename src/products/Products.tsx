@@ -16,7 +16,7 @@ const Products = ({ pages }: ProductsProps) => {
     <>
       {
         pages.map(({ path, item }, ix) => {
-          const product = <Product ix={ix} item={item} />
+          const product = <Product key={ix} item={item} />
           return <Route path={path} element={product} />;
         })
       }
