@@ -85,9 +85,9 @@ type Product = {
 }
 
 const productList = [
-  { img: 'assets/images/forest-nymph-4.webp', link: 'shop-all-rings.html', label: 'Shop Rings' },
-  { img: 'assets/images/dragon-slayer-3.webp', link: 'shop-all-bracelets.html', label: 'Shop Bracelets' },
-  { img: 'assets/images/forest-pearl-icon.webp', link: 'shop-necklace-pendants.html', label: 'Shop Necklaces' },
+  { img: '/assets/images/forest-nymph-4.webp', link: 'shop-all-rings.html', label: 'Shop Rings' },
+  { img: '/assets/images/dragon-slayer-3.webp', link: 'shop-all-bracelets.html', label: 'Shop Bracelets' },
+  { img: '/assets/images/forest-pearl-icon.webp', link: 'shop-necklace-pendants.html', label: 'Shop Necklaces' },
 ]
 
 // Use as <ShopByProduct products={productList} />
