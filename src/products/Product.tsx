@@ -1,16 +1,5 @@
 import { useState } from 'react'
-import "./index.css"
-import Footer from './Footer'
-
-const slidesList = [
-  { img: 'assets/images/cosmic-oasis-1.webp', alt: 'Cosmic Oasis - View 1' },
-  { img: 'assets/images/untitled-artwork-8.webp', alt: 'Cosmic Oasis - View 2' },
-  { img: 'assets/images/cosmic-oasis-7.webp', alt: 'Cosmic Oasis - View 3' },
-  { img: 'assets/images/cosmic-oasis.webp', alt: 'Cosmic Oasis - View 4' },
-  { img: 'assets/images/cosmic-oasis-10.webp', alt: 'Cosmic Oasis - View 5' },
-  { img: 'assets/images/cosmic-oasis-4.webp', alt: 'Cosmic Oasis - View 6' },
-  { img: 'assets/images/cosmic-oasis-18-copy.webp', alt: 'Cosmic Oasis - View 7' },
-]
+import Footer from '../Footer'
 
 type CarouselProps = {
   slides: CarouselSlide[],
@@ -140,50 +129,63 @@ const ShopByProduct = ({ products }: ShopByProductProps) => {
   )
 }
 
-const Product = () => {
+export type ProductProps = {
+  ix: number,
+  item: ProductItem,
+}
+
+export type ProductItem = {
+  carouselSlides: CarouselSlide[],
+  title: string,
+  paragraphs: string[],
+  materials?: string,
+  price: string,
+}
+
+const Product = ({ ix, item }: ProductProps) => {
   return (
     <>
-      <div className="h-16" />
-
       {/* === PRODUCT SECTION === */}
-      <section className="py-12 lg:py-20">
+      <section key={ix} className="py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
             {/* Left: Image Carousel */}
-            <Carousel slides={slidesList} />
+            <Carousel slides={item.carouselSlides} />
 
             {/* Right: Product Details */}
             <div className="w-full lg:w-[45%]">
               <div className="text-left">
+
+                {/* Title */}
                 <h1 className="font-family-cinzel text-2xl sm:text-3xl lg:text-4xl text-white mb-4 leading-tight">
-                  <strong>Cosmic Oasis · Sterling Silver Wire Wrapped Bello Opal Necklace Pendant</strong>
+                  <strong>{item.title}</strong>
                 </h1>
 
-                <div className="product-desc text-base sm:text-lg mb-6 text-gray-300 leading-relaxed">
-                  <p className="mb-4">
-                    This vibrant Bello Opal was shaped and polished by hand, and wrapped meticulously in a
-                    Sterling Silver wire casing. Capturing a sliver of the galaxy, each angle of light captures a unique
-                    highlight color in the "fire", or play of color, of the opal. From deep purples and pinks, to bright
-                    orange yellows, to a stark neon green, this stone is bursting with character.
-                  </p>
-                  <p className="mb-4">
-                    Bello Opals are synthetic, lab-grown stones known for the radiant vibrancy of their fire,
-                    often in vertical columnar patterns. Not to be confused with Imitation Opal (which are commonly made of
-                    glass or plastic and lack the opal silica structure), Bello Opals are chemically parallel to natural
-                    opals.
-                  </p>
-                  <p className="mb-4">
-                    Opals are associated with spontaneity and creativity, although it's argued that man-made
-                    opals may not hold the same astrological significance as natural opals.
-                  </p>
-                  <p className="text-base text-gray-300">
-                    <strong>Materials:</strong> Bello Opal, Sterling Silver Wire, Caffeine
-                  </p>
+                {/* Paragraphs */}
+                <div className="flex flex-col gap-4 text-base sm:text-lg mb-6 text-gray-300 leading-relaxed">
+                  {
+                    item.paragraphs.map((paragraph) => {
+                      return (
+                        <p>{paragraph}</p>
+                      )
+                    })
+                  }
+
+                  {/* Materials */}
+                  {
+                    item.materials ? (
+                      <p className="text-base text-gray-300">
+                        <strong>Materials:</strong> {item.materials}
+                      </p>
+                    ) : null
+                  }
                 </div>
 
-                <p className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">Price: $349</p>
+                {/* Price */}
+                <p className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">Price: {item.price}</p>
 
+                {/* Buy button */}
                 <div className="mb-4">
                   <a
                     href="https://buy.stripe.com/6oU6oJfa7aiKctBbvd7Re0a"
@@ -191,23 +193,14 @@ const Product = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent hover:scale-105 opacity-100 active:opacity-70 transition rounded-sm"
                   >
-                    Buy Now with Stripe!
+                    Buy Now!
                   </a>
                 </div>
-
-                <p className="text-base">
-                  <a
-                    href="help-and-policies.html#shopping-cart"
-                    className="text-primary hover:text-primary-hover transition-colors"
-                  >
-                    Why don't I have a cart?
-                  </a>
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* === SHOP BY PRODUCT === */}
       <ShopByProduct products={productList} />
