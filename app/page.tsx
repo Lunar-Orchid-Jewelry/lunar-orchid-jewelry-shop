@@ -1,8 +1,11 @@
+import Image from "next/image";
+import Navbar from "./ui/navbar";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <div className="bg-primary pt-20 font-josefin text-white">
+        <Navbar />
 
         {/* === HERO / HEADER === */}
         <section>
@@ -10,9 +13,11 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12">
               {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
-                <img
-                  src="assets/images/lunar-orchid-logo.png"
+                <Image
+                  src="images/lunar-orchid-logo.png"
                   alt="Lunar Orchid Jewelry Logo"
+                  height={400}
+                  width={400}
                   className="max-w-full h-auto object-contain lg:max-w-md"
                 />
               </div>
@@ -56,9 +61,11 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="w-full max-w-5xl ">
-                <img
-                  src="assets/images/copper-amethyst-cuff.webp"
+                <Image
+                  src="images/copper-amethyst-cuff.webp"
                   alt="Copper Amethyst Cuff"
+                  height={40}
+                  width={40}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
               </div>
@@ -122,9 +129,11 @@ const Home = () => {
                     className="block"
                   >
                     <div className="overflow-hidden rounded-sm mb-3">
-                      <img
+                      <Image
                         src={item.img}
                         alt="Ocean Goddess Collection"
+                        height={40}
+                        width={40}
                         className="w-full h-48 lg:h-64 object-cover"
                       />
                     </div>
@@ -156,9 +165,11 @@ const Home = () => {
                 >
                   <a href="shop-all-rings.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
-                      <img
+                      <Image
                         src={item.img}
                         alt=""
+                        height={40}
+                        width={40}
                         className="w-full h-48 lg:h-64 object-cover"
                       />
                     </div>
@@ -189,9 +200,11 @@ const Home = () => {
                 >
                   <a href="shop-all-rings.html" className="block">
                     <div className="overflow-hidden rounded-sm mb-3">
-                      <img
+                      <Image
                         src={item.img}
                         alt=""
+                        height={40}
+                        width={40}
                         className="w-full h-48 lg:h-64 object-cover"
                       />
                     </div>
@@ -214,9 +227,11 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
               <div className="w-full lg:w-1/2">
                 <div className="overflow-hidden rounded-sm">
-                  <img
-                    src="assets/images/dsc-8646-768x1152.webp"
+                  <Image
+                    src="images/dsc-8646-768x1152.webp"
                     alt="Robin - Creator of Lunar Orchid Jewelry"
+                    height={40}
+                    width={40}
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -277,9 +292,11 @@ const Home = () => {
                 <div className="w-full lg:w-1/2">
                   <div className="overflow-hidden rounded-lg">
                     <a href="donation.html">
-                      <img
-                        src="assets/images/img-2319-1138x854.webp"
+                      <Image
+                        src="images/img-2319-1138x854.webp"
                         alt="Thank you for donating!"
+                        height={40}
+                        width={40}
                         className="w-full h-auto object-cover rounded-lg"
                       />
                     </a>
@@ -467,21 +484,23 @@ const Home = () => {
                 </h6>
                 <div className="grid grid-cols-3 gap-2">
                   {[
-                    "assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp",
-                    "assets/images/hawk-eye.webp",
-                    "assets/images/img-588520copy-899x1154.webp",
-                    "assets/images/seaglass20eye20wrap-369x492.webp",
-                    "assets/images/img-659120large-369x478.webp",
-                    "assets/images/icon-369x492.webp",
+                    "images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp",
+                    "images/hawk-eye.webp",
+                    "images/img-588520copy-899x1154.webp",
+                    "images/seaglass20eye20wrap-369x492.webp",
+                    "images/img-659120large-369x478.webp",
+                    "images/icon-369x492.webp",
                   ].map((img, i) => (
                     <div
                       key={i}
                       className="hover:scale-105 hover:transition-transform"
                     >
                       <a href="gallery.html">
-                        <img
+                        <Image
                           src={img}
                           alt="Jewelry Gallery Item"
+                          height={40}
+                          width={40}
                           className="aspect-square"
                         />
                       </a>
@@ -511,26 +530,28 @@ const Home = () => {
                   date: "MAY 4, 2021 / BODY MASSAGE",
                   title: "AROMATIC OILS FOR FACE AND BODY",
                   author: "By Loreen Walsh",
-                  img: "assets/images/features13.webp",
+                  img: "images/features13.webp",
                 },
                 {
                   date: "MAY 4, 2021 / BODY MASSAGE",
                   title: "AROMATIC OILS FOR FACE AND BODY",
                   author: "By Loreen Walsh",
-                  img: "assets/images/features14.webp",
+                  img: "images/features14.webp",
                 },
                 {
                   date: "MAY 4, 2021 / BODY MASSAGE",
                   title: "AROMATIC OILS FOR FACE AND BODY",
                   author: "By Loreen Walsh",
-                  img: "assets/images/features15.webp",
+                  img: "images/features15.webp",
                 },
               ].map((item, i) => (
                 <div key={i} className="w-full lg:w-[33%] text-center">
                   <div className="overflow-hidden rounded-sm">
-                    <img
+                    <Image
                       src={item.img}
                       alt=""
+                      height={40}
+                      width={40}
                       className="w-full h-48 lg:h-64 object-cover"
                     />
                   </div>
@@ -557,28 +578,28 @@ const Home = () => {
 
 const necklaceList = [
   {
-    img: "assets/images/forest-pearl-icon.webp",
+    img: "images/forest-pearl-icon.webp",
     alt: "Sterling Silver Bello Opal Necklace Pendant",
     link: "cosmic-oasis",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
-    img: "assets/images/sacred-alignment-icon.webp",
+    img: "images/sacred-alignment-icon.webp",
     alt: "",
     link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
-    img: "assets/images/cosmic-oasis-3.webp",
+    img: "images/cosmic-oasis-3.webp",
     alt: "",
     link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
-    img: "assets/images/faire-magic-icon.webp",
+    img: "images/faire-magic-icon.webp",
     alt: "",
     link: "",
     name: "Cosmic Oasis",
@@ -588,28 +609,28 @@ const necklaceList = [
 
 const braceletList = [
   {
-    img: "assets/images/photoroom-20260116.webp",
+    img: "images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "Bracelet1",
     price: "$PRICE",
   },
   {
-    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    img: "images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "Bracelet2",
     price: "$PRICE",
   },
   {
-    img: "assets/images/photoroom-20260129.webp",
+    img: "images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "Bracelet3",
     price: "$PRICE",
   },
   {
-    img: "assets/images/orange-agate-copper-cuff.webp",
+    img: "images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "Bracelet4",
@@ -619,28 +640,28 @@ const braceletList = [
 
 const ringList = [
   {
-    img: "assets/images/photoroom-20260116.webp",
+    img: "images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "Ring1",
     price: "$PRICE",
   },
   {
-    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    img: "images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "Ring2",
     price: "$PRICE",
   },
   {
-    img: "assets/images/photoroom-20260129.webp",
+    img: "images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "Ring3",
     price: "$PRICE",
   },
   {
-    img: "assets/images/orange-agate-copper-cuff.webp",
+    img: "images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "Ring4",
@@ -650,28 +671,28 @@ const ringList = [
 
 const oceangoddessList = [
   {
-    img: "assets/images/photoroom-20260116.webp",
+    img: "images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "OG1",
     price: "$PRICE",
   },
   {
-    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    img: "images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "OG2",
     price: "$PRICE",
   },
   {
-    img: "assets/images/photoroom-20260129.webp",
+    img: "images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "Ring3",
     price: "$PRICE",
   },
   {
-    img: "assets/images/orange-agate-copper-cuff.webp",
+    img: "images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "OG4",
@@ -681,28 +702,28 @@ const oceangoddessList = [
 
 const forestnymphList = [
   {
-    img: "assets/images/photoroom-20260116.webp",
+    img: "images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "FN1",
     price: "$PRICE",
   },
   {
-    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    img: "images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "FN2",
     price: "$PRICE",
   },
   {
-    img: "assets/images/photoroom-20260129.webp",
+    img: "images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "FN3",
     price: "$PRICE",
   },
   {
-    img: "assets/images/orange-agate-copper-cuff.webp",
+    img: "images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "FN4",
@@ -712,28 +733,28 @@ const forestnymphList = [
 
 const vikingqueenList = [
   {
-    img: "assets/images/photoroom-20260116.webp",
+    img: "images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "VQ1",
     price: "$PRICE",
   },
   {
-    img: "assets/images/copper-amethyst-cuff-copy.webp",
+    img: "images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "VQ2",
     price: "$PRICE",
   },
   {
-    img: "assets/images/photoroom-20260129.webp",
+    img: "images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "VQ3",
     price: "$PRICE",
   },
   {
-    img: "assets/images/orange-agate-copper-cuff.webp",
+    img: "images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "VQ4",
@@ -745,7 +766,6 @@ const vikingqueenList = [
   /* === PRODUCT TILE COMPONENT === */
 }
 type ProductTileProps = {
-  ix: number;
   item: ProductTileItem;
 };
 
@@ -757,18 +777,20 @@ type ProductTileItem = {
   price: string;
 };
 
-const ProductTile = ({ ix, item }: ProductTileProps) => {
+const ProductTile = ({ item }: ProductTileProps) => {
   return (
     <>
-      <div key={ix} className="rounded-xl hover:shadow-lg ">
+      <div className="rounded-xl hover:shadow-lg ">
         <a
           href={item.link}
           className="block"
         >
           <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
-            <img
+            <Image
               src={item.img}
               alt={item.alt}
+              height={40}
+              width={40}
               className="aspect-square w-full h-auto object-cover"
             />
           </div>
@@ -804,7 +826,7 @@ const Collection = (props: CollectionProps) => {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {props.productTileList.map((item, ix) => (
-              <ProductTile ix={ix} item={item} />
+              <ProductTile key={ix} item={item} />
             ))}
           </div>
         </div>
@@ -820,5 +842,3 @@ const Collection = (props: CollectionProps) => {
     </>
   );
 };
-
-export default Home;

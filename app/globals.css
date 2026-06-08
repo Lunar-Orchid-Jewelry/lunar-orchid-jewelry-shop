@@ -2,8 +2,7 @@
 
 @import "tailwindcss";
 
-/* Custom theme values — replaces the tailwind.config script from page29.html */
-@theme {
+@theme inline {
     /* Custom fonts */
     --font-cinzel: "Cinzel Decorative", serif;
     --font-bad-script: "Bad Script", cursive;

@@ -1,7 +1,10 @@
-import { useState } from "react";
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <>
@@ -11,13 +14,15 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="shrink-0">
-              <a href="/">
-                <img
-                  src="/assets/images/lunar-orchid-logo.png"
+              <Link href="/">
+                <Image
+                  src="/images/lunar-orchid-logo.png"
                   alt="Lunar Orchid Jewelry"
+                  height={80}
+                  width={80}
                   className="h-12 w-auto"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Nav */}
@@ -168,7 +173,7 @@ const Navbar = () => {
         </div>
       </nav>
     </>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
