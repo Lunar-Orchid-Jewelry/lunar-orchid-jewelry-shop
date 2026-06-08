@@ -42,7 +42,13 @@ export default function Footer() {
                 {galleryItems.map((item, i) => (
                   <div key={i} className="hover:scale-105 transition">
                     <a href="gallery.html">
-                      <Image src={item.img} alt="Jewelry Gallery Item" className="aspect-square object-cover" />
+                      <Image
+                        className="aspect-square object-cover"
+                        src={item.img}
+                        alt="Jewelry Gallery Item"
+                        height={40}
+                        width={40}
+                      />
                     </a>
                   </div>
                 ))}

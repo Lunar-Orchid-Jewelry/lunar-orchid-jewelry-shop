@@ -37,6 +37,8 @@ export default function Carousel({ slides }: CarouselProps) {
             key={activeSlide}
             src={slides[activeSlide].img}
             alt={slides[activeSlide].alt}
+            height={40}
+            width={40}
             className="w-full h-auto object-cover"
           />
 
@@ -62,6 +64,8 @@ export default function Carousel({ slides }: CarouselProps) {
               key={i}
               src={slide.img}
               alt={slide.alt}
+              height={40}
+              width={40}
               className={`thumb w-16 h-16 rounded-md hover:scale-105 transition object-cover cursor-pointer border-2 ${i === activeSlide
                 ? 'border-primary opacity-100'
                 : 'border-transparent opacity-60 hover:opacity-100'
