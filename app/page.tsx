@@ -14,7 +14,7 @@ export default function Home() {
               {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
-                  src="images/lunar-orchid-logo.png"
+                  src="/images/lunar-orchid-logo.png"
                   alt="Lunar Orchid Jewelry Logo"
                   height={400}
                   width={400}
@@ -62,7 +62,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="w-full max-w-5xl ">
                 <Image
-                  src="images/copper-amethyst-cuff.webp"
+                  src="/images/copper-amethyst-cuff.webp"
                   alt="Copper Amethyst Cuff"
                   height={40}
                   width={40}
@@ -228,7 +228,7 @@ export default function Home() {
               <div className="w-full lg:w-1/2">
                 <div className="overflow-hidden rounded-sm">
                   <Image
-                    src="images/dsc-8646-768x1152.webp"
+                    src="/images/dsc-8646-768x1152.webp"
                     alt="Robin - Creator of Lunar Orchid Jewelry"
                     height={40}
                     width={40}
@@ -293,7 +293,7 @@ export default function Home() {
                   <div className="overflow-hidden rounded-lg">
                     <a href="donation.html">
                       <Image
-                        src="images/img-2319-1138x854.webp"
+                        src="/images/img-2319-1138x854.webp"
                         alt="Thank you for donating!"
                         height={40}
                         width={40}
@@ -484,12 +484,12 @@ export default function Home() {
                 </h6>
                 <div className="grid grid-cols-3 gap-2">
                   {[
-                    "images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp",
-                    "images/hawk-eye.webp",
-                    "images/img-588520copy-899x1154.webp",
-                    "images/seaglass20eye20wrap-369x492.webp",
-                    "images/img-659120large-369x478.webp",
-                    "images/icon-369x492.webp",
+                    "/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp",
+                    "/images/hawk-eye.webp",
+                    "/images/img-588520copy-899x1154.webp",
+                    "/images/seaglass20eye20wrap-369x492.webp",
+                    "/images/img-659120large-369x478.webp",
+                    "/images/icon-369x492.webp",
                   ].map((img, i) => (
                     <div
                       key={i}
@@ -530,19 +530,19 @@ export default function Home() {
                   date: "MAY 4, 2021 / BODY MASSAGE",
                   title: "AROMATIC OILS FOR FACE AND BODY",
                   author: "By Loreen Walsh",
-                  img: "images/features13.webp",
+                  img: "/images/features13.webp",
                 },
                 {
                   date: "MAY 4, 2021 / BODY MASSAGE",
                   title: "AROMATIC OILS FOR FACE AND BODY",
                   author: "By Loreen Walsh",
-                  img: "images/features14.webp",
+                  img: "/images/features14.webp",
                 },
                 {
                   date: "MAY 4, 2021 / BODY MASSAGE",
                   title: "AROMATIC OILS FOR FACE AND BODY",
                   author: "By Loreen Walsh",
-                  img: "images/features15.webp",
+                  img: "/images/features15.webp",
                 },
               ].map((item, i) => (
                 <div key={i} className="w-full lg:w-[33%] text-center">
@@ -578,28 +578,28 @@ export default function Home() {
 
 const necklaceList = [
   {
-    img: "images/forest-pearl-icon.webp",
+    img: "/images/forest-pearl-icon.webp",
     alt: "Sterling Silver Bello Opal Necklace Pendant",
-    link: "cosmic-oasis",
+    link: "products/cosmic-oasis",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
-    img: "images/sacred-alignment-icon.webp",
+    img: "/images/sacred-alignment-icon.webp",
     alt: "",
     link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
-    img: "images/cosmic-oasis-3.webp",
+    img: "/images/cosmic-oasis-3.webp",
     alt: "",
     link: "",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },
   {
-    img: "images/faire-magic-icon.webp",
+    img: "/images/faire-magic-icon.webp",
     alt: "",
     link: "",
     name: "Cosmic Oasis",
@@ -609,28 +609,28 @@ const necklaceList = [
 
 const braceletList = [
   {
-    img: "images/photoroom-20260116.webp",
+    img: "/images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "Bracelet1",
     price: "$PRICE",
   },
   {
-    img: "images/copper-amethyst-cuff-copy.webp",
+    img: "/images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "Bracelet2",
     price: "$PRICE",
   },
   {
-    img: "images/photoroom-20260129.webp",
+    img: "/images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "Bracelet3",
     price: "$PRICE",
   },
   {
-    img: "images/orange-agate-copper-cuff.webp",
+    img: "/images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "Bracelet4",
@@ -640,28 +640,28 @@ const braceletList = [
 
 const ringList = [
   {
-    img: "images/photoroom-20260116.webp",
+    img: "/images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "Ring1",
     price: "$PRICE",
   },
   {
-    img: "images/copper-amethyst-cuff-copy.webp",
+    img: "/images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "Ring2",
     price: "$PRICE",
   },
   {
-    img: "images/photoroom-20260129.webp",
+    img: "/images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "Ring3",
     price: "$PRICE",
   },
   {
-    img: "images/orange-agate-copper-cuff.webp",
+    img: "/images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "Ring4",
@@ -671,28 +671,28 @@ const ringList = [
 
 const oceangoddessList = [
   {
-    img: "images/photoroom-20260116.webp",
+    img: "/images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "OG1",
     price: "$PRICE",
   },
   {
-    img: "images/copper-amethyst-cuff-copy.webp",
+    img: "/images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "OG2",
     price: "$PRICE",
   },
   {
-    img: "images/photoroom-20260129.webp",
+    img: "/images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "Ring3",
     price: "$PRICE",
   },
   {
-    img: "images/orange-agate-copper-cuff.webp",
+    img: "/images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "OG4",
@@ -702,28 +702,28 @@ const oceangoddessList = [
 
 const forestnymphList = [
   {
-    img: "images/photoroom-20260116.webp",
+    img: "/images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "FN1",
     price: "$PRICE",
   },
   {
-    img: "images/copper-amethyst-cuff-copy.webp",
+    img: "/images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "FN2",
     price: "$PRICE",
   },
   {
-    img: "images/photoroom-20260129.webp",
+    img: "/images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "FN3",
     price: "$PRICE",
   },
   {
-    img: "images/orange-agate-copper-cuff.webp",
+    img: "/images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "FN4",
@@ -733,28 +733,28 @@ const forestnymphList = [
 
 const vikingqueenList = [
   {
-    img: "images/photoroom-20260116.webp",
+    img: "/images/photoroom-20260116.webp",
     alt: "",
     link: "",
     name: "VQ1",
     price: "$PRICE",
   },
   {
-    img: "images/copper-amethyst-cuff-copy.webp",
+    img: "/images/copper-amethyst-cuff-copy.webp",
     alt: "",
     link: "",
     name: "VQ2",
     price: "$PRICE",
   },
   {
-    img: "images/photoroom-20260129.webp",
+    img: "/images/photoroom-20260129.webp",
     alt: "",
     link: "",
     name: "VQ3",
     price: "$PRICE",
   },
   {
-    img: "images/orange-agate-copper-cuff.webp",
+    img: "/images/orange-agate-copper-cuff.webp",
     alt: "",
     link: "",
     name: "VQ4",
