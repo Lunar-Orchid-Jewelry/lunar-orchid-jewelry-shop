@@ -10,16 +10,14 @@ export type ProductTileItem = {
   name: string;
   link: string;
   price: string;
+  description?: string;
 };
 
 export default function ProductTile({ item }: ProductTileProps) {
   return (
     <>
       <div className="rounded-xl hover:shadow-lg ">
-        <a
-          href={item.link}
-          className="block"
-        >
+        <a href={item.link} className="block">
           <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
             <Image
               src={item.img}
@@ -32,9 +30,14 @@ export default function ProductTile({ item }: ProductTileProps) {
           <h4 className="text-white text-base font-josefin text-center mb-2">
             {item.name}
           </h4>
-          <p className="text-dark text-lg font-josefin text-center">
+          <p className="text-light text-lg font-josefin text-center">
             {item.price}
           </p>
+          {!item.description ? <></> : (
+            <p className="text-light text-lg font-josefin text-center">
+              {item.description}
+            </p>
+          )}
         </a>
       </div>
     </>
