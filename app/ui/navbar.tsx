@@ -27,36 +27,36 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="lg:flex items-center space-x-8">
-              <a
-                href="#"
-                className="text-white text-md font-josefin hover:text-primary transition-colors"
+              <Link
+                href="/"
+                className="text-white text-lg font-josefin hover:text-primary transition-colors"
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="text-white text-md font-josefin hover:text-primary transition-colors"
+              </Link>
+              <Link
+                href="/catalog/necklaces"
+                className="text-white text-lg font-josefin hover:text-primary transition-colors"
               >
                 Necklaces
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/catalog/bracelets"
                 className="text-white text-lg font-josefin hover:text-primary transition-colors"
               >
                 Bracelets
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/catalog/rings"
                 className="text-white text-lg font-josefin hover:text-primary transition-colors"
               >
                 Rings
-              </a>
-              <a
+              </Link>
+              {/*<Link
                 href="#"
                 className="text-white text-lg font-josefin hover:text-primary transition-colors"
               >
                 Gallery
-              </a>
+              </Link>*/}
             </div>
 
             {/* Social Icons (Desktop) */}

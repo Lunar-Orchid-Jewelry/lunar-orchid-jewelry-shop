@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "./ui/navbar";
-import ProductTile, { ProductTileItem } from "./ui/product-tile";
+import Collection from "./ui/collection";
 
 export default function Home() {
   return (
@@ -83,21 +83,21 @@ export default function Home() {
         <Collection
           title="Necklaces"
           button="More Necklaces"
-          productTileList={necklaceList}
+          products={necklaceList}
         />
 
         {/* === BRACELETS === */}
         <Collection
           title="Bracelets"
           button="More Bracelets"
-          productTileList={braceletList}
+          products={braceletList}
         />
 
         {/* === RINGS === */}
         <Collection
           title="Rings"
           button="More Rings"
-          productTileList={ringList}
+          products={ringList}
         />
 
         {/* === SHOP BY Collection (Dark Section) === */}
@@ -112,13 +112,13 @@ export default function Home() {
         </section>
 
         {/* === OCEAN GODDESS === */}
-        <Collection title="Ocean Goddess" productTileList={oceangoddessList} />
+        <Collection title="Ocean Goddess" products={oceangoddessList} />
 
         {/* === FOREST NYMPH === */}
-        <Collection title="Forest Nymph" productTileList={forestnymphList} />
+        <Collection title="Forest Nymph" products={forestnymphList} />
 
         {/* === VIKING QUEEN === */}
-        <Collection title="Viking Queen" productTileList={vikingqueenList} />
+        <Collection title="Viking Queen" products={vikingqueenList} />
 
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
@@ -661,45 +661,3 @@ const vikingqueenList = [
     price: "$PRICE",
   },
 ];
-
-{
-  /* === COLLECTION COMPONENT === */
-}
-
-type CollectionProps = {
-  title: string;
-  button?: string;
-  productTileList: ProductTileItem[];
-};
-
-const Collection = (props: CollectionProps) => {
-  return (
-    <>
-      <section className="bg-primary py-8 lg:py-16">
-        <div className="max-w-7xl mx-auto px-10">
-          <div className="category-line p-4 mb-8 text-center">
-            <p className="text-4xl font-bad-script text-white">{props.title}</p>
-          </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {props.productTileList.map((item, ix) => (
-              <ProductTile key={ix} item={item} />
-            ))}
-          </div>
-        </div>
-
-        {!props.button ? (
-          <></>
-        ) : (
-          <div className="text-center mt-8">
-            <a
-              href="gallery.html"
-              className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
-            >
-              {props.button}
-            </a>
-          </div>
-        )}
-      </section>
-    </>
-  );
-};

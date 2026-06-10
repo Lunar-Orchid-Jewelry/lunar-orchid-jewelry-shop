@@ -12,7 +12,7 @@ type Props = {
  * Each returned { slug } becomes a static HTML page at /products/<slug>.
  */
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  return catalogItems.map((product) => ({ slug: product.slug }));
+  return Object.keys(catalogItems).map((slug) => ({ slug }))
 }
 
 /**
