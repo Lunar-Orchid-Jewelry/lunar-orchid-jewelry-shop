@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Carousel, { CarouselSlide } from "./carousel";
 import Footer from "./footer";
-import type { ProductItem } from "../products/data";
+import type { ProductItem } from "../product/data";
 import Navbar from "./navbar";
 
 /* ─── ShopByProduct ─── */
