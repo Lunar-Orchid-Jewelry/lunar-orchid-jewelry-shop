@@ -3,7 +3,9 @@ export type CatalogItem = {
   title: string;
 };
 
-const catalogItems: CatalogItem[] = [];
+const catalogItems: CatalogItem[] = [
+  { slug: "necklaces", title: "Necklaces" },
+];
 
 export default catalogItems;
 

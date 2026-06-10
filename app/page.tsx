@@ -480,7 +480,7 @@ const necklaceList = [
   {
     img: "/images/forest-pearl-icon.webp",
     alt: "Sterling Silver Bello Opal Necklace Pendant",
-    link: "products/cosmic-oasis",
+    link: "product/cosmic-oasis",
     name: "Cosmic Oasis",
     price: "$PRICE",
   },

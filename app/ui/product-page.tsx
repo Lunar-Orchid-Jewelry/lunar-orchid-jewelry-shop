@@ -17,8 +17,9 @@ type ProductPageProps = {
 export default function ProductPage({ item }: ProductPageProps) {
   return (
     <>
-      <Navbar />
       <div className="bg-primary pt-20">
+        <Navbar />
+
         {/* === PRODUCT SECTION === */}
         <section className="py-12 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

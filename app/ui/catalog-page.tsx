@@ -16,15 +16,20 @@ export type CatalogPageProps = {
 export default function CatalogPage({ item }: CatalogPageProps) {
   return (
     <>
-      <Navbar />
+      <div className="size-full bg-primary">
+        <Navbar />
 
-      {/* TODO Catalog page */}
+        {/* TODO Catalog page */}
+        <div className="h-80">
 
-      {/* === SHOP BY PRODUCT === */}
-      <ShopByProduct productItems={shopByProductItems} />
+        </div>
 
-      {/* === FOOTER === */}
-      <Footer />
+        {/* === SHOP BY PRODUCT === */}
+        <ShopByProduct productItems={shopByProductItems} />
+
+        {/* === FOOTER === */}
+        <Footer />
+      </div>
     </>
   );
 };
