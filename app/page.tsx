@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./ui/navbar";
 import Collection from "./ui/collection";
+import { braceletProducts, forestNymphProducts, necklaceProducts, oceanGoddessProducts, ringProducts, vikingQueenProducts } from "./product/data";
 
 export default function Home() {
   return (
@@ -83,21 +84,21 @@ export default function Home() {
         <Collection
           title="Necklaces"
           button="More Necklaces"
-          products={necklaceList}
+          products={necklaceProducts}
         />
 
         {/* === BRACELETS === */}
         <Collection
           title="Bracelets"
           button="More Bracelets"
-          products={braceletList}
+          products={braceletProducts}
         />
 
         {/* === RINGS === */}
         <Collection
           title="Rings"
           button="More Rings"
-          products={ringList}
+          products={ringProducts}
         />
 
         {/* === SHOP BY Collection (Dark Section) === */}
@@ -112,13 +113,13 @@ export default function Home() {
         </section>
 
         {/* === OCEAN GODDESS === */}
-        <Collection title="Ocean Goddess" products={oceangoddessList} />
+        <Collection title="Ocean Goddess" products={oceanGoddessProducts} />
 
         {/* === FOREST NYMPH === */}
-        <Collection title="Forest Nymph" products={forestnymphList} />
+        <Collection title="Forest Nymph" products={forestNymphProducts} />
 
         {/* === VIKING QUEEN === */}
-        <Collection title="Viking Queen" products={vikingqueenList} />
+        <Collection title="Viking Queen" products={vikingQueenProducts} />
 
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
@@ -475,189 +476,3 @@ export default function Home() {
     </>
   );
 }
-
-const necklaceList = [
-  {
-    img: "/images/forest-pearl-icon.webp",
-    alt: "Sterling Silver Bello Opal Necklace Pendant",
-    link: "product/cosmic-oasis",
-    name: "Cosmic Oasis",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/sacred-alignment-icon.webp",
-    alt: "",
-    link: "",
-    name: "Cosmic Oasis",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/cosmic-oasis-3.webp",
-    alt: "",
-    link: "",
-    name: "Cosmic Oasis",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/faire-magic-icon.webp",
-    alt: "",
-    link: "",
-    name: "Cosmic Oasis",
-    price: "$PRICE",
-  },
-];
-
-const braceletList = [
-  {
-    img: "/images/photoroom-20260116.webp",
-    alt: "",
-    link: "",
-    name: "Bracelet1",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/copper-amethyst-cuff-copy.webp",
-    alt: "",
-    link: "",
-    name: "Bracelet2",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/photoroom-20260129.webp",
-    alt: "",
-    link: "",
-    name: "Bracelet3",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/orange-agate-copper-cuff.webp",
-    alt: "",
-    link: "",
-    name: "Bracelet4",
-    price: "$PRICE",
-  },
-];
-
-const ringList = [
-  {
-    img: "/images/photoroom-20260116.webp",
-    alt: "",
-    link: "",
-    name: "Ring1",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/copper-amethyst-cuff-copy.webp",
-    alt: "",
-    link: "",
-    name: "Ring2",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/photoroom-20260129.webp",
-    alt: "",
-    link: "",
-    name: "Ring3",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/orange-agate-copper-cuff.webp",
-    alt: "",
-    link: "",
-    name: "Ring4",
-    price: "$PRICE",
-  },
-];
-
-const oceangoddessList = [
-  {
-    img: "/images/photoroom-20260116.webp",
-    alt: "",
-    link: "",
-    name: "OG1",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/copper-amethyst-cuff-copy.webp",
-    alt: "",
-    link: "",
-    name: "OG2",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/photoroom-20260129.webp",
-    alt: "",
-    link: "",
-    name: "Ring3",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/orange-agate-copper-cuff.webp",
-    alt: "",
-    link: "",
-    name: "OG4",
-    price: "$PRICE",
-  },
-];
-
-const forestnymphList = [
-  {
-    img: "/images/photoroom-20260116.webp",
-    alt: "",
-    link: "",
-    name: "FN1",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/copper-amethyst-cuff-copy.webp",
-    alt: "",
-    link: "",
-    name: "FN2",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/photoroom-20260129.webp",
-    alt: "",
-    link: "",
-    name: "FN3",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/orange-agate-copper-cuff.webp",
-    alt: "",
-    link: "",
-    name: "FN4",
-    price: "$PRICE",
-  },
-];
-
-const vikingqueenList = [
-  {
-    img: "/images/photoroom-20260116.webp",
-    alt: "",
-    link: "",
-    name: "VQ1",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/copper-amethyst-cuff-copy.webp",
-    alt: "",
-    link: "",
-    name: "VQ2",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/photoroom-20260129.webp",
-    alt: "",
-    link: "",
-    name: "VQ3",
-    price: "$PRICE",
-  },
-  {
-    img: "/images/orange-agate-copper-cuff.webp",
-    alt: "",
-    link: "",
-    name: "VQ4",
-    price: "$PRICE",
-  },
-];

@@ -4,7 +4,7 @@ import ProductTile from "./product-tile";
 type CollectionProps = {
   title: string;
   button?: string;
-  products: ProductItem[];
+  products: Record<string, ProductItem>;
 };
 
 export default function Collection(props: CollectionProps) {
@@ -16,8 +16,8 @@ export default function Collection(props: CollectionProps) {
             <p className="text-4xl font-bad-script text-white">{props.title}</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {props.products.map((item, ix) => (
-              <ProductTile key={ix} item={item} />
+            {Object.entries(props.products).map(([key, item]) => (
+              <ProductTile key={key} item={item} />
             ))}
           </div>
         </div>
