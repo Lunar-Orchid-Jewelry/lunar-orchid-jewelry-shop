@@ -28,12 +28,6 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <div className="lg:flex items-center space-x-8">
               <a
-                href="product"
-                className="text-white text-md font-josefin hover:text-primary transition-colors"
-              >
-                Product
-              </a>
-              <a
                 href="#"
                 className="text-white text-md font-josefin hover:text-primary transition-colors"
               >
