@@ -1,68 +1,20 @@
-import Image from "next/image";
-import Carousel, { CarouselSlide } from "./carousel";
+import Carousel from "./carousel";
 import Footer from "./footer";
 import type { ProductItem } from "../product/data";
 import Navbar from "./navbar";
+import ShopByProduct, { ShopByProductItem } from "./shop-by-product";
 
-/* ─── ShopByProduct ─── */
-
-type ShopByProductProps = {
-  products: Product[];
-};
-
-type Product = {
-  img: string;
-  link: string;
-  label: string;
-};
-
-const productList: Product[] = [
+const shopByProductItems: ShopByProductItem[] = [
   { img: "/assets/images/forest-nymph-4.webp", link: "/products/forest-pearl", label: "Shop Necklaces" },
   { img: "/assets/images/dragon-slayer-3.webp", link: "/products/dragon-slayer", label: "Shop Pendants" },
   { img: "/assets/images/forest-pearl-icon.webp", link: "/products/forest-pearl", label: "Shop Best Sellers" },
 ];
 
-const ShopByProduct = ({ products }: ShopByProductProps) => {
-  return (
-    <section className="bg-white py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10">
-          <p className="text-2xl sm:text-3xl font-josefin text-dark">Shop by Product</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {products.map((cat, i) => (
-            <div key={i} className="category-card bg-white overflow-hidden rounded-sm shadow-card cursor-pointer">
-              <a href={cat.link}>
-                <div className="overflow-hidden">
-                  <Image
-                    src={cat.img}
-                    alt={cat.label}
-                    height={40}
-                    width={40}
-                    className="w-full h-64 lg:h-80 object-cover"
-                  />
-                </div>
-                <div className="p-4">
-                  <span className="text-white text-lg sm:text-xl font-josefin hover:text-primary transition-colors block">
-                    {cat.label}
-                  </span>
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-/* ─── ProductPageContent ─── */
-
-type ProductPageContentProps = {
+type ProductPageProps = {
   item: ProductItem;
 };
 
-const ProductPageContent = ({ item }: ProductPageContentProps) => {
+export default function ProductPage({ item }: ProductPageProps) {
   return (
     <>
       <Navbar />
@@ -119,7 +71,7 @@ const ProductPageContent = ({ item }: ProductPageContentProps) => {
         </section>
 
         {/* === SHOP BY PRODUCT === */}
-        <ShopByProduct products={productList} />
+        <ShopByProduct productItems={shopByProductItems} />
 
         {/* === FOOTER === */}
         <Footer />
@@ -128,5 +80,5 @@ const ProductPageContent = ({ item }: ProductPageContentProps) => {
   );
 };
 
-export { ProductPageContent, ShopByProduct };
-export type { Product };
+export { ProductPage as ProductPageContent, ShopByProduct };
+export type { ShopByProductItem as Product };
