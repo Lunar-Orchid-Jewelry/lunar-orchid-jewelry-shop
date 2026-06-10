@@ -57,25 +57,23 @@ export default function Home() {
         </section>
 
         {/* === IMAGE - Feature Image === */}
-        <section className="bg-primary py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-center">
-              <div className="w-full max-w-5xl ">
-                <Image
-                  src="/images/copper-amethyst-cuff.webp"
-                  alt="Copper Amethyst Cuff"
-                  height={40}
-                  width={40}
-                  className="w-full h-auto object-cover rounded-2xl"
-                />
-              </div>
+        <section className="py-12 max-w-7xl mx-auto px-10 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <div className="w-full h-auto max-w-5xl">
+              <Image
+                src="/images/copper-amethyst-cuff.webp"
+                alt="Copper Amethyst Cuff"
+                height={40}
+                width={40}
+                className="w-full object-cover rounded-2xl"
+              />
             </div>
           </div>
         </section>
 
         {/* === SHOP BY PRODUCT (Dark Section) === */}
-        <section className="bg-primary py-8">
-          <h1 className="font-cinzel text-white text-lg text-center ">
+        <section className=" pt-16">
+          <h1 className="font-cinzel text-white text-xl text-center ">
             Shop by Product
           </h1>
         </section>
@@ -101,11 +99,11 @@ export default function Home() {
           productTileList={ringList}
         />
 
-        {/* === SHOP BY COLLECTION (Dark Section) === */}
-        <section className="bg-primary py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <h1 className="font-cinzel text-white text-3xl sm:text-4xl lg:text-5xl mb-4">
+        {/* === SHOP BY Collection (Dark Section) === */}
+        <section className=" pt-16">
+          <div className="flex justify-center">
+            <div className="max-w-5xl w-full mx-16 rounded-sm opacity-60 py-4 bg-secondary">
+              <h1 className="font-cinzel text-white text-xl text-center">
                 Shop by Collection
               </h1>
             </div>
@@ -113,113 +111,13 @@ export default function Home() {
         </section>
 
         {/* === OCEAN GODDESS === */}
-        <section className="bg-primary py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="category-line py-4 mb-8 text-center">
-              <p className="text-2xl font-josefin text-dark">Ocean Goddess</p>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {oceangoddessList.map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
-                >
-                  <a
-                    href="rose-gold-ammonite-fossil-pendant.html"
-                    className="block"
-                  >
-                    <div className="overflow-hidden rounded-sm mb-3">
-                      <Image
-                        src={item.img}
-                        alt="Ocean Goddess Collection"
-                        height={40}
-                        width={40}
-                        className="w-full h-48 lg:h-64 object-cover"
-                      />
-                    </div>
-                    <h4 className="text-primary text-base font-josefin text-center mb-1">
-                      {item.name}
-                    </h4>
-
-                    <p className="text-dark text-lg font-josefin text-center">
-                      {item.price}
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Collection title="Ocean Goddess" productTileList={oceangoddessList} />
 
         {/* === FOREST NYMPH === */}
-        <section className="bg-primary py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="category-line py-4 mb-8 text-center">
-              <p className="text-2xl font-josefin text-dark">Forest Nymph</p>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {forestnymphList.map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
-                >
-                  <a href="shop-all-rings.html" className="block">
-                    <div className="overflow-hidden rounded-sm mb-3">
-                      <Image
-                        src={item.img}
-                        alt=""
-                        height={40}
-                        width={40}
-                        className="w-full h-48 lg:h-64 object-cover"
-                      />
-                    </div>
-                    <h4 className="text-base font-josefin text-center mb-1">
-                      {item.name}
-                    </h4>
-                    <p className="text-dark text-lg font-josefin text-center">
-                      coming soon
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Collection title="Forest Nymph" productTileList={forestnymphList} />
 
         {/* === VIKING QUEEN === */}
-        <section className="bg-primary py-12 lg:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="border-y border-[#e0e0e0] py-4 mb-8 text-center">
-              <p className="text-2xl font-josefin text-dark">Dragon Slayer</p>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {vikingqueenList.map((item, i) => (
-                <div
-                  key={i}
-                  className="rounded-b-md hover:shadow-lg hover:scale-105 transition"
-                >
-                  <a href="shop-all-rings.html" className="block">
-                    <div className="overflow-hidden rounded-sm mb-3">
-                      <Image
-                        src={item.img}
-                        alt=""
-                        height={40}
-                        width={40}
-                        className="w-full h-48 lg:h-64 object-cover"
-                      />
-                    </div>
-                    <h4 className="text-base font-josefin text-center mb-1">
-                      {item.name}
-                    </h4>
-                    <p className="text-dark text-lg font-josefin text-center">
-                      coming soon
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Collection title="Viking Queen" productTileList={vikingqueenList} />
 
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
@@ -264,7 +162,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* === DONATION SECTION === */}
+        {/* === DONATION SECTION
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
@@ -512,7 +410,7 @@ export default function Home() {
           </div>
         </footer>
 
-        {/* === OUR SERVICES === */}
+        {/* === OUR SERVICES
         <section className="bg-white py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12">
@@ -571,6 +469,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        === */}
       </div>
     </>
   );
@@ -781,10 +680,7 @@ const ProductTile = ({ item }: ProductTileProps) => {
   return (
     <>
       <div className="rounded-xl hover:shadow-lg ">
-        <a
-          href={item.link}
-          className="block"
-        >
+        <a href={item.link} className="block">
           <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
             <Image
               src={item.img}
@@ -797,7 +693,7 @@ const ProductTile = ({ item }: ProductTileProps) => {
           <h4 className="text-white text-base font-josefin text-center mb-2">
             {item.name}
           </h4>
-          <p className="text-dark text-lg font-josefin text-center">
+          <p className="text-white text-lg font-josefin text-center">
             {item.price}
           </p>
         </a>
@@ -812,15 +708,15 @@ const ProductTile = ({ item }: ProductTileProps) => {
 
 type CollectionProps = {
   title: string;
-  button: string;
+  button?: string;
   productTileList: ProductTileItem[];
 };
 
 const Collection = (props: CollectionProps) => {
   return (
     <>
-      <section className="bg-primary py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-primary py-8 lg:py-16">
+        <div className="max-w-7xl mx-auto px-10">
           <div className="category-line p-4 mb-8 text-center">
             <p className="text-4xl font-bad-script text-white">{props.title}</p>
           </div>
@@ -830,14 +726,19 @@ const Collection = (props: CollectionProps) => {
             ))}
           </div>
         </div>
-        <div className="text-center mt-8">
-          <a
-            href="gallery.html"
-            className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
-          >
-            {props.button}
-          </a>
-        </div>
+
+        {!props.button ? (
+          <></>
+        ) : (
+          <div className="text-center mt-8">
+            <a
+              href="gallery.html"
+              className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-sm hover:bg-primary-hover transition-colors rounded-sm"
+            >
+              {props.button}
+            </a>
+          </div>
+        )}
       </section>
     </>
   );
