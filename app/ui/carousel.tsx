@@ -42,16 +42,18 @@ export default function Carousel({ slides }: CarouselProps) {
           />
 
           <div className="absolute top-0 left-0 h-full w-40 flex flex-row hover:bg-white hover:opacity-50 active:opacity-70" onClick={() => goPrev()}>
-            {/* TODO left arrow */}
             <div className="self-center mx-auto p-2">
-              Prev
+              <svg xmlns="http://www.w3.org/2000/svg" className="size-12 text-white bg-black/40 rounded-full p-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
             </div>
           </div>
 
           <div className="absolute top-0 right-0 h-full w-40 flex flex-row hover:bg-white hover:opacity-50 active:opacity-70" onClick={() => goNext()}>
-            {/* TODO right arrow */}
             <div className="self-center mx-auto p-2">
-              Next
+              <svg xmlns="http://www.w3.org/2000/svg" className="size-12 text-white bg-black/40 rounded-full p-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import Image from "next/image"
 import { ProductItem } from "../product/data";
+import ProductTile from "./product-tile";
 
 export type ShopByProductProps = {
   products: Record<string, ProductItem>;
@@ -14,24 +14,7 @@ export default function ShopByProduct({ products }: ShopByProductProps) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {Object.values(products).map((product, i) => (
-            <div key={i} className="category-card bg-white overflow-hidden rounded-sm shadow-card cursor-pointer">
-              <a href={product.link()}>
-                <div className="overflow-hidden">
-                  <Image
-                    src={product.coverImage}
-                    alt={product.coverImageAlt}
-                    height={40}
-                    width={40}
-                    className="w-full h-64 lg:h-80 object-cover"
-                  />
-                </div>
-                <div className="p-4">
-                  <span className="text-white text-lg sm:text-xl font-josefin hover:text-primary transition-colors block">
-                    {product.title}
-                  </span>
-                </div>
-              </a>
-            </div>
+            <ProductTile key={i} product={product} />
           ))}
         </div>
       </div>
