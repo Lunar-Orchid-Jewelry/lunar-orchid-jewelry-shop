@@ -2,27 +2,18 @@ import Image from "next/image"
 import { ProductItem } from "../product/data";
 
 export type ProductTileProps = {
-  item: ProductItem;
+  product: ProductItem;
 };
 
-// export type ProductTileItem = {
-//   img: string;
-//   alt: string;
-//   name: string;
-//   link: string;
-//   price: string;
-//   description?: string;
-// };
-
-export default function ProductTile({ item }: ProductTileProps) {
+export default function ProductTile({ product }: ProductTileProps) {
   return (
     <>
       <div className="rounded-xl transition hover:shadow-lg hover:scale-105">
-        <a href={item.productLink} className="block">
+        <a href={product.link()} className="block">
           <div className="overflow-hidden rounded-sm">
             <Image
-              src={item.coverImage}
-              alt={item.coverImageAlt}
+              src={product.coverImage}
+              alt={product.coverImageAlt}
               height={40}
               width={40}
               className="aspect-square w-full h-auto object-cover"
@@ -30,14 +21,14 @@ export default function ProductTile({ item }: ProductTileProps) {
           </div>
           <div className="p-2">
             <h4 className="text-white text-base font-josefin text-center">
-              {item.title}
+              {product.title}
             </h4>
             <p className="text-white text-lg font-josefin text-center">
-              {item.price}
+              {product.price}
             </p>
-            {!item.description ? <></> : (
+            {!product.description ? <></> : (
               <p className="text-white text-lg font-josefin text-center">
-                {item.description}
+                {product.description}
               </p>
             )}
           </div>

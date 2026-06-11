@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import catalogItems, { getCatalogBySlug } from "../data";
-import CatalogPage from "@/app/ui/catalog-page";
+import CatalogPageContent from "@/app/ui/catalog-page";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -42,5 +42,5 @@ export default async function ProductPage({ params }: Props) {
     notFound();
   }
 
-  return <CatalogPage item={catalog} />;
+  return <CatalogPageContent item={catalog} />;
 }

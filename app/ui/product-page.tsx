@@ -1,20 +1,20 @@
 import Carousel from "./carousel";
 import Footer from "./footer";
-import type { ProductItem } from "../product/data";
+import { productSet, type ProductItem } from "../product/data";
 import Navbar from "./navbar";
-import ShopByProduct, { ShopByProductItem } from "./shop-by-product";
-
-const shopByProductItems: ShopByProductItem[] = [
-  { img: "/assets/images/forest-nymph-4.webp", link: "/products/forest-pearl", label: "Shop Necklaces" },
-  { img: "/assets/images/dragon-slayer-3.webp", link: "/products/dragon-slayer", label: "Shop Pendants" },
-  { img: "/assets/images/forest-pearl-icon.webp", link: "/products/forest-pearl", label: "Shop Best Sellers" },
-];
+import ShopByProduct from "./shop-by-product";
 
 type ProductPageProps = {
-  item: ProductItem;
+  product: ProductItem;
 };
 
-export default function ProductPageContent({ item }: ProductPageProps) {
+const shopByProductItems = productSet([
+  "forest-nymph",
+  "dragon-slayer",
+  "forest-pearl",
+])
+
+export default function ProductPageContent({ product }: ProductPageProps) {
   return (
     <>
       <div className="bg-primary pt-20">
@@ -25,33 +25,33 @@ export default function ProductPageContent({ item }: ProductPageProps) {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* Left: Image Carousel */}
-              <Carousel slides={item.carouselSlides} />
+              <Carousel slides={product.carouselSlides} />
 
               {/* Right: Product Details */}
               <div className="w-full lg:w-[45%]">
                 <div className="text-left">
                   {/* Title */}
                   <h1 className="font-family-cinzel text-2xl sm:text-3xl lg:text-4xl text-white mb-4 leading-tight">
-                    <strong>{item.title}</strong>
+                    <strong>{product.title}</strong>
                   </h1>
 
                   {/* Paragraphs */}
                   <div className="flex flex-col gap-4 text-base sm:text-lg mb-6 text-gray-300 leading-relaxed">
-                    {item.paragraphs.map((paragraph, i) => (
+                    {product.paragraphs.map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
                     ))}
 
                     {/* Materials */}
-                    {item.materials && (
+                    {product.materials && (
                       <p className="text-base text-gray-300">
-                        <strong>Materials:</strong> {item.materials}
+                        <strong>Materials:</strong> {product.materials}
                       </p>
                     )}
                   </div>
 
                   {/* Price */}
                   <p className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
-                    Price: {item.price}
+                    Price: {product.price}
                   </p>
 
                   {/* Buy button */}
@@ -72,7 +72,7 @@ export default function ProductPageContent({ item }: ProductPageProps) {
         </section>
 
         {/* === SHOP BY PRODUCT === */}
-        <ShopByProduct productItems={shopByProductItems} />
+        <ShopByProduct products={shopByProductItems} />
 
         {/* === FOOTER === */}
         <Footer />

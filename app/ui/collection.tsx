@@ -17,7 +17,7 @@ export default function Collection(props: CollectionProps) {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {Object.entries(props.products).map(([key, item]) => (
-              <ProductTile key={key} item={item} />
+              <ProductTile key={key} product={item} />
             ))}
           </div>
         </div>
