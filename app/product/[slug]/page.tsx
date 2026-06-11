@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import products, { getProductBySlug } from "../data";
-import { ProductPageContent } from "../../ui/product-page";
+import ProductPageContent from "../../ui/product-page";
 
 type Props = {
   params: Promise<{ slug: string }>;

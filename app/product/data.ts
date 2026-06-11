@@ -482,10 +482,15 @@ export const products: Record<string, ProductItem> = {
   },
 };
 
+// Index of the products keyed by their slug, for fast lookup
+const productsBySlug = Object.fromEntries(Object.values(products)
+  .map((item) => [item.slug, item]));
+
 const productSet = (keys: Iterable<string>) => {
   const set = new Set(keys);
   return Object.fromEntries(
     Object.entries(products)
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       .filter(([key, _]) => set.has(key)))
 }
 
@@ -534,5 +539,5 @@ export const vikingQueenProducts = productSet([
 
 /** Look up a product by its slug. Returns undefined if not found. */
 export function getProductBySlug(slug: string): ProductItem | undefined {
-  return products[slug];
+  return productsBySlug[slug];
 }

@@ -14,7 +14,7 @@ type ProductPageProps = {
   item: ProductItem;
 };
 
-export default function ProductPage({ item }: ProductPageProps) {
+export default function ProductPageContent({ item }: ProductPageProps) {
   return (
     <>
       <div className="bg-primary pt-20">
@@ -80,6 +80,3 @@ export default function ProductPage({ item }: ProductPageProps) {
     </>
   );
 };
-
-export { ProductPage as ProductPageContent, ShopByProduct };
-export type { ShopByProductItem as Product };
