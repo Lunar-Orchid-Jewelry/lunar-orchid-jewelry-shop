@@ -1,4 +1,7 @@
-import type { CarouselSlide } from "../ui/carousel";
+export type ProductImage = {
+  img: string;
+  alt: string;
+}
 
 export class ProductItem {
   public slug: string;
@@ -8,7 +11,7 @@ export class ProductItem {
   public coverImage: string;
   public coverImageAlt: string;
   public price: string;
-  public carouselSlides: CarouselSlide[];
+  public productImages: ProductImage[];
   public materials?: string;
 
   constructor(
@@ -18,9 +21,8 @@ export class ProductItem {
     paragraphs: string[],
     coverImage: string,
     coverImageAlt: string,
-    productLink: string,
     price: string,
-    carouselSlides: CarouselSlide[],
+    productImages: ProductImage[],
     materials?: string,
   ) {
     this.slug = slug;
@@ -31,7 +33,7 @@ export class ProductItem {
     this.coverImage = coverImage;
     this.coverImageAlt = coverImageAlt;
     this.price = price;
-    this.carouselSlides = carouselSlides;
+    this.productImages = productImages;
     this.materials = materials;
   }
 
@@ -50,7 +52,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/cosmic-oasis.webp",
     "Cosmic Oasis Pendant",
-    "/product/cosmic-oasis",
     "$PRICE",
     [
       { img: "/images/cosmic-oasis.webp", alt: "Cosmic Oasis Pendant" },
@@ -73,7 +74,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/amethyst-whisper-slide-1-674x506.webp",
     "Amethyst Whisper Pendant",
-    "/product/amethyst-whisper",
     "$PRICE",
     [
       { img: "/images/amethyst-whisper-slide-1-674x506.webp", alt: "Amethyst Whisper Pendant" },
@@ -91,7 +91,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/ancient-copper-icon.webp",
     "Ancient Copper Ring",
-    "/product/ancient-copper",
     "$PRICE",
     [
       { img: "/images/ancient-copper-icon.webp", alt: "Ancient Copper Ring" },
@@ -107,7 +106,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/copper-amethyst-cuff.webp",
     "Copper Amethyst Cuff",
-    "/product/copper-amethyst-cuff",
     "$PRICE",
     [
       { img: "/images/copper-amethyst-cuff.webp", alt: "Copper Amethyst Cuff" },
@@ -125,7 +123,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/copper-breath.webp",
     "Copper Breath Pendant",
-    "/product/copper-breath",
     "$PRICE",
     [
       { img: "/images/copper-breath.webp", alt: "Copper Breath Pendant" },
@@ -143,7 +140,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/copper-breeze-icon.webp",
     "Copper Breeze Earrings",
-    "/product/copper-breeze",
     "$PRICE",
     [
       { img: "/images/copper-breeze-icon.webp", alt: "Copper Breeze Earrings" },
@@ -159,7 +155,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/copper-rose-ring.webp",
     "Copper Rose Ring",
-    "/product/copper-rose-ring",
     "$PRICE",
     [
       { img: "/images/copper-rose-ring.webp", alt: "Copper Rose Ring" },
@@ -176,7 +171,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/copper-spiral-ring.webp",
     "Copper Spiral Ring",
-    "/product/copper-spiral-ring",
     "$PRICE",
     [
       { img: "/images/copper-spiral-ring.webp", alt: "Copper Spiral Ring" },
@@ -193,7 +187,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/dragon-slayer-1.webp",
     "Dragon Slayer Pendant",
-    "/product/dragon-slayer",
     "$PRICE",
     [
       { img: "/images/dragon-slayer-1.webp", alt: "Dragon Slayer Pendant" },
@@ -211,7 +204,6 @@ export const products: Record<string, ProductItem> = {
     ],
     "/images/forest-pearl-icon.webp",
     "Forest Pearl Necklace",
-    "/product/forest-pearl",
     "$PRICE",
     [
       { img: "/images/forest-pearl-icon.webp", alt: "Forest Pearl Necklace" },
@@ -226,7 +218,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/forest-pearl-icon.webp",
     "Sterling Silver Bello Opal Necklace Pendant",
-    "/product/necklace-1",
     "$PRICE",
     [],
     "",
@@ -238,7 +229,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/sacred-alignment-icon.webp",
     "",
-    "/product/necklace-2",
     "$PRICE",
     [],
     "",
@@ -250,7 +240,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/cosmic-oasis-3.webp",
     "",
-    "/product/necklace-3",
     "$PRICE",
     [],
     "",
@@ -262,7 +251,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/faire-magic-icon.webp",
     "",
-    "/product/necklace-4",
     "$PRICE",
     [],
     "",
@@ -274,7 +262,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260116.webp",
     "",
-    "/product/bracelet-1",
     "$PRICE",
     [],
     "",
@@ -286,7 +273,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/copper-amethyst-cuff-copy.webp",
     "",
-    "/product/bracelet-2",
     "$PRICE",
     [],
     "",
@@ -298,7 +284,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260129.webp",
     "",
-    "/product/bracelet-3",
     "$PRICE",
     [],
     "",
@@ -310,7 +295,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/orange-agate-copper-cuff.webp",
     "",
-    "/product/bracelet-4",
     "$PRICE",
     [],
     "",
@@ -322,7 +306,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260116.webp",
     "",
-    "/product/ring-1",
     "$PRICE",
     [],
     "",
@@ -334,7 +317,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/copper-amethyst-cuff-copy.webp",
     "",
-    "/product/ring-2",
     "$PRICE",
     [],
     "",
@@ -346,7 +328,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260129.webp",
     "",
-    "/product/ring-3",
     "$PRICE",
     [],
     "",
@@ -358,7 +339,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/orange-agate-copper-cuff.webp",
     "",
-    "/product/ring-4",
     "$PRICE",
     [],
     "",
@@ -370,7 +350,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260116.webp",
     "",
-    "/product/oceangoddess-1",
     "$PRICE",
     [],
     "",
@@ -382,7 +361,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/copper-amethyst-cuff-copy.webp",
     "",
-    "/product/oceangoddess-2",
     "$PRICE",
     [],
     "",
@@ -394,7 +372,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260129.webp",
     "",
-    "/product/oceangoddess-3",
     "$PRICE",
     [],
     "",
@@ -406,7 +383,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/orange-agate-copper-cuff.webp",
     "",
-    "/product/oceangoddess-4",
     "$PRICE",
     [],
     "",
@@ -418,7 +394,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260116.webp",
     "",
-    "/product/forestnymph-1",
     "$PRICE",
     [],
     "",
@@ -430,7 +405,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/copper-amethyst-cuff-copy.webp",
     "",
-    "/product/forestnymph-2",
     "$PRICE",
     [],
     "",
@@ -442,7 +416,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260129.webp",
     "",
-    "/product/forestnymph-3",
     "$PRICE",
     [],
     "",
@@ -454,7 +427,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/orange-agate-copper-cuff.webp",
     "",
-    "/product/forestnymph-4",
     "$PRICE",
     [],
     "",
@@ -466,7 +438,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260116.webp",
     "",
-    "/product/vikingqueen-1",
     "$PRICE",
     [],
     "",
@@ -478,7 +449,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/copper-amethyst-cuff-copy.webp",
     "",
-    "/product/vikingqueen-2",
     "$PRICE",
     [],
     "",
@@ -490,7 +460,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/photoroom-20260129.webp",
     "",
-    "/product/vikingqueen-3",
     "$PRICE",
     [],
     "",
@@ -502,7 +471,6 @@ export const products: Record<string, ProductItem> = {
     [],
     "/images/orange-agate-copper-cuff.webp",
     "",
-    "/product/vikingqueen-4",
     "$PRICE",
     [],
     "",
