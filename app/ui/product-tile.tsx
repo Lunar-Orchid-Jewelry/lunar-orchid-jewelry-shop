@@ -21,8 +21,8 @@ export default function ProductTile({ item }: ProductTileProps) {
         <a href={item.productLink} className="block">
           <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
             <Image
-              src={item.image}
-              alt={item.imageAlt}
+              src={item.coverImage}
+              alt={item.coverImageAlt}
               height={40}
               width={40}
               className="aspect-square w-full h-auto object-cover"
