@@ -23,7 +23,7 @@ export default function CatalogPageContent({ item }: CatalogPageProps) {
 
         {/* TODO Catalog page */}
 
-        <section className="py-10 font-cinzel container-main mx-auto">
+        <section className="py-15 font-bad-script container-main mx-auto">
 
           <h1 className="py-20 text-7xl text-center text-white">{item.title}</h1>
 

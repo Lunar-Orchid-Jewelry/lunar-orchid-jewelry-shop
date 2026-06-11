@@ -11,7 +11,7 @@ type ProductPageProps = {
 const shopByProductItems = productSet([
   "forest-nymph",
   "dragon-slayer",
-  "forest-pearl",
+  "forest-nymph",
 ])
 
 export default function ProductPageContent({ product }: ProductPageProps) {

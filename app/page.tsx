@@ -27,7 +27,7 @@ export default function Home() {
 
               {/* Title & CTA */}
               <div className="w-full lg:w-[65%] text-center lg:text-left">
-                <h1 className="font-family-cinzel text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6">
+                <h1 className="font-bad-script text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6">
                   Lunar Orchid Jewelry
                 </h1>
 
