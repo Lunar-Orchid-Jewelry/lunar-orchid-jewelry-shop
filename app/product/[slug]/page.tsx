@@ -9,7 +9,7 @@ type Props = {
 
 /**
  * Tell Next.js which product slugs to pre-render at build time.
- * Each returned { slug } becomes a static HTML page at /products/<slug>.
+ * Each returned { slug } becomes a static HTML page at /product/<slug>.
  */
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return Object.values(products).map((item) => ({ slug: item.slug }))

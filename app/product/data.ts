@@ -38,7 +38,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "amethyst-whisper": {
-    slug: "",
+    slug: "amethyst-whisper",
     title: "Amethyst Whisper",
     description: "",
     paragraphs: [
@@ -56,7 +56,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "ancient-copper": {
-    slug: "",
+    slug: "ancient-copper",
     title: "Ancient Copper Ring",
     description: "",
     paragraphs: [
@@ -72,7 +72,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "copper-amethyst-cuff": {
-    slug: "",
+    slug: "copper-amethyst-cuff",
     title: "Copper Amethyst Cuff",
     description: "",
     paragraphs: [
@@ -90,7 +90,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "copper-breath": {
-    slug: "",
+    slug: "copper-breath",
     title: "Copper Breath Pendant",
     description: "",
     paragraphs: [
@@ -108,7 +108,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "copper-breeze": {
-    slug: "",
+    slug: "copper-breeze",
     title: "Copper Breeze Earrings",
     description: "",
     paragraphs: [
@@ -124,7 +124,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "copper-rose-ring": {
-    slug: "",
+    slug: "copper-rose-ring",
     title: "Copper Rose Ring",
     description: "",
     paragraphs: [
@@ -141,7 +141,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "copper-spiral-ring": {
-    slug: "",
+    slug: "copper-spiral-ring",
     title: "Copper Spiral Ring",
     description: "",
     paragraphs: [
@@ -158,7 +158,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "dragon-slayer": {
-    slug: "",
+    slug: "dragon-slayer",
     title: "Dragon Slayer Pendant",
     description: "",
     paragraphs: [
@@ -176,7 +176,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "forest-pearl": {
-    slug: "",
+    slug: "forest-pearl",
     title: "Forest Pearl Necklace",
     description: "",
     paragraphs: [
@@ -193,7 +193,7 @@ export const products: Record<string, ProductItem> = {
     ],
   },
   "necklace-1": {
-    slug: "",
+    slug: "necklace-1",
     title: "Cosmic Oasis",
     description: "",
     paragraphs: [],
@@ -205,7 +205,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "necklace-2": {
-    slug: "",
+    slug: "necklace-2",
     title: "Cosmic Oasis",
     description: "",
     paragraphs: [],
@@ -217,7 +217,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "necklace-3": {
-    slug: "",
+    slug: "necklace-3",
     title: "Cosmic Oasis",
     description: "",
     paragraphs: [],
@@ -229,7 +229,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "necklace-4": {
-    slug: "",
+    slug: "necklace-4",
     title: "Cosmic Oasis",
     description: "",
     paragraphs: [],
@@ -241,7 +241,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "bracelet-1": {
-    slug: "",
+    slug: "bracelet-1",
     title: "Bracelet1",
     description: "",
     paragraphs: [],
@@ -253,7 +253,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "bracelet-2": {
-    slug: "",
+    slug: "bracelet-2",
     title: "Bracelet2",
     description: "",
     paragraphs: [],
@@ -265,7 +265,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "bracelet-3": {
-    slug: "",
+    slug: "bracelet-3",
     title: "Bracelet3",
     description: "",
     paragraphs: [],
@@ -277,7 +277,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "bracelet-4": {
-    slug: "",
+    slug: "bracelet-4",
     title: "Bracelet4",
     description: "",
     paragraphs: [],
@@ -289,7 +289,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "ring-1": {
-    slug: "",
+    slug: "ring-1",
     title: "Ring1",
     description: "",
     paragraphs: [],
@@ -301,7 +301,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "ring-2": {
-    slug: "",
+    slug: "ring-2",
     title: "Ring2",
     description: "",
     paragraphs: [],
@@ -313,7 +313,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "ring-3": {
-    slug: "",
+    slug: "ring-3",
     title: "Ring3",
     description: "",
     paragraphs: [],
@@ -325,7 +325,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "ring-4": {
-    slug: "",
+    slug: "ring-4",
     title: "Ring4",
     description: "",
     paragraphs: [],
@@ -337,7 +337,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "oceangoddess-1": {
-    slug: "",
+    slug: "oceangoddess-1",
     title: "OG1",
     description: "",
     paragraphs: [],
@@ -349,7 +349,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "oceangoddess-2": {
-    slug: "",
+    slug: "oceangoddess-2",
     title: "OG2",
     description: "",
     paragraphs: [],
@@ -361,7 +361,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "oceangoddess-3": {
-    slug: "",
+    slug: "oceangoddess-3",
     title: "Ring3",
     description: "",
     paragraphs: [],
@@ -373,7 +373,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "oceangoddess-4": {
-    slug: "",
+    slug: "oceangoddess-4",
     title: "OG4",
     description: "",
     paragraphs: [],
@@ -385,7 +385,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "forestnymph-1": {
-    slug: "",
+    slug: "forestnymph-1",
     title: "FN1",
     description: "",
     paragraphs: [],
@@ -397,7 +397,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "forestnymph-2": {
-    slug: "",
+    slug: "forestnymph-2",
     title: "FN2",
     description: "",
     paragraphs: [],
@@ -409,7 +409,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "forestnymph-3": {
-    slug: "",
+    slug: "forestnymph-3",
     title: "FN3",
     description: "",
     paragraphs: [],
@@ -421,7 +421,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "forestnymph-4": {
-    slug: "",
+    slug: "forestnymph-4",
     title: "FN4",
     description: "",
     paragraphs: [],
@@ -433,7 +433,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "vikingqueen-1": {
-    slug: "",
+    slug: "vikingqueen-1",
     title: "VQ1",
     description: "",
     paragraphs: [],
@@ -445,7 +445,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "vikingqueen-2": {
-    slug: "",
+    slug: "vikingqueen-2",
     title: "VQ2",
     description: "",
     paragraphs: [],
@@ -457,7 +457,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "vikingqueen-3": {
-    slug: "",
+    slug: "vikingqueen-3",
     title: "VQ3",
     description: "",
     paragraphs: [],
@@ -469,7 +469,7 @@ export const products: Record<string, ProductItem> = {
     carouselSlides: [],
   },
   "vikingqueen-4": {
-    slug: "",
+    slug: "vikingqueen-4",
     title: "VQ4",
     description: "",
     paragraphs: [],

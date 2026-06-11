@@ -22,17 +22,15 @@ export default function CatalogPage({ item }: CatalogPageProps) {
 
         {/* TODO Catalog page */}
 
-        <section className="py-30 font-cinzel">
+        <section className="py-10 font-cinzel container-main mx-auto">
 
-          <h1 className="text-7xl text-center text-white">{item.title}</h1>
+          <h1 className="py-20 text-7xl text-center text-white">{item.title}</h1>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
             {
               Object.entries(item.products).map(([slug, product]) => {
                 return (
-                  <>
-                    <ProductTile item={product} />
-                  </>
+                  <ProductTile key={slug} item={product} />
                 )
               })
             }

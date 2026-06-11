@@ -31,11 +31,11 @@ export default function ProductTile({ item }: ProductTileProps) {
           <h4 className="text-white text-base font-josefin text-center mb-2">
             {item.title}
           </h4>
-          <p className="text-light text-lg font-josefin text-center">
+          <p className="text-white text-lg font-josefin text-center">
             {item.price}
           </p>
           {!item.description ? <></> : (
-            <p className="text-light text-lg font-josefin text-center">
+            <p className="text-white text-lg font-josefin text-center">
               {item.description}
             </p>
           )}
