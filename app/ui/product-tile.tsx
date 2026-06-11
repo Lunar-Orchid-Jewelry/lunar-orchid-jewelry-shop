@@ -17,9 +17,9 @@ export type ProductTileProps = {
 export default function ProductTile({ item }: ProductTileProps) {
   return (
     <>
-      <div className="rounded-xl hover:shadow-lg ">
+      <div className="rounded-xl transition hover:shadow-lg hover:scale-105">
         <a href={item.productLink} className="block">
-          <div className="overflow-hidden hover:scale-98  transition rounded-sm mb-3">
+          <div className="overflow-hidden rounded-sm">
             <Image
               src={item.coverImage}
               alt={item.coverImageAlt}
@@ -28,17 +28,19 @@ export default function ProductTile({ item }: ProductTileProps) {
               className="aspect-square w-full h-auto object-cover"
             />
           </div>
-          <h4 className="text-white text-base font-josefin text-center mb-2">
-            {item.title}
-          </h4>
-          <p className="text-white text-lg font-josefin text-center">
-            {item.price}
-          </p>
-          {!item.description ? <></> : (
+          <div className="p-2">
+            <h4 className="text-white text-base font-josefin text-center">
+              {item.title}
+            </h4>
             <p className="text-white text-lg font-josefin text-center">
-              {item.description}
+              {item.price}
             </p>
-          )}
+            {!item.description ? <></> : (
+              <p className="text-white text-lg font-josefin text-center">
+                {item.description}
+              </p>
+            )}
+          </div>
         </a>
       </div>
     </>
