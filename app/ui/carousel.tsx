@@ -22,6 +22,10 @@ export default function Carousel({ slides }: CarouselProps) {
     setActiveSlide((prev: number) => (prev < slides.length - 1 ? prev + 1 : 0))
   }
 
+  if (slides.length == 0) {
+    return <></>;
+  }
+
   return (
     <>
       <div className="w-full lg:w-[55%]">

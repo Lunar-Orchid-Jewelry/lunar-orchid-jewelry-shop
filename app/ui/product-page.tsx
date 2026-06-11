@@ -1,5 +1,5 @@
 import Carousel from "./carousel";
-import Footer from "./footer";
+import Footer, { footerProducts } from "./footer";
 import { productSet, type ProductItem } from "../product/data";
 import Navbar from "./navbar";
 import ShopByProduct from "./shop-by-product";
@@ -75,7 +75,7 @@ export default function ProductPageContent({ product }: ProductPageProps) {
         <ShopByProduct products={shopByProductItems} />
 
         {/* === FOOTER === */}
-        <Footer />
+        <Footer products={footerProducts} />
       </div>
     </>
   );

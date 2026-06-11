@@ -1,4 +1,4 @@
-import Footer from "./footer";
+import Footer, { footerProducts } from "./footer";
 import Navbar from "./navbar";
 import ShopByProduct from "./shop-by-product";
 import { CatalogItem } from "../catalog/data";
@@ -44,7 +44,7 @@ export default function CatalogPageContent({ item }: CatalogPageProps) {
         <ShopByProduct products={shopByProductItems} />
 
         {/* === FOOTER === */}
-        <Footer />
+        <Footer products={footerProducts} />
       </div>
     </>
   );

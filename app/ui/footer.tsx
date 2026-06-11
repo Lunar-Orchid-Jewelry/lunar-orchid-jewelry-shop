@@ -1,15 +1,20 @@
 import Image from "next/image"
+import { ProductItem, productSet } from "../product/data"
 
-const galleryItems = [
-  { img: "assets/images/94fce968-b64b-4599-b08a-d90db876f07c-1000x1250.webp" },
-  { img: "assets/images/hawk-eye.webp" },
-  { img: "assets/images/img-588520copy-899x1154.webp" },
-  { img: "assets/images/seaglass20eye20wrap-369x492.webp" },
-  { img: "assets/images/img-659120large-369x478.webp" },
-  { img: "assets/images/icon-369x492.webp" },
-]
+export type FooterProps = {
+  products: Record<string, ProductItem>,
+}
 
-export default function Footer() {
+export const footerProducts = productSet([
+  "copper-amethyst-cuff",
+  "copper-breath",
+  "copper-breeze",
+  "copper-rose-ring",
+  "copper-spiral-ring",
+  "dragon-slayer",
+])
+
+export default function Footer({ products }: FooterProps) {
   return (
     <>
       <footer className="bg-secondary text-white py-12 lg:py-16">
@@ -38,16 +43,16 @@ export default function Footer() {
               <h6 className="font-cinzel text-lg mb-4">
                 <a href="gallery.html" className="text-white hover:text-primary transition-colors">Gallery</a>
               </h6>
-              <div className="grid grid-cols-6 gap-2">
-                {galleryItems.map((item, i) => (
-                  <div key={i} className="hover:scale-105 transition">
-                    <a href="gallery.html">
+              <div className="grid grid-cols-3 gap-4">
+                {Object.values(products).map((product, i) => (
+                  <div key={i} className="rounded-lg hover:scale-105 transition">
+                    <a href={product.link()}>
                       <Image
-                        className="aspect-square object-cover"
-                        src={item.img}
+                        className="aspect-square object-cover rounded-lg"
+                        src={product.coverImage}
                         alt="Jewelry Gallery Item"
-                        height={40}
-                        width={40}
+                        height={400}
+                        width={400}
                       />
                     </a>
                   </div>

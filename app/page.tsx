@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "./ui/navbar";
 import Collection from "./ui/collection";
 import { braceletProducts, forestNymphProducts, necklaceProducts, oceanGoddessProducts, ringProducts, vikingQueenProducts } from "./product/data";
-import Footer from "./ui/footer";
+import Footer, { footerProducts } from "./ui/footer";
 
 export default function Home() {
   return (
@@ -306,7 +306,7 @@ export default function Home() {
         </section>
 
         {/* === FOOTER === */}
-        <Footer />
+        <Footer products={footerProducts} />
 
       </div>
     </>
