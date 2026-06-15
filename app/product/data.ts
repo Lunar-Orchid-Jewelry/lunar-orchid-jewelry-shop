@@ -1,7 +1,7 @@
 export type ProductImage = {
   img: string;
   alt: string;
-}
+};
 
 export class ProductItem {
   public slug: string;
@@ -38,499 +38,333 @@ export class ProductItem {
   }
 
   public link() {
-    return `/product/${this.slug}`
+    return `/product/${this.slug}`;
   }
 }
 
 export const products: Record<string, ProductItem> = {
-  "cosmic-oasis": new ProductItem(
-    "sterling-silver-bello-opal-pendant",
-    "Cosmic Oasis",
-    "",
+  "amethyst-whisper": new ProductItem(
+    "copper-wrapped-amethyst-necklace-pendant",
+    "Amethyst Whisper",
+    "Copper Wire Wrapped Amethyst Pendant",
+    ["paragraph"],
+    "/images/amethyst-whisper-1.jpg",
+    "Amethyst Whisper Pendant",
+    "$68",
     [
-      "A stunning celestial-inspired pendant featuring a bello opal set in sterling silver. Each piece captures the ethereal beauty of a cosmic oasis, with colors that shift and dance in the light.",
+      {
+        img: "/images/amethyst-whisper-0.jpg",
+        alt: "Amethyst Whisper Pendant",
+      },
+      {
+        img: "/images/amethyst-whisper-1.jpg",
+        alt: "Amethyst Whisper detail",
+      },
+      {
+        img: "/images/amethyst-whisper-2.jpg",
+        alt: "Amethyst Whisper close-up",
+      },
     ],
-    "/images/cosmic-oasis.webp",
+    "Copper Wire, Tear Drop Amethyst Stone",
+  ),
+  "copper-breath": new ProductItem(
+    "copper-wrapped-jasper-heart-necklace-pendant",
+    "Copper Breath",
+    "Copper Wire Wrapped Jasper",
+    ["paragraph"],
+    "/images/copper-breath.jpg",
+    "Copper Breath Pendant",
+    "$78",
+    [
+      { img: "/images/copper-breath-0.jpg", alt: "Copper Breath Pendant" },
+      {
+        img: "/images/copper-breath-1.jpg",
+        alt: "Copper Breath Pendant side view",
+      },
+      {
+        img: "/images/copper-breath-2.jpg",
+        alt: "Copper Breath Pendant detail",
+      },
+    ],
+    "Copper",
+  ),
+
+  "cosmic-oasis": new ProductItem(
+    "sterling-silver-bello-opal-necklace-pendant",
+    "Cosmic Oasis",
+    "Sterling Silver Wrapped Bello Opal",
+    [
+      "A celestial-inspired pendant featuring a bello opal set in sterling silver. This piece features color, or fire, that shimmers and dances in the light.",
+    ],
+    "/images/cosmic-oasis-0.jpg",
     "Cosmic Oasis Pendant",
     "$PRICE",
     [
-      { img: "/images/cosmic-oasis.webp", alt: "Cosmic Oasis Pendant" },
-      { img: "/images/cosmic-oasis-1.webp", alt: "Cosmic Oasis Pendant side view" },
-      { img: "/images/cosmic-oasis-2.webp", alt: "Cosmic Oasis Pendant detail" },
-      { img: "/images/cosmic-oasis-3.webp", alt: "Cosmic Oasis Pendant alternate angle" },
-      { img: "/images/cosmic-oasis-4.webp", alt: "Cosmic Oasis Pendant close-up" },
-      { img: "/images/cosmic-oasis-7.webp", alt: "Cosmic Oasis Pendant worn" },
-      { img: "/images/cosmic-oasis-10.webp", alt: "Cosmic Oasis Pendant detail" },
-      { img: "/images/cosmic-oasis-18-copy.webp", alt: "Cosmic Oasis Pendant" },
+      { img: "/images/cosmic-oasis-0.jpg", alt: "Cosmic Oasis Pendant" },
+      { img: "/images/cosmic-oasis-1.jpg", alt: "Cosmic Oasis Pendant" },
+      {
+        img: "/images/cosmic-oasis-2.jpg",
+        alt: "Cosmic Oasis Pendant side view",
+      },
+      {
+        img: "/images/cosmic-oasis-3.jpg",
+        alt: "Cosmic Oasis Pendant detail",
+      },
+      {
+        img: "/images/cosmic-oasis-4.jpg",
+        alt: "Cosmic Oasis Pendant alternate angle",
+      },
+      {
+        img: "/images/cosmic-oasis-5.jpg",
+        alt: "Cosmic Oasis Pendant close-up",
+      },
+      { img: "/images/cosmic-oasis-6.jpg", alt: "Cosmic Oasis Pendant worn" },
+      {
+        img: "/images/cosmic-oasis-7.jpg",
+        alt: "Cosmic Oasis Pendant detail",
+      },
+      { img: "/images/cosmic-oasis-8.jpg", alt: "Cosmic Oasis Pendant" },
     ],
     "Sterling Silver, Bello Opal",
   ),
-  "amethyst-whisper": new ProductItem(
-    "amethyst-whisper",
-    "Amethyst Whisper",
-    "",
+
+  "dragon-blood": new ProductItem(
+    "copper-patina-red-tigers-eye-necklace-pendant",
+    "Dragon Blood",
+    "Copper Wire Wrapped Dragon's Eye",
+    ["paragraph"],
+    "/images/dragon-blood-0.jpg",
+    "Dragon Blood Pendant",
+    "$72",
     [
-      "An elegant amethyst pendant that whispers of ancient forests and mystical realms. The deep purple hues are complemented by intricate copper wire wrapping.",
+      { img: "/images/dragon-blood-0.jpg", alt: "Copper Breath Pendant" },
+      {
+        img: "/images/dragon-blood-1.jpg",
+        alt: "Copper Breath Pendant side view",
+      },
+      {
+        img: "/images/dragon-blood-2.jpg",
+        alt: "Copper Breath Pendant detail",
+      },
     ],
-    "/images/amethyst-whisper-slide-1-674x506.webp",
-    "Amethyst Whisper Pendant",
-    "$PRICE",
-    [
-      { img: "/images/amethyst-whisper-slide-1-674x506.webp", alt: "Amethyst Whisper Pendant" },
-      { img: "/images/amethyst-whisper-slide-2-598x449.webp", alt: "Amethyst Whisper detail" },
-      { img: "/images/amethyst-whisper-slide-2-302x227.webp", alt: "Amethyst Whisper close-up" },
-    ],
-    "Copper, Amethyst",
+    "Copper Wire, Red Tiger's Eye(Dragon's Eye) Stone",
   ),
-  "ancient-copper": new ProductItem(
-    "ancient-copper",
-    "Ancient Copper Ring",
-    "",
+  "eternal-current": new ProductItem(
+    "rose-gold-ammonite-fossil-necklace-pendant",
+    "Eternal Current",
+    "Rose Gold Plated Copper Wrapped Ammonite",
+    ["paragraph"],
+    "/images/eternal-current-0.jpg",
+    "Eternal Current Pendant",
+    "$125",
     [
-      "A hand-forged copper ring with an antique finish, evoking the spirit of ancient artisans. Each ring is uniquely textured and patinated.",
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
     ],
-    "/images/ancient-copper-icon.webp",
-    "Ancient Copper Ring",
-    "$PRICE",
-    [
-      { img: "/images/ancient-copper-icon.webp", alt: "Ancient Copper Ring" },
-    ],
-    "Copper",
+    "Rose Gold Plated Copper, Ammonite Fossil",
   ),
-  "copper-amethyst-cuff": new ProductItem(
-    "copper-amethyst-cuff",
-    "Copper Amethyst Cuff",
-    "",
+  "faire-magic": new ProductItem(
+    "copper-patina-wrapped-frosted-sea-glass-necklace-pendant",
+    "Faire Magic",
+    "Patina Copper Wrapped Sea Glass",
+    ["paragraph"],
+    "/images/faire-magic-0",
+    "Faire Magic Pendant",
+    "$55",
     [
-      "A bold copper cuff bracelet set with a raw amethyst crystal. The organic design complements the natural beauty of the stone.",
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
     ],
-    "/images/copper-amethyst-cuff.webp",
-    "Copper Amethyst Cuff",
-    "$PRICE",
-    [
-      { img: "/images/copper-amethyst-cuff.webp", alt: "Copper Amethyst Cuff" },
-      { img: "/images/copper-amethyst-cuff-copy.webp", alt: "Copper Amethyst Cuff alternate view" },
-      { img: "/images/copper-amethyst-cuff-4.webp", alt: "Copper Amethyst Cuff detail" },
-    ],
-    "Copper, Amethyst",
+    "Patina Copper Wire, Frosted Sea Glass",
   ),
-  "copper-breath": new ProductItem(
-    "copper-breath",
-    "Copper Breath Pendant",
-    "",
-    [
-      "A delicate copper pendant that captures the essence of breath and movement. The oxidized finish creates a beautiful depth of color.",
-    ],
-    "/images/copper-breath.webp",
-    "Copper Breath Pendant",
-    "$PRICE",
-    [
-      { img: "/images/copper-breath.webp", alt: "Copper Breath Pendant" },
-      { img: "/images/copper-breath-slide-1.webp", alt: "Copper Breath Pendant side view" },
-      { img: "/images/copper-breath-slide-1-3-copy.webp", alt: "Copper Breath Pendant detail" },
-    ],
-    "Copper",
+  "forest-pearl": new ProductItem(
+    "copper-wrapped-purple-glass-necklace-pendant",
+    "Forest Pearl",
+    "Copper Wire Wrapped Purple Glass",
+    ["paragraph"],
+    "/images/forest-pearl-0.jpg",
+    "Forest Pearl Necklace",
+    "$65",
+    [{ img: "/images/forest-pearl-0.jpg", alt: "Forest Pearl Necklace" }],
+    "Copper Wire, Purple Glass",
   ),
-  "copper-breeze": new ProductItem(
-    "copper-breeze",
-    "Copper Breeze Earrings",
-    "",
+  "golden-roots": new ProductItem(
+    "tree-of-life-gold-wrapped-heart-tigers-eye-necklace-pendant",
+    "Golden Roots",
+    "Gold Plated Copper Wrapped Tiger's Eye",
+    ["paragraph"],
+    "/images/golden-roots-0.jpg",
+    "Midas Touch Pendant",
+    "$82",
     [
-      "Lightweight copper earrings that move like a breeze. Hand-hammered texture catches the light beautifully.",
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
     ],
-    "/images/copper-breeze-icon.webp",
-    "Copper Breeze Earrings",
+    "Gold Plated Copper Wire, Heart Tiger's Eye Stone",
+  ),
+  "midas-touch": new ProductItem(
+    "gold-wrapped-tigers-eye-necklace-pendant",
+    "Midas Touch",
+    "Gold Plated Copper Wrapped Tiger's Eye",
+    ["paragraph"],
+    "/images/midas-touch-0",
+    "Midas Touch Pendant",
+    "$75",
+    [
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
+    ],
+    "Gold Plated Copper Wire, Tiger's Eye Stone",
+  ),
+  "oceanic-roots": new ProductItem(
+    "oceanic-roots",
+    "Oceanic Roots",
+    "Rose Gold Plated Copper Wrapped Blue Agate",
+    ["paragraph"],
+    "/images/oceanic-roots-0",
+    "Oceanic Roots Pendant",
+    "$80",
+    [
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
+    ],
+    "Rose Gold Plated Copper Wire, Blue Agate Stone",
+  ),
+  "rustic-breeze": new ProductItem(
+    "rustic-breeze",
+    "Rustic Breeze",
+    "description",
+    ["paragraph"],
+    "/images/rustic-breeze-0.jpg",
+    "Rustic Breeze",
     "$PRICE",
+    [{ img: "/images/rustic-breeze-0.jpg", alt: "Rustic Breeze Pendant" }],
+    "Copper Wire, Raw Edged Agate Stone",
+  ),
+  "sacred-alignment": new ProductItem(
+    "sacred-alignment",
+    "Sacred Alignment",
+    "Copper Wire Wrapped Chakra Stone",
+    ["paragraph"],
+    "/images/sacred-alignment-0.jpg",
+    "Sacred Alignment Pendant",
+    "$60",
     [
-      { img: "/images/copper-breeze-icon.webp", alt: "Copper Breeze Earrings" },
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
     ],
-    "Copper, Sterling Silver Ear Wires",
+    "Copper Wire, Chakra Stone",
   ),
   "copper-rose-ring": new ProductItem(
     "copper-rose-ring",
     "Copper Rose Ring",
-    "",
-    [
-      "A romantic copper ring featuring a hand-sculpted rose. Each petal is carefully formed and finished with a subtle patina.",
-    ],
-    "/images/copper-rose-ring.webp",
+    "description",
+    ["paragraph"],
+    "/images/copper-rose-ring.jpg",
     "Copper Rose Ring",
     "$PRICE",
-    [
-      { img: "/images/copper-rose-ring.webp", alt: "Copper Rose Ring" },
-      { img: "/images/copper-rose-ring-16.webp", alt: "Copper Rose Ring detail" },
-    ],
+    [{ img: "/images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" }],
     "Copper",
   ),
+  "artemis-cuff": new ProductItem(
+    "copper-amethyst-cuff",
+    "Artemis Cuff",
+    "description",
+    ["paragraph"],
+    "/images/artemis-cuff.jpg",
+    "Artemis Cuff",
+    "$PRICE",
+    [
+      { img: "/images/copper-amethyst-cuff.jpg", alt: "Copper Amethyst Cuff" },
+      {
+        img: "/images/copper-amethyst-cuff-copy.jpg",
+        alt: "Copper Amethyst Cuff alternate view",
+      },
+      {
+        img: "/images/copper-amethyst-cuff-4.jpg",
+        alt: "Copper Amethyst Cuff detail",
+      },
+    ],
+    "Copper, Amethyst",
+  ),
+
   "copper-spiral-ring": new ProductItem(
     "copper-spiral-ring",
     "Copper Spiral Ring",
-    "",
-    [
-      "A captivating spiral design in copper, symbolizing growth and evolution. The open band adjusts to fit most finger sizes.",
-    ],
-    "/images/copper-spiral-ring.webp",
+    "description",
+    ["paragraph"],
+    "/images/copper-spiral-ring.jpg",
     "Copper Spiral Ring",
     "$PRICE",
-    [
-      { img: "/images/copper-spiral-ring.webp", alt: "Copper Spiral Ring" },
-      { img: "/images/copper-spiral-ring-1.webp", alt: "Copper Spiral Ring side view" },
-    ],
+    [{ img: "/images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
     "Copper",
   ),
-  "dragon-slayer": new ProductItem(
-    "dragon-slayer",
-    "Dragon Slayer Pendant",
-    "",
-    [
-      "A bold pendant inspired by dragon scale armor. The textured copper surface and deep patina give it an ancient, powerful feel.",
-    ],
-    "/images/dragon-slayer-1.webp",
-    "Dragon Slayer Pendant",
+
+  "new-item": new ProductItem(
+    "new-item",
+    "New Item",
+    "description",
+    ["paragraph"],
+    "/images/cover-image-0.jpg",
+    "New Item Alt",
     "$PRICE",
     [
-      { img: "/images/dragon-slayer-1.webp", alt: "Dragon Slayer Pendant" },
-      { img: "/images/dragon-slayer-2.webp", alt: "Dragon Slayer Pendant detail" },
-      { img: "/images/dragon-slayer-3.webp", alt: "Dragon Slayer Pendant worn" },
+      { img: "/images/image-0", alt: "image alt 0" },
+      { img: "/images/image-1", alt: "image alt 1" },
     ],
-    "Copper",
-  ),
-  "forest-pearl": new ProductItem(
-    "forest-pearl",
-    "Forest Pearl Necklace",
-    "",
-    [
-      "A sterling silver necklace featuring a freshwater pearl with an organic, forest-inspired setting. Perfect for nature lovers.",
-    ],
-    "/images/forest-pearl-icon.webp",
-    "Forest Pearl Necklace",
-    "$PRICE",
-    [
-      { img: "/images/forest-pearl-icon.webp", alt: "Forest Pearl Necklace" },
-      { img: "/images/forest-nymph-4.webp", alt: "Forest Pearl Necklace worn" },
-    ],
-    "Sterling Silver, Freshwater Pearl",
-  ),
-  "necklace-1": new ProductItem(
-    "necklace-1",
-    "Cosmic Oasis",
-    "",
-    [],
-    "/images/forest-pearl-icon.webp",
-    "Sterling Silver Bello Opal Necklace Pendant",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "necklace-2": new ProductItem(
-    "necklace-2",
-    "Cosmic Oasis",
-    "",
-    [],
-    "/images/sacred-alignment-icon.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "necklace-3": new ProductItem(
-    "necklace-3",
-    "Cosmic Oasis",
-    "",
-    [],
-    "/images/cosmic-oasis-3.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "necklace-4": new ProductItem(
-    "necklace-4",
-    "Cosmic Oasis",
-    "",
-    [],
-    "/images/faire-magic-icon.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "bracelet-1": new ProductItem(
-    "bracelet-1",
-    "Bracelet1",
-    "",
-    [],
-    "/images/photoroom-20260116.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "bracelet-2": new ProductItem(
-    "bracelet-2",
-    "Bracelet2",
-    "",
-    [],
-    "/images/copper-amethyst-cuff-copy.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "bracelet-3": new ProductItem(
-    "bracelet-3",
-    "Bracelet3",
-    "",
-    [],
-    "/images/photoroom-20260129.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "bracelet-4": new ProductItem(
-    "bracelet-4",
-    "Bracelet4",
-    "",
-    [],
-    "/images/orange-agate-copper-cuff.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "ring-1": new ProductItem(
-    "ring-1",
-    "Ring1",
-    "",
-    [],
-    "/images/photoroom-20260116.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "ring-2": new ProductItem(
-    "ring-2",
-    "Ring2",
-    "",
-    [],
-    "/images/copper-amethyst-cuff-copy.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "ring-3": new ProductItem(
-    "ring-3",
-    "Ring3",
-    "",
-    [],
-    "/images/photoroom-20260129.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "ring-4": new ProductItem(
-    "ring-4",
-    "Ring4",
-    "",
-    [],
-    "/images/orange-agate-copper-cuff.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "oceangoddess-1": new ProductItem(
-    "oceangoddess-1",
-    "OG1",
-    "",
-    [],
-    "/images/photoroom-20260116.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "oceangoddess-2": new ProductItem(
-    "oceangoddess-2",
-    "OG2",
-    "",
-    [],
-    "/images/copper-amethyst-cuff-copy.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "oceangoddess-3": new ProductItem(
-    "oceangoddess-3",
-    "Ring3",
-    "",
-    [],
-    "/images/photoroom-20260129.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "oceangoddess-4": new ProductItem(
-    "oceangoddess-4",
-    "OG4",
-    "",
-    [],
-    "/images/orange-agate-copper-cuff.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "forestnymph-1": new ProductItem(
-    "forestnymph-1",
-    "FN1",
-    "",
-    [],
-    "/images/photoroom-20260116.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "forestnymph-2": new ProductItem(
-    "forestnymph-2",
-    "FN2",
-    "",
-    [],
-    "/images/copper-amethyst-cuff-copy.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "forestnymph-3": new ProductItem(
-    "forestnymph-3",
-    "FN3",
-    "",
-    [],
-    "/images/photoroom-20260129.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "forestnymph-4": new ProductItem(
-    "forestnymph-4",
-    "FN4",
-    "",
-    [],
-    "/images/orange-agate-copper-cuff.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "vikingqueen-1": new ProductItem(
-    "vikingqueen-1",
-    "VQ1",
-    "",
-    [],
-    "/images/photoroom-20260116.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "vikingqueen-2": new ProductItem(
-    "vikingqueen-2",
-    "VQ2",
-    "",
-    [],
-    "/images/copper-amethyst-cuff-copy.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "vikingqueen-3": new ProductItem(
-    "vikingqueen-3",
-    "VQ3",
-    "",
-    [],
-    "/images/photoroom-20260129.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
-  ),
-  "vikingqueen-4": new ProductItem(
-    "vikingqueen-4",
-    "VQ4",
-    "",
-    [],
-    "/images/orange-agate-copper-cuff.webp",
-    "",
-    "$PRICE",
-    [],
-    "",
+    "material",
   ),
 };
 
 // Index of the products keyed by their slug, for fast lookup
-const productsBySlug = Object.fromEntries(Object.values(products)
-  .map((item) => [item.slug, item]));
+const productsBySlug = Object.fromEntries(
+  Object.values(products).map((item) => [item.slug, item]),
+);
 
 export const productSet = (keys: Iterable<string>) => {
   const set = new Set(keys);
   return Object.fromEntries(
     Object.entries(products)
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      .filter(([key, _]) => set.has(key)))
-}
+      .filter(([key, _]) => set.has(key)),
+  );
+};
 
 export default products;
 
 export const necklaceProducts = productSet([
-  "cosmic-oasis",
   "amethyst-whisper",
-  "ancient-copper",
-])
+  "copper-breath",
+  "cosmic-oasis",
+  "dragon-blood",
+  "eternal-current",
+  "faire-magic",
+  "forest-pearl",
+  "golden-roots",
+  "midas-touch",
+  "oceanic-roots",
+  "rustic-breeze",
+  "sacred-alignment",
+]);
 
-export const braceletProducts = productSet([
-  "bracelet-1",
-  "bracelet-2",
-  "bracelet-3",
-  "bracelet-4",
-])
+export const braceletProducts = productSet(["artemis-cuff"]);
 
 export const ringProducts = productSet([
-  "ring-1",
-  "ring-2",
-  "ring-3",
-  "ring-4",
-])
+  "copper-rose-ring",
+  "copper-spiral-ring",
+]);
 
 export const oceanGoddessProducts = productSet([
-  "oceangoddess-1",
-  "oceangoddess-2",
-  "oceangoddess-3",
-  "oceangoddess-4",
-])
+  "oceanic-roots",
+  "eternal-current",
+]);
 
 export const forestNymphProducts = productSet([
-  "forestnymph-1",
-  "forestnymph-2",
-  "forestnymph-3",
-  "forestnymph-4",
-])
+  "forest-pearl",
+  "copper-rose-ring",
+]);
 
-export const vikingQueenProducts = productSet([
-  "vikingqueen-1",
-  "vikingqueen-2",
-  "vikingqueen-3",
-  "vikingqueen-4",
-])
+export const vikingQueenProducts = productSet(["dragon-blood", "artemis-cuff"]);
 
 /** Look up a product by its slug. Returns undefined if not found. */
 export function getProductBySlug(slug: string): ProductItem | undefined {

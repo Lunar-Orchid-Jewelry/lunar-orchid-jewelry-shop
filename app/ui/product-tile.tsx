@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import { ProductItem } from "../product/data";
 
 export type ProductTileProps = {
@@ -23,17 +23,20 @@ export default function ProductTile({ product }: ProductTileProps) {
             <h4 className="text-white text-base font-josefin text-center">
               {product.title}
             </h4>
-            <p className="text-white text-lg font-josefin text-center">
-              {product.price}
-            </p>
-            {!product.description ? <></> : (
+
+            {!product.description ? (
+              <></>
+            ) : (
               <p className="text-white text-lg font-josefin text-center">
                 {product.description}
               </p>
             )}
+            <p className="text-white text-lg font-josefin text-center">
+              {product.price}
+            </p>
           </div>
         </a>
       </div>
     </>
   );
-};
+}

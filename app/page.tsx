@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Navbar from "./ui/navbar";
 import Collection from "./ui/collection";
-import { braceletProducts, forestNymphProducts, necklaceProducts, oceanGoddessProducts, ringProducts, vikingQueenProducts } from "./product/data";
+import {
+  braceletProducts,
+  forestNymphProducts,
+  necklaceProducts,
+  oceanGoddessProducts,
+  ringProducts,
+  vikingQueenProducts,
+} from "./product/data";
 import Footer, { footerProducts } from "./ui/footer";
 
 export default function Home() {
@@ -96,11 +103,7 @@ export default function Home() {
         />
 
         {/* === RINGS === */}
-        <Collection
-          title="Rings"
-          button="More Rings"
-          products={ringProducts}
-        />
+        <Collection title="Rings" button="More Rings" products={ringProducts} />
 
         {/* === SHOP BY Collection (Dark Section) === */}
         <section className=" pt-16">
@@ -146,7 +149,7 @@ export default function Home() {
                 </h2>
                 <div className="text-gray-300 font-josefin leading-relaxed">
                   <p className="mb-4">
-                    I'm the creative behind Lunar Orchid Jewelry!
+                    Im the creative behind Lunar Orchid Jewelry!
                   </p>
                   <p className="mb-4">
                     I developed a love of making jewelry in my childhood. My
@@ -156,8 +159,8 @@ export default function Home() {
                     foster after she passed.
                   </p>
                   <p>
-                    When I'm not making jewelry, I'm probably doing something
-                    ridiculous and you shouldn't ask too many questions.
+                    When Im not making jewelry, Im probably doing something
+                    ridiculous and you shouldnt ask too many questions.
                   </p>
                 </div>
               </div>
@@ -240,7 +243,7 @@ export default function Home() {
                   className="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-sm"
                   role="alert"
                 >
-                  Thanks for reaching out. I'll be in touch soon!
+                  Thanks for reaching out. Ill be in touch soon!
                 </div>
                 <div
                   className="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-sm"
@@ -307,7 +310,6 @@ export default function Home() {
 
         {/* === FOOTER === */}
         <Footer products={footerProducts} />
-
       </div>
     </>
   );
