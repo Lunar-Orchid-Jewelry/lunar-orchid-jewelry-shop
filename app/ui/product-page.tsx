@@ -50,8 +50,8 @@ export default function ProductPageContent({ product }: ProductPageProps) {
                   </div>
 
                   {/* Price */}
-                  <div className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
-                    Price: <div className={product.sale ? "line-through" : ""}>{product.price}</div>
+                  <div className="flex flex-row gap-2 text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
+                    Price: <p className={product.sale ? "line-through" : ""}>{product.price}</p>
                   </div>
                   {!product.sale ? <></> :
                     <div className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
