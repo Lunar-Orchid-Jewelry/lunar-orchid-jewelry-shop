@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Cinzel+Decorative&family=Josefin+Slab&display=swap");
 
 @import "tailwindcss";
 
@@ -26,12 +26,12 @@ html {
 
 /* Global defaults */
 body {
-    font-family: var(--font-family-josefin);
+    font-family: var(--font-josefin);
 }
 
 /* === Utility classes that map to the font-family config === */
 .font-cinzel {
-    font-family: var(--font-family-cinzel);
+    font-family: var(--font-cinzel);
 }
 
 .font-bad-script {

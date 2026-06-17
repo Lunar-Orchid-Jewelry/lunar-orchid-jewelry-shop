@@ -12,7 +12,7 @@ const shopByProductItems = productSet([
   "forest-nymph",
   "dragon-slayer",
   "forest-nymph",
-])
+]);
 
 export default function ProductPageContent({ product }: ProductPageProps) {
   return (
@@ -31,7 +31,7 @@ export default function ProductPageContent({ product }: ProductPageProps) {
               <div className="w-full lg:w-[45%]">
                 <div className="text-left">
                   {/* Title */}
-                  <h1 className="font-family-cinzel text-2xl sm:text-3xl lg:text-4xl text-white mb-4 leading-tight">
+                  <h1 className="font-cinzel text-2xl sm:text-3xl lg:text-4xl text-white mb-4 leading-tight">
                     <strong>{product.title}</strong>
                   </h1>
 
@@ -79,4 +79,4 @@ export default function ProductPageContent({ product }: ProductPageProps) {
       </div>
     </>
   );
-};
+}
