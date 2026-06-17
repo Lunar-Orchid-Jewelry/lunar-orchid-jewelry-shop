@@ -16,7 +16,6 @@ export default function Home() {
     <>
       <div className="bg-primary pt-20 font-josefin text-white">
         <Navbar />
-
         {/* === HERO / HEADER === */}
         <section>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,7 +64,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* === IMAGE - Feature Image === */}
         <section className="py-12 max-w-7xl mx-auto px-10 sm:px-6 lg:px-8">
           <div className="flex justify-center">
@@ -80,31 +78,26 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* === SHOP BY PRODUCT (Dark Section) === */}
         <section className=" pt-16">
           <h1 className="font-cinzel text-white text-xl text-center ">
             Shop by Product
           </h1>
         </section>
-
         {/* === NECKLACES === */}
         <Collection
           title="Necklaces"
           button="More Necklaces"
           products={necklaceProducts}
         />
-
         {/* === BRACELETS === */}
         <Collection
           title="Bracelets"
           button="More Bracelets"
           products={braceletProducts}
         />
-
         {/* === RINGS === */}
         <Collection title="Rings" button="More Rings" products={ringProducts} />
-
         {/* === SHOP BY Collection (Dark Section) === */}
         <section className=" pt-16">
           <div className="flex justify-center">
@@ -115,16 +108,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* === OCEAN GODDESS === */}
         <Collection title="Ocean Goddess" products={oceanGoddessProducts} />
-
         {/* === FOREST NYMPH === */}
         <Collection title="Forest Nymph" products={forestNymphProducts} />
-
         {/* === VIKING QUEEN === */}
         <Collection title="Viking Queen" products={vikingQueenProducts} />
-
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -167,7 +156,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* === DONATION SECTION
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -211,7 +199,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* === CONTACT FORM === */}
+        {/* === CONTACT FORM
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-xl mx-auto">
@@ -306,10 +294,9 @@ export default function Home() {
               </form>
             </div>
           </div>
-        </section>
-
+        </section> === */}
         {/* === FOOTER === */}
-        <Footer products={footerProducts} />
+        <Footer products={footerProducts} />{" "}
       </div>
     </>
   );
