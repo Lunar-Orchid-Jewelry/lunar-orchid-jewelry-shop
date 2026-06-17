@@ -50,9 +50,14 @@ export default function ProductPageContent({ product }: ProductPageProps) {
                   </div>
 
                   {/* Price */}
-                  <p className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
-                    Price: {product.price}
-                  </p>
+                  <div className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
+                    Price: <div className={product.sale ? "line-through" : ""}>{product.price}</div>
+                  </div>
+                  {!product.sale ? <></> :
+                    <div className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
+                      Sale: {product.sale}
+                    </div>
+                  }
 
                   {/* Buy button */}
                   <div className="mb-4">

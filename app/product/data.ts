@@ -13,6 +13,7 @@ export type ProductData = {
   price: string;
   materials: string;
   productImages: ProductImage[];
+  sale?: string;
 }
 
 export class Product {
@@ -25,6 +26,7 @@ export class Product {
   public price: string;
   public materials: string;
   public productImages: ProductImage[];
+  public sale?: string;
 
   constructor(
     data: ProductData,
@@ -38,6 +40,7 @@ export class Product {
     this.price = data.price;
     this.materials = data.materials;
     this.productImages = data.productImages;
+    this.sale = data.sale;
   }
 
   public link() {
@@ -66,6 +69,7 @@ export const products: Record<string, Product> = {
       { img: "/images/amethyst-whisper-6.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "/images/amethyst-whisper-7.jpg", alt: "Amethyst Whisper Pendant" },
     ],
+    sale: "$38",
   }),
   "copper-breath": new Product({
     slug: "copper-wrapped-jasper-heart-necklace-pendant",
