@@ -1,8 +1,8 @@
-import { products, ProductItem } from "../product/data";
+import { products, Product } from "../product/data";
 
 export type CatalogItem = {
   title: string;
-  products: Record<string, ProductItem>;
+  products: Record<string, Product>;
 };
 
 const catalogItems: Record<string, CatalogItem> = {

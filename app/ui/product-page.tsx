@@ -1,11 +1,11 @@
 import Carousel from "./carousel";
 import Footer, { footerProducts } from "./footer";
-import { productSet, type ProductItem } from "../product/data";
+import { productSet, type Product } from "../product/data";
 import Navbar from "./navbar";
 import ShopByProduct from "./shop-by-product";
 
 type ProductPageProps = {
-  product: ProductItem;
+  product: Product;
 };
 
 const shopByProductItems = productSet([

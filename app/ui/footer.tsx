@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ProductItem, productSet } from "../product/data";
+import { Product, productSet } from "../product/data";
 
 export type FooterProps = {
-  products: Record<string, ProductItem>;
+  products: Record<string, Product>;
 };
 
 export const footerProducts = productSet([

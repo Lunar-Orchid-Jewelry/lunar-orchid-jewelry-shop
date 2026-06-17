@@ -1,8 +1,8 @@
-import { ProductItem } from "../product/data";
+import { Product } from "../product/data";
 import ProductTile from "./product-tile";
 
 export type ShopByProductProps = {
-  products: Record<string, ProductItem>;
+  products: Record<string, Product>;
 };
 
 export default function ShopByProduct({ products }: ShopByProductProps) {
