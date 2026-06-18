@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-"use client"
-import Image from "next/image"
-import Link from "next/link"
-import { useState } from "react"
-import { basePath } from "../utils"
-=======
 "use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
->>>>>>> cc1448e (data entry - images)
+import { basePath } from "../utils";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
