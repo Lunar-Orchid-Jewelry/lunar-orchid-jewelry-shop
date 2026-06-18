@@ -12,7 +12,7 @@ export default function ProductTile({ product }: ProductTileProps) {
         <a href={product.link()} className="block">
           <div className="overflow-hidden rounded-sm">
             <Image
-              src={product.coverImage}
+              src={product.coverImg()}
               alt={product.coverImageAlt}
               height={40}
               width={40}

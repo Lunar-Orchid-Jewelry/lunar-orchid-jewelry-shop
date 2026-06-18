@@ -10,6 +10,7 @@ import {
   vikingQueenProducts,
 } from "./product/data";
 import Footer, { footerProducts } from "./ui/footer";
+import { basePath } from "./utils";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
               {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
-                  src="/images/lunar-orchid-logo.png"
+                  src={basePath("images/lunar-orchid-logo.png")}
                   alt="Lunar Orchid Jewelry Logo"
                   height={400}
                   width={400}
@@ -69,7 +70,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="w-full h-auto max-w-5xl">
               <Image
-                src="/images/copper-amethyst-cuff.webp"
+                src={basePath("images/copper-amethyst-cuff.webp")}
                 alt="Copper Amethyst Cuff"
                 height={40}
                 width={40}
@@ -121,7 +122,7 @@ export default function Home() {
               <div className="w-full lg:w-1/2">
                 <div className="overflow-hidden rounded-sm">
                   <Image
-                    src="/images/dsc-8646-768x1152.webp"
+                    src={basePath("images/dsc-8646-768x1152.webp")}
                     alt="Robin - Creator of Lunar Orchid Jewelry"
                     height={40}
                     width={40}

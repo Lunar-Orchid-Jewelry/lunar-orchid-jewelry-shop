@@ -25,7 +25,7 @@ export default function ProductPageContent({ product }: ProductPageProps) {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
               {/* Left: Image Carousel */}
-              <Carousel slides={product.productImages} />
+              <Carousel slides={product.productImgs()} />
 
               {/* Right: Product Details */}
               <div className="w-full lg:w-[45%]">

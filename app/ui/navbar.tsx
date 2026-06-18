@@ -2,6 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { basePath } from "../utils"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -16,7 +17,7 @@ export default function Navbar() {
             <div className="shrink-0">
               <Link href="/">
                 <Image
-                  src="/images/lunar-orchid-logo.png"
+                  src={basePath("images/lunar-orchid-logo.png")}
                   alt="Lunar Orchid Jewelry"
                   height={80}
                   width={80}

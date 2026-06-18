@@ -108,7 +108,7 @@ export default function Footer({ products }: FooterProps) {
                     <a href={product.link()}>
                       <Image
                         className="aspect-square object-cover rounded-lg"
-                        src={product.coverImage}
+                        src={product.coverImg()}
                         alt="Jewelry Gallery Item"
                         height={400}
                         width={400}
