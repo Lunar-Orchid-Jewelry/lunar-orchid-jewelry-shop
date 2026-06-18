@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 "use client"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { basePath } from "../utils"
+=======
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+>>>>>>> cc1448e (data entry - images)
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -30,25 +37,25 @@ export default function Navbar() {
             <div className="lg:flex items-center space-x-8">
               <Link
                 href="/"
-                className="text-white text-lg font-josefin hover:text-primary transition-colors"
+                className="text-white text-lg font-cinzel hover:text-primary transition-colors"
               >
                 Home
               </Link>
               <Link
                 href="/catalog/necklaces"
-                className="text-white text-lg font-josefin hover:text-primary transition-colors"
+                className="text-white text-lg font-cinzel hover:text-primary transition-colors"
               >
                 Necklaces
               </Link>
               <Link
                 href="/catalog/bracelets"
-                className="text-white text-lg font-josefin hover:text-primary transition-colors"
+                className="text-white text-lg font-cinzel hover:text-primary transition-colors"
               >
                 Bracelets
               </Link>
               <Link
                 href="/catalog/rings"
-                className="text-white text-lg font-josefin hover:text-primary transition-colors"
+                className="text-white text-lg font-cinzel hover:text-primary transition-colors"
               >
                 Rings
               </Link>
@@ -168,5 +175,5 @@ export default function Navbar() {
         </div>
       </nav>
     </>
-  )
+  );
 }

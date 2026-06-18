@@ -16,7 +16,7 @@ export type ProductData = {
   materials: string;
   productImages: ProductImage[];
   sale?: string;
-}
+};
 
 export class Product {
   public slug: string;
@@ -30,9 +30,7 @@ export class Product {
   productImages: ProductImage[];
   public sale?: string;
 
-  constructor(
-    data: ProductData,
-  ) {
+  constructor(data: ProductData) {
     this.slug = data.slug;
     this.title = data.title;
     this.description = data.description;
@@ -57,7 +55,7 @@ export class Product {
     return this.productImages.map(({ alt, img }) => ({
       alt,
       img: basePath(img),
-    }))
+    }));
   }
 }
 
@@ -231,7 +229,7 @@ export const products: Record<string, Product> = {
     title: "Midas Touch",
     description: "Gold Plated Copper Wrapped Tiger's Eye",
     paragraphs: ["paragraph"],
-    coverImage: "images/midas-touch-0",
+    coverImage: "images/midas-touch-0.jpg",
     coverImageAlt: "Midas Touch Pendant",
     price: "$75",
     materials: "Gold Plated Copper Wire, Tiger's Eye Stone",
@@ -251,7 +249,7 @@ export const products: Record<string, Product> = {
     title: "Oceanic Roots",
     description: "Rose Gold Plated Copper Wrapped Blue Agate",
     paragraphs: ["paragraph"],
-    coverImage: "images/oceanic-roots-0",
+    coverImage: "images/oceanic-roots-0.jpg",
     coverImageAlt: "Oceanic Roots Pendant",
     price: "$80",
     materials: "Rose Gold Plated Copper Wire, Blue Agate Stone",

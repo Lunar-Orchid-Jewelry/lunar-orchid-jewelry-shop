@@ -18,22 +18,22 @@ export default function Footer({ products }: FooterProps) {
   return (
     <>
       <footer className="bg-secondary text-white py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-10 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="w-full lg:w-lg">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-lg sm:justify-center">
                   <h3
-                    className="font-cinzel text-lg leading-relaxed"
+                    className="font-cinzel text-center text-3xl leading-relaxed"
                     style={{ fontWeight: "normal" }}
                   >
                     Lunar Orchid Jewelry
                   </h3>
                   <h3
-                    className="font-cinzel text-lg leading-relaxed"
+                    className="font-bad-script text-center text-lg leading-relaxed"
                     style={{ fontWeight: "normal" }}
                   >
-                    Contact lunarorchidjewelry@gmail.com with any questions.
+                    Contact: lunarorchidjewelry@gmail.com with any questions.
                   </h3>
                 </div>
                 <div className="md:w-sm justify-center">
@@ -99,7 +99,7 @@ export default function Footer({ products }: FooterProps) {
                   Gallery
                 </a>
               </h6>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-6 gap-4">
                 {Object.values(products).map((product, i) => (
                   <div
                     key={i}
