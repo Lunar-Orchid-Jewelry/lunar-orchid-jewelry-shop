@@ -62,7 +62,7 @@ export default function ProductPageContent({ product }: ProductPageProps) {
                   {/* Buy button */}
                   <div className="mb-4">
                     <a
-                      href="https://buy.stripe.com/6oU6oJfa7aiKctBbvd7Re0a"
+                      href={product.purchaseLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-secondary text-white px-8 py-3 font-josefin text-base hover:bg-accent hover:scale-105 opacity-100 active:opacity-70 transition rounded-sm"

@@ -15,6 +15,7 @@ export type ProductData = {
   price: string;
   materials: string;
   productImages: ProductImage[];
+  purchaseLink: string;
   sale?: string;
 };
 
@@ -28,6 +29,7 @@ export class Product {
   public price: string;
   public materials: string;
   productImages: ProductImage[];
+  public purchaseLink: string;
   public sale?: string;
 
   constructor(data: ProductData) {
@@ -40,6 +42,7 @@ export class Product {
     this.price = data.price;
     this.materials = data.materials;
     this.productImages = data.productImages;
+    this.purchaseLink = data.purchaseLink;
     this.sale = data.sale;
   }
 
@@ -80,6 +83,7 @@ export const products: Record<string, Product> = {
       { img: "images/amethyst-whisper-6.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "images/amethyst-whisper-7.jpg", alt: "Amethyst Whisper Pendant" },
     ],
+    purchaseLink: "",
     sale: "$38",
   }),
   "copper-breath": new Product({
@@ -101,6 +105,7 @@ export const products: Record<string, Product> = {
       { img: "images/copper-breath-6.jpg", alt: "Copper Breath Pendant" },
       { img: "images/copper-breath-7.jpg", alt: "Copper Breath Pendant" },
     ],
+    purchaseLink: "",
   }),
   "cosmic-oasis": new Product({
     slug: "sterling-silver-bello-opal-necklace-pendant",
@@ -123,6 +128,7 @@ export const products: Record<string, Product> = {
       { img: "images/cosmic-oasis-6.jpg", alt: "Cosmic Oasis Pendant" },
       { img: "images/cosmic-oasis-7.jpg", alt: "Cosmic Oasis Pendant" },
     ],
+    purchaseLink: "",
   }),
   "dragon-blood": new Product({
     slug: "copper-patina-red-tigers-eye-necklace-pendant",
@@ -143,6 +149,7 @@ export const products: Record<string, Product> = {
       { img: "images/dragon-blood-6.jpg", alt: "Dragon Blood Pendant" },
       { img: "images/dragon-blood-7.jpg", alt: "Dragon Blood Pendant" },
     ],
+    purchaseLink: "",
   }),
   "eternal-current": new Product({
     slug: "rose-gold-ammonite-fossil-necklace-pendant",
@@ -163,6 +170,7 @@ export const products: Record<string, Product> = {
       { img: "images/eternal-current-6", alt: "Eternal Current Pendant" },
       { img: "images/eternal-current-7", alt: "Eternal Current Pendant" },
     ],
+    purchaseLink: "",
   }),
   "faire-magic": new Product({
     slug: "copper-patina-wrapped-frosted-sea-glass-necklace-pendant",
@@ -183,6 +191,7 @@ export const products: Record<string, Product> = {
       { img: "images/faire-magic-6.jpg", alt: "Faire Magic Pendant" },
       { img: "images/faire-magic-7.jpg", alt: "Faire Magic Pendant" },
     ],
+    purchaseLink: "",
   }),
   "forest-pearl": new Product({
     slug: "copper-wrapped-purple-glass-necklace-pendant",
@@ -203,6 +212,7 @@ export const products: Record<string, Product> = {
       { img: "images/forest-pearl-6.jpg", alt: "Forest Pearl Pendant" },
       { img: "images/forest-pearl-7.jpg", alt: "Forest Pearl Pendant" },
     ],
+    purchaseLink: "",
   }),
   "golden-roots": new Product({
     slug: "tree-of-life-gold-wrapped-heart-tigers-eye-necklace-pendant",
@@ -223,6 +233,7 @@ export const products: Record<string, Product> = {
       { img: "images/golden-roots-6", alt: "Golden Roots Pendant" },
       { img: "images/golden-roots-7", alt: "Golden Roots Pendant" },
     ],
+    purchaseLink: "",
   }),
   "midas-touch": new Product({
     slug: "gold-wrapped-tigers-eye-necklace-pendant",
@@ -243,6 +254,7 @@ export const products: Record<string, Product> = {
       { img: "images/midas-touch-6", alt: "Midas Touch Pendant" },
       { img: "images/midas-touch-7", alt: "Midas Touch Pendant" },
     ],
+    purchaseLink: "",
   }),
   "oceanic-roots": new Product({
     slug: "rose-gold-tree-of-life-blue-agate-necklace-pendant",
@@ -263,6 +275,7 @@ export const products: Record<string, Product> = {
       { img: "images/oceanic-roots-6", alt: "Oceanic Roots Pendant" },
       { img: "images/oceanic-roots-7", alt: "Oceanic Roots Pendant" },
     ],
+    purchaseLink: "",
   }),
   "rustic-breeze": new Product({
     slug: "rustic-breeze",
@@ -283,6 +296,7 @@ export const products: Record<string, Product> = {
       { img: "images/rustic-breeze-6.jpg", alt: "Rustic Breeze Pendant" },
       { img: "images/rustic-breeze-7.jpg", alt: "Rustic Breeze Pendant" },
     ],
+    purchaseLink: "",
   }),
   "sacred-alignment": new Product({
     slug: "sacred-alignment",
@@ -303,6 +317,7 @@ export const products: Record<string, Product> = {
       { img: "images/sacred-alignment-6", alt: "Sacred Alignment Pendant" },
       { img: "images/sacred-alignment-7", alt: "Sacred Alignment Pendant" },
     ],
+    purchaseLink: "",
   }),
   "copper-rose-ring": new Product({
     slug: "copper-rose-ring",
@@ -320,6 +335,7 @@ export const products: Record<string, Product> = {
       { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
       { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
     ],
+    purchaseLink: "",
   }),
   "artemis-cuff": new Product({
     slug: "copper-amethyst-cuff",
@@ -336,6 +352,7 @@ export const products: Record<string, Product> = {
       { img: "images/copper-amethyst-cuff-2.jpg", alt: "Copper Amethyst Cuff" },
       { img: "images/copper-amethyst-cuff-3.jpg", alt: "Copper Amethyst Cuff" },
     ],
+    purchaseLink: "",
   }),
 
   "copper-spiral-ring": new Product({
@@ -348,6 +365,7 @@ export const products: Record<string, Product> = {
     price: "$PRICE",
     materials: "Copper",
     productImages: [{ img: "images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
+    purchaseLink: "",
   }),
 
   "new-item": new Product({
@@ -363,6 +381,7 @@ export const products: Record<string, Product> = {
       { img: "images/image-0", alt: "image alt 0" },
       { img: "images/image-1", alt: "image alt 1" },
     ],
+    purchaseLink: "",
   }),
 };
 
