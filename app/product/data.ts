@@ -27,9 +27,9 @@ export class Product {
   coverImage: string;
   public coverImageAlt: string;
   public price: string;
+  public purchaseLink: string;
   public materials: string;
   productImages: ProductImage[];
-  public purchaseLink: string;
   public sale?: string;
 
   constructor(data: ProductData) {
@@ -40,9 +40,9 @@ export class Product {
     this.coverImage = data.coverImage;
     this.coverImageAlt = data.coverImageAlt;
     this.price = data.price;
+    this.purchaseLink = data.purchaseLink;
     this.materials = data.materials;
     this.productImages = data.productImages;
-    this.purchaseLink = data.purchaseLink;
     this.sale = data.sale;
   }
 
@@ -72,6 +72,8 @@ export const products: Record<string, Product> = {
     coverImage: "images/amethyst-whisper-0.jpg",
     coverImageAlt: "Amethyst Whisper Pendant",
     price: "$68",
+    sale: "$38",
+    purchaseLink: "",
     materials: "Copper Wire, Tear Drop Amethyst Stone",
     productImages: [
       { img: "images/amethyst-whisper-0.jpg", alt: "Amethyst Whisper Pendant" },
@@ -83,8 +85,6 @@ export const products: Record<string, Product> = {
       { img: "images/amethyst-whisper-6.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "images/amethyst-whisper-7.jpg", alt: "Amethyst Whisper Pendant" },
     ],
-    purchaseLink: "",
-    sale: "$38",
   }),
   "copper-breath": new Product({
     slug: "copper-wrapped-jasper-heart-necklace-pendant",
@@ -94,6 +94,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/copper-breath-0.jpg",
     coverImageAlt: "Copper Breath Pendant",
     price: "$78",
+    purchaseLink: "",
     materials: "Copper",
     productImages: [
       { img: "images/copper-breath-0.jpg", alt: "Copper Breath Pendant" },
@@ -105,7 +106,6 @@ export const products: Record<string, Product> = {
       { img: "images/copper-breath-6.jpg", alt: "Copper Breath Pendant" },
       { img: "images/copper-breath-7.jpg", alt: "Copper Breath Pendant" },
     ],
-    purchaseLink: "",
   }),
   "cosmic-oasis": new Product({
     slug: "sterling-silver-bello-opal-necklace-pendant",
@@ -117,6 +117,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/cosmic-oasis-0.jpg",
     coverImageAlt: "Cosmic Oasis Pendant",
     price: "$349",
+    purchaseLink: "",
     materials: "Sterling Silver, Bello Opal",
     productImages: [
       { img: "images/cosmic-oasis-0.jpg", alt: "Cosmic Oasis Pendant" },
@@ -128,7 +129,6 @@ export const products: Record<string, Product> = {
       { img: "images/cosmic-oasis-6.jpg", alt: "Cosmic Oasis Pendant" },
       { img: "images/cosmic-oasis-7.jpg", alt: "Cosmic Oasis Pendant" },
     ],
-    purchaseLink: "",
   }),
   "dragon-blood": new Product({
     slug: "copper-patina-red-tigers-eye-necklace-pendant",
@@ -138,6 +138,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/dragon-blood-0.jpg",
     coverImageAlt: "Dragon Blood Pendant",
     price: "$72",
+    purchaseLink: "",
     materials: "Copper Wire, Red Tiger's Eye(Dragon's Eye) Stone",
     productImages: [
       { img: "images/dragon-blood-0.jpg", alt: "Dragon Blood Pendant" },
@@ -149,7 +150,6 @@ export const products: Record<string, Product> = {
       { img: "images/dragon-blood-6.jpg", alt: "Dragon Blood Pendant" },
       { img: "images/dragon-blood-7.jpg", alt: "Dragon Blood Pendant" },
     ],
-    purchaseLink: "",
   }),
   "eternal-current": new Product({
     slug: "rose-gold-ammonite-fossil-necklace-pendant",
@@ -159,6 +159,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/eternal-current-0.jpg",
     coverImageAlt: "Eternal Current Pendant",
     price: "$125",
+    purchaseLink: "",
     materials: "Rose Gold Plated Copper, Ammonite Fossil",
     productImages: [
       { img: "images/eternal-current-0.jpg", alt: "Eternal Current Pendant" },
@@ -170,7 +171,6 @@ export const products: Record<string, Product> = {
       { img: "images/eternal-current-6.jpg", alt: "Eternal Current Pendant" },
       { img: "images/eternal-current-7.jpg", alt: "Eternal Current Pendant" },
     ],
-    purchaseLink: "",
   }),
   "faire-magic": new Product({
     slug: "copper-patina-wrapped-frosted-sea-glass-necklace-pendant",
@@ -180,6 +180,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/faire-magic-0.jpg",
     coverImageAlt: "Faire Magic Pendant",
     price: "$55",
+    purchaseLink: "",
     materials: "Patina Copper Wire, Frosted Sea Glass",
     productImages: [
       { img: "images/faire-magic-0.jpg", alt: "Faire Magic Pendant" },
@@ -191,7 +192,6 @@ export const products: Record<string, Product> = {
       { img: "images/faire-magic-6.jpg", alt: "Faire Magic Pendant" },
       { img: "images/faire-magic-7.jpg", alt: "Faire Magic Pendant" },
     ],
-    purchaseLink: "",
   }),
   "forest-pearl": new Product({
     slug: "copper-wrapped-purple-glass-necklace-pendant",
@@ -201,6 +201,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/forest-pearl-0.jpg",
     coverImageAlt: "Forest Pearl Pendant",
     price: "$65",
+    purchaseLink: "",
     materials: "Copper Wire, Purple Glass",
     productImages: [
       { img: "images/forest-pearl-0.jpg", alt: "Forest Pearl Pendant" },
@@ -212,7 +213,6 @@ export const products: Record<string, Product> = {
       { img: "images/forest-pearl-6.jpg", alt: "Forest Pearl Pendant" },
       { img: "images/forest-pearl-7.jpg", alt: "Forest Pearl Pendant" },
     ],
-    purchaseLink: "",
   }),
   "golden-roots": new Product({
     slug: "tree-of-life-gold-wrapped-heart-tigers-eye-necklace-pendant",
@@ -222,6 +222,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/golden-roots-0.jpg",
     coverImageAlt: "Golden Roots Pendant",
     price: "$82",
+    purchaseLink: "",
     materials: "Gold Plated Copper Wire, Heart Tiger's Eye Stone",
     productImages: [
       { img: "images/golden-roots-0.jpg", alt: "Golden Roots Pendant" },
@@ -233,7 +234,6 @@ export const products: Record<string, Product> = {
       { img: "images/golden-roots-6.jpg", alt: "Golden Roots Pendant" },
       { img: "images/golden-roots-7.jpg", alt: "Golden Roots Pendant" },
     ],
-    purchaseLink: "",
   }),
   "midas-touch": new Product({
     slug: "gold-wrapped-tigers-eye-necklace-pendant",
@@ -243,6 +243,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/midas-touch-0.jpg",
     coverImageAlt: "Midas Touch Pendant",
     price: "$75",
+    purchaseLink: "",
     materials: "Gold Plated Copper Wire, Tiger's Eye Stone",
     productImages: [
       { img: "images/midas-touch-0.jpg", alt: "Midas Touch Pendant" },
@@ -254,7 +255,6 @@ export const products: Record<string, Product> = {
       { img: "images/midas-touch-6.jpg", alt: "Midas Touch Pendant" },
       { img: "images/midas-touch-7.jpg", alt: "Midas Touch Pendant" },
     ],
-    purchaseLink: "",
   }),
   "oceanic-roots": new Product({
     slug: "rose-gold-tree-of-life-blue-agate-necklace-pendant",
@@ -264,6 +264,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/oceanic-roots-0.jpg",
     coverImageAlt: "Oceanic Roots Pendant",
     price: "$80",
+    purchaseLink: "",
     materials: "Rose Gold Plated Copper Wire, Blue Agate Stone",
     productImages: [
       { img: "images/oceanic-roots-0.jpg", alt: "Oceanic Roots Pendant" },
@@ -275,7 +276,6 @@ export const products: Record<string, Product> = {
       { img: "images/oceanic-roots-6.jpg", alt: "Oceanic Roots Pendant" },
       { img: "images/oceanic-roots-7.jpg", alt: "Oceanic Roots Pendant" },
     ],
-    purchaseLink: "",
   }),
   "rustic-breeze": new Product({
     slug: "rustic-breeze",
@@ -285,6 +285,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/rustic-breeze-0.jpg",
     coverImageAlt: "Rustic Breeze",
     price: "$PRICE",
+    purchaseLink: "",
     materials: "Copper Wire, Raw Edged Agate Stone",
     productImages: [
       { img: "images/rustic-breeze-0.jpg", alt: "Rustic Breeze Pendant" },
@@ -296,7 +297,6 @@ export const products: Record<string, Product> = {
       { img: "images/rustic-breeze-6.jpg", alt: "Rustic Breeze Pendant" },
       { img: "images/rustic-breeze-7.jpg", alt: "Rustic Breeze Pendant" },
     ],
-    purchaseLink: "",
   }),
   "sacred-alignment": new Product({
     slug: "sacred-alignment",
@@ -306,6 +306,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/sacred-alignment-0.jpg",
     coverImageAlt: "Sacred Alignment Pendant",
     price: "$60",
+    purchaseLink: "",
     materials: "Copper Wire, Chakra Stone",
     productImages: [
       { img: "images/sacred-alignment-0", alt: "Sacred Alignment Pendant" },
@@ -317,7 +318,6 @@ export const products: Record<string, Product> = {
       { img: "images/sacred-alignment-6", alt: "Sacred Alignment Pendant" },
       { img: "images/sacred-alignment-7", alt: "Sacred Alignment Pendant" },
     ],
-    purchaseLink: "",
   }),
   "copper-rose-ring": new Product({
     slug: "copper-rose-ring",
@@ -327,6 +327,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/copper-rose-ring.jpg",
     coverImageAlt: "Copper Rose Ring",
     price: "$PRICE",
+    purchaseLink: "",
     materials: "Copper Wire",
     productImages: [
       { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
@@ -335,7 +336,6 @@ export const products: Record<string, Product> = {
       { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
       { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
     ],
-    purchaseLink: "",
   }),
   "artemis-cuff": new Product({
     slug: "copper-amethyst-cuff",
@@ -345,6 +345,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/artemis-cuff.jpg",
     coverImageAlt: "Artemis Cuff",
     price: "$PRICE",
+    purchaseLink: "",
     materials: "Copper, Amethyst",
     productImages: [
       { img: "images/copper-amethyst-cuff-0.jpg", alt: "Copper Amethyst Cuff" },
@@ -352,7 +353,6 @@ export const products: Record<string, Product> = {
       { img: "images/copper-amethyst-cuff-2.jpg", alt: "Copper Amethyst Cuff" },
       { img: "images/copper-amethyst-cuff-3.jpg", alt: "Copper Amethyst Cuff" },
     ],
-    purchaseLink: "",
   }),
 
   "copper-spiral-ring": new Product({
@@ -363,9 +363,9 @@ export const products: Record<string, Product> = {
     coverImage: "images/copper-spiral-ring.jpg",
     coverImageAlt: "Copper Spiral Ring",
     price: "$PRICE",
+    purchaseLink: "",
     materials: "Copper",
     productImages: [{ img: "images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
-    purchaseLink: "",
   }),
 
   "new-item": new Product({
@@ -376,12 +376,12 @@ export const products: Record<string, Product> = {
     coverImage: "images/cover-image-0.jpg",
     coverImageAlt: "New Item Alt",
     price: "$PRICE",
+    purchaseLink: "",
     materials: "material",
     productImages: [
       { img: "images/image-0", alt: "image alt 0" },
       { img: "images/image-1", alt: "image alt 1" },
     ],
-    purchaseLink: "",
   }),
 };
 
