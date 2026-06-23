@@ -9,8 +9,8 @@ type ProductPageProps = {
 };
 
 const shopByProductItems = productSet([
-  "forest-nymph",
-  "dragon-slayer",
+  "cosmic-oasis",
+  "goddess-cuff",
   "forest-nymph",
 ]);
 
@@ -51,13 +51,18 @@ export default function ProductPageContent({ product }: ProductPageProps) {
 
                   {/* Price */}
                   <div className="flex flex-row gap-2 text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
-                    Price: <p className={product.sale ? "line-through" : ""}>{product.price}</p>
+                    Price:{" "}
+                    <p className={product.sale ? "line-through" : ""}>
+                      {product.price}
+                    </p>
                   </div>
-                  {!product.sale ? <></> :
+                  {!product.sale ? (
+                    <></>
+                  ) : (
                     <div className="text-2xl sm:text-3xl text-gray-300 font-josefin font-semibold mb-6">
                       Sale: {product.sale}
                     </div>
-                  }
+                  )}
 
                   {/* Buy button */}
                   <div className="mb-4">

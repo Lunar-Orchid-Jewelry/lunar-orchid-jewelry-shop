@@ -3,11 +3,12 @@ import Navbar from "./ui/navbar";
 import Collection from "./ui/collection";
 import {
   braceletProducts,
-  forestNymphProducts,
+  nymphProducts,
   necklaceProducts,
-  oceanGoddessProducts,
+  goddessProducts,
   ringProducts,
-  vikingQueenProducts,
+  warriorProducts,
+  queenProducts,
 } from "./product/data";
 import Footer, { footerProducts } from "./ui/footer";
 import { basePath } from "./utils";
@@ -65,7 +66,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* === IMAGE - Feature Image === */}
+        {/* === IMAGE - Feature Image
         <section className="py-12 max-w-7xl mx-auto px-10 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <div className="w-full h-auto max-w-5xl">
@@ -79,6 +80,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        === */}
         {/* === SHOP BY PRODUCT (Dark Section) === */}
         <section className=" pt-16">
           <h1 className="font-cinzel text-white text-xl text-center ">
@@ -109,12 +111,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* === OCEAN GODDESS === */}
-        <Collection title="Ocean Goddess" products={oceanGoddessProducts} />
-        {/* === FOREST NYMPH === */}
-        <Collection title="Forest Nymph" products={forestNymphProducts} />
-        {/* === VIKING QUEEN === */}
-        <Collection title="Viking Queen" products={vikingQueenProducts} />
+        {/* === GODDESS COLLECTION=== */}
+        <Collection title="Goddess Collection" products={goddessProducts} />
+        {/* === NYMPH COLLECTION === */}
+        <Collection title="Nymph Collection" products={nymphProducts} />
+        {/* === WARRIOR COLLECTION === */}
+        <Collection title="Warrior Collection" products={warriorProducts} />
+        {/* === QUEEN COLLECTION === */}
+        <Collection title="Queen Collection" products={queenProducts} />
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

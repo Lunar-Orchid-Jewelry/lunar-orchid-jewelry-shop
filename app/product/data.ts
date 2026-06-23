@@ -73,7 +73,7 @@ export const products: Record<string, Product> = {
     coverImageAlt: "Amethyst Whisper Pendant",
     price: "$68",
     sale: "$38",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/dRmdRb2nl9eG9hp2YH7Re06",
     materials: "Copper Wire, Tear Drop Amethyst Stone",
     productImages: [
       { img: "images/amethyst-whisper-0.jpg", alt: "Amethyst Whisper Pendant" },
@@ -85,6 +85,7 @@ export const products: Record<string, Product> = {
       { img: "images/amethyst-whisper-6.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "images/amethyst-whisper-7.jpg", alt: "Amethyst Whisper Pendant" },
     ],
+
   }),
   "copper-breath": new Product({
     slug: "copper-wrapped-jasper-heart-necklace-pendant",
@@ -117,7 +118,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/cosmic-oasis-0.jpg",
     coverImageAlt: "Cosmic Oasis Pendant",
     price: "$349",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/6oU6oJfa7aiKctBbvd7Re0a",
     materials: "Sterling Silver, Bello Opal",
     productImages: [
       { img: "images/cosmic-oasis-0.jpg", alt: "Cosmic Oasis Pendant" },
@@ -138,7 +139,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/dragon-blood-0.jpg",
     coverImageAlt: "Dragon Blood Pendant",
     price: "$72",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/dRm4gB6DBez0gJR2YH7Re0k",
     materials: "Copper Wire, Red Tiger's Eye(Dragon's Eye) Stone",
     productImages: [
       { img: "images/dragon-blood-0.jpg", alt: "Dragon Blood Pendant" },
@@ -159,7 +160,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/eternal-current-0.jpg",
     coverImageAlt: "Eternal Current Pendant",
     price: "$125",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/00w6oJbXV8aCgJR8j17Re0b",
     materials: "Rose Gold Plated Copper, Ammonite Fossil",
     productImages: [
       { img: "images/eternal-current-0.jpg", alt: "Eternal Current Pendant" },
@@ -180,7 +181,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/faire-magic-0.jpg",
     coverImageAlt: "Faire Magic Pendant",
     price: "$55",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/eVqfZj7HFduWfFNgPx7Re0g",
     materials: "Patina Copper Wire, Frosted Sea Glass",
     productImages: [
       { img: "images/faire-magic-0.jpg", alt: "Faire Magic Pendant" },
@@ -201,7 +202,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/forest-pearl-0.jpg",
     coverImageAlt: "Forest Pearl Pendant",
     price: "$65",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/14AaEZe632Qibpx56P7Re0i",
     materials: "Copper Wire, Purple Glass",
     productImages: [
       { img: "images/forest-pearl-0.jpg", alt: "Forest Pearl Pendant" },
@@ -222,7 +223,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/golden-roots-0.jpg",
     coverImageAlt: "Golden Roots Pendant",
     price: "$82",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/6oU00l8LJduWbpx0Qz7Re0h",
     materials: "Gold Plated Copper Wire, Heart Tiger's Eye Stone",
     productImages: [
       { img: "images/golden-roots-0.jpg", alt: "Golden Roots Pendant" },
@@ -264,7 +265,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/oceanic-roots-0.jpg",
     coverImageAlt: "Oceanic Roots Pendant",
     price: "$80",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/dRm8wRbXVbmO1OXdDl7Re08",
     materials: "Rose Gold Plated Copper Wire, Blue Agate Stone",
     productImages: [
       { img: "images/oceanic-roots-0.jpg", alt: "Oceanic Roots Pendant" },
@@ -306,7 +307,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/sacred-alignment-0.jpg",
     coverImageAlt: "Sacred Alignment Pendant",
     price: "$60",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/5kQ14pd1Z0IactBgPx7Re09",
     materials: "Copper Wire, Chakra Stone",
     productImages: [
       { img: "images/sacred-alignment-0", alt: "Sacred Alignment Pendant" },
@@ -368,6 +369,47 @@ export const products: Record<string, Product> = {
     productImages: [{ img: "images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
   }),
 
+  "rainbow-pride-cuff": new Product({
+    slug: "rainbow-beaded-silver-cuff-bracelet",
+    title: "Rainbow Pride Cuff",
+    description: "Silver Rainbow Cuff",
+    paragraphs: ["paragraph"],
+    coverImage: "images/rainbow-pride-cuff-0.jpg",
+    coverImageAlt: "Rainbow Pride Cuff",
+    price: "$20",
+    materials: "Silver Plated Copper Wire, Rainbow Assortment of Preciosa Crystal Beads",
+    productImages: [
+      { img: "images/rainbow-pride-cuff-0", alt: "Rainbow Pride Cuff" },
+      { img: "images/rainbow-pride-cuff-1", alt: "Rainbow Pride Cuff" },
+      { img: "images/rainbow-pride-cuff-2", alt: "Rainbow Pride Cuff" },
+      { img: "images/rainbow-pride-cuff-3", alt: "Rainbow Pride Cuff" },
+      { img: "images/rainbow-pride-cuff-4", alt: "Rainbow Pride Cuff" },
+      { img: "images/rainbow-pride-cuff-5", alt: "Rainbow Pride Cuff" },
+      { img: "images/rainbow-pride-cuff-6", alt: "Rainbow Pride Cuff" },
+    ],
+    purchaseLink: "",
+  }),
+
+  "goddess-cuff": new Product({
+    slug: "silver-wire-woven-cuff-bracelet",
+    title: "Silver Goddess Cuff",
+    description: "Silver Wire Wrapped Cuff Bracelet",
+    paragraphs: ["paragraph"],
+    coverImage: "images/goddess-cuff-0.jpg",
+    coverImageAlt: "Silver Goddess Cuff",
+    price: "$PRICE",
+    materials: "material",
+    productImages: [
+      { img: "images/goddess-cuff-0.jpg", alt: "Silver Goddess Cuff" },
+      { img: "images/goddess-cuff-1.jpg", alt: "Silver Goddess Cuff" },
+      { img: "images/goddess-cuff-2.jpg", alt: "Silver Goddess Cuff" },
+      { img: "images/goddess-cuff-3.jpg", alt: "Silver Goddess Cuff" },
+      { img: "images/goddess-cuff-4.jpg", alt: "Silver Goddess Cuff" },
+      { img: "images/goddess-cuff-5.jpg", alt: "Silver Goddess Cuff" },
+    ],
+    purchaseLink: "",
+  }),
+
   "new-item": new Product({
     slug: "new-item",
     title: "New Item",
@@ -407,33 +449,32 @@ export const necklaceProducts = productSet([
   "cosmic-oasis",
   "dragon-blood",
   "eternal-current",
+  "golden-roots",
   "faire-magic",
   "forest-pearl",
-  "golden-roots",
+  "rustic-breeze",
   "midas-touch",
   "oceanic-roots",
-  "rustic-breeze",
   "sacred-alignment",
 ]);
 
-export const braceletProducts = productSet(["artemis-cuff"]);
+export const braceletProducts = productSet([
+  "rainbow-pride-cuff",
+  "goddess-cuff",
+]);
 
 export const ringProducts = productSet([
   "copper-rose-ring",
   "copper-spiral-ring",
 ]);
 
-export const oceanGoddessProducts = productSet([
-  "oceanic-roots",
-  "eternal-current",
-]);
+export const goddessProducts = productSet(["oceanic-roots", "eternal-current"]);
 
-export const forestNymphProducts = productSet([
-  "forest-pearl",
-  "copper-rose-ring",
-]);
+export const nymphProducts = productSet(["forest-pearl", "copper-rose-ring"]);
 
-export const vikingQueenProducts = productSet(["dragon-blood", "artemis-cuff"]);
+export const warriorProducts = productSet(["dragon-blood", "artemis-cuff"]);
+
+export const queenProducts = productSet(["rainbow-pride-cuff"]);
 
 /** Look up a product by its slug. Returns undefined if not found. */
 export function getProductBySlug(slug: string): Product | undefined {

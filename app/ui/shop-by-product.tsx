@@ -8,9 +8,11 @@ export type ShopByProductProps = {
 export default function ShopByProduct({ products }: ShopByProductProps) {
   return (
     <section className="bg-white py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="lg:max-w-4xl md:max-w-xl sm:max-w-xs xs:max-w-xs mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <p className="text-2xl sm:text-3xl font-josefin text-dark">Shop by Product</p>
+          <p className="text-2xl sm:text-3xl font-josefin text-dark">
+            Shop by Product
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {Object.values(products).map((product, i) => (
@@ -20,4 +22,4 @@ export default function ShopByProduct({ products }: ShopByProductProps) {
       </div>
     </section>
   );
-};
+}

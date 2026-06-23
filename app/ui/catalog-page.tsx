@@ -5,11 +5,7 @@ import { CatalogItem } from "../catalog/data";
 import ProductTile from "./product-tile";
 import { productSet } from "../product/data";
 
-const shopByProductItems = productSet([
-  "forest-nymph",
-  "dragon-slayer",
-  "forest-pearl",
-])
+const shopByProductItems = productSet(["forest-pearl", "rainbow-pride-cuff"]);
 
 export type CatalogPageProps = {
   item: CatalogItem;
@@ -24,21 +20,16 @@ export default function CatalogPageContent({ item }: CatalogPageProps) {
         {/* TODO Catalog page */}
 
         <section className="py-15 font-bad-script container-main mx-auto">
-
-          <h1 className="py-20 text-7xl text-center text-white">{item.title}</h1>
+          <h1 className="py-20 text-7xl text-center text-white">
+            {item.title}
+          </h1>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8">
-            {
-              Object.entries(item.products).map(([slug, product]) => {
-                return (
-                  <ProductTile key={slug} product={product} />
-                )
-              })
-            }
+            {Object.entries(item.products).map(([slug, product]) => {
+              return <ProductTile key={slug} product={product} />;
+            })}
           </div>
-
         </section>
-
 
         {/* === SHOP BY PRODUCT === */}
         <ShopByProduct products={shopByProductItems} />
@@ -48,4 +39,4 @@ export default function CatalogPageContent({ item }: CatalogPageProps) {
       </div>
     </>
   );
-};
+}
