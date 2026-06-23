@@ -1,5 +1,5 @@
 import { Product } from "../product/data";
-import ProductTile from "./product-tile";
+import ShopByProductTile from "./shop-by-product-tile";
 
 export type ShopByProductProps = {
   products: Record<string, Product>;
@@ -7,7 +7,7 @@ export type ShopByProductProps = {
 
 export default function ShopByProduct({ products }: ShopByProductProps) {
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-accent py-12 lg:py-16">
       <div className="lg:max-w-4xl md:max-w-xl sm:max-w-xs xs:max-w-xs mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <p className="text-2xl sm:text-3xl font-josefin text-dark">
@@ -16,7 +16,7 @@ export default function ShopByProduct({ products }: ShopByProductProps) {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {Object.values(products).map((product, i) => (
-            <ProductTile key={i} product={product} />
+            <ShopByProductTile key={i} product={product} />
           ))}
         </div>
       </div>
