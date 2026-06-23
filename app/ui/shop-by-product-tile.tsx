@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Product } from "../product/data";
 
-export type ProductTileProps = {
+export type ShopByProductTileProps = {
   product: Product;
 };
 
-export default function ProductTile({ product }: ProductTileProps) {
+export default function ShopByProductTile({ product }: ShopByProductTileProps) {
   return (
     <>
       <div className="bg-secondary rounded-xl transition hover:shadow-lg hover:scale-105">
@@ -24,13 +24,13 @@ export default function ProductTile({ product }: ProductTileProps) {
               {product.title}
             </h4>
 
-            {!product.description ? (
+            {/*{!product.description ? (
               <></>
             ) : (
               <p className="text-white text-lg font-josefin text-center">
                 {product.description}
               </p>
-            )}
+            )}*/}
             <p className="text-white text-lg font-josefin text-center">
               {product.price}
             </p>
