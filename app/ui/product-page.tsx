@@ -28,7 +28,7 @@ export default function ProductPageContent({ product }: ProductPageProps) {
               <Carousel slides={product.productImgs()} />
 
               {/* Right: Product Details */}
-              <div className="w-full lg:w-[45%]">
+              <div className="mx-auto pr-80 lg:pr-0 lg:w-[45%]">
                 <div className="text-left">
                   {/* Title */}
                   <h1 className="font-cinzel text-2xl sm:text-3xl lg:text-4xl text-white mb-4 leading-tight">
