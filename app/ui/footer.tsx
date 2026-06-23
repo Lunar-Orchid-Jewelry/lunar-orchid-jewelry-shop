@@ -6,11 +6,11 @@ export type FooterProps = {
 };
 
 export const footerProducts = productSet([
-  "artemis-cuff",
-  "copper-breath",
+  "cosmic-oasis",
+  "rainbow-pride-cuff",
   "rustic-breeze",
-  "copper-rose-ring",
-  "copper-spiral-ring",
+  "faire-magic",
+  "midas-touch",
   "eternal-current",
 ]);
 

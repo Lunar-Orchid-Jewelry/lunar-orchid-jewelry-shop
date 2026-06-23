@@ -18,7 +18,6 @@ export default function Home() {
     <>
       <div className="bg-primary pt-20 font-josefin text-white">
         <Navbar />
-
         {/* === HERO / HEADER === */}
         <section>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,6 +48,7 @@ export default function Home() {
                 <h4 className="font-bad-script text-base text-center sm:text-lg text-gray-100 mb-8 leading-relaxed">
                   <p>Float among the mystical and the magical</p>
                 </h4>
+                {/*
                 <div className="flex flex-wrap gap-4 justify-center">
                   <a
                     href="#"
@@ -63,60 +63,51 @@ export default function Home() {
                     Shop by Collection
                   </a>
                 </div>
+               */}
               </div>
             </div>
           </div>
         </section>
-
         <Divider />
-
         {/* === NECKLACES === */}
         <Collection
           title="Necklaces"
-          button={{ text: "More Necklaces", link: basePath("catalog/necklaces") }}
+          button={{
+            text: "More Necklaces",
+            link: basePath("catalog/necklaces"),
+          }}
           products={necklacePreview}
         />
-
         <Divider />
-
         {/* === BRACELETS === */}
         <Collection
           title="Bracelets"
-          button={{ text: "More Bracelets", link: basePath("catalog/bracelets") }}
+          button={{
+            text: "More Bracelets",
+            link: basePath("catalog/bracelets"),
+          }}
           products={braceletProducts}
         />
-
         <Divider />
-
         {/* === RINGS === */}
         <Collection
           title="Rings"
           button={{ text: "More Rings", link: basePath("catalog/rings") }}
           products={ringProducts}
         />
-
         <Divider />
-
         {/* === GODDESS COLLECTION=== */}
         <Collection title="Goddess Collection" products={goddessProducts} />
-
         <Divider />
-
         {/* === NYMPH COLLECTION === */}
         <Collection title="Nymph Collection" products={nymphProducts} />
-
         <Divider />
-
         {/* === WARRIOR COLLECTION === */}
         <Collection title="Warrior Collection" products={warriorProducts} />
-
         <Divider />
-
         {/* === QUEEN COLLECTION === */}
         <Collection title="Queen Collection" products={queenProducts} />
-
         <Divider />
-
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -140,21 +131,14 @@ export default function Home() {
                   Hi! My name is Robin!
                 </h2>
                 <div className="text-gray-300 font-josefin leading-relaxed">
-                  <p className="mb-4">
-                    {intro1}
-                  </p>
-                  <p className="mb-4">
-                    {intro2}
-                  </p>
-                  <p>
-                    {intro3}
-                  </p>
+                  <p className="mb-4">{intro1}</p>
+                  <p className="mb-4">{intro2}</p>
+                  <p>{intro3}</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
         {/* === FOOTER === */}
         <Footer products={footerProducts} />{" "}
       </div>
@@ -164,7 +148,7 @@ export default function Home() {
 
 const intro1 = `
 I'm the creative behind Lunar Orchid Jewelry!
-`.trim()
+`.trim();
 
 const intro2 = `
 I developed a love of making jewelry in my childhood. My
@@ -180,7 +164,5 @@ ridiculous and you shouldnt ask too many questions.
 `.trim();
 
 function Divider() {
-  return (
-    <div className="mx-auto w-[60%] border-b border-secondary"></div>
-  )
+  return <div className="mx-auto w-[60%] border-b border-secondary"></div>;
 }
