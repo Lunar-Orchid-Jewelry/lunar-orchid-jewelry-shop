@@ -126,7 +126,7 @@ export default function Home() {
               <div className="w-full lg:w-1/2">
                 <div className="overflow-hidden rounded-sm">
                   <Image
-                    src={basePath("images/dsc-8646-768x1152.webp")}
+                    src={basePath("images/about-portrait.jpg")}
                     alt="Robin - Creator of Lunar Orchid Jewelry"
                     height={40}
                     width={40}

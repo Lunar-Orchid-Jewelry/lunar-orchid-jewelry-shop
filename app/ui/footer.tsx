@@ -17,7 +17,7 @@ export const footerProducts = productSet([
 export default function Footer({ products }: FooterProps) {
   return (
     <>
-      <footer className="bg-accent text-white py-12 lg:py-16">
+      <footer className="bg-secondary text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-10 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="w-full lg:w-lg">
