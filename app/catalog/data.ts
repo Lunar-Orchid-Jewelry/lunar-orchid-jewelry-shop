@@ -1,9 +1,8 @@
 import {
-  products,
   Product,
   braceletProducts,
-  necklaceProducts,
   ringProducts,
+  necklaceCatalog,
 } from "../product/data";
 
 export type CatalogItem = {
@@ -14,7 +13,7 @@ export type CatalogItem = {
 const catalogItems: Record<string, CatalogItem> = {
   necklaces: {
     title: "Necklaces",
-    products: necklaceProducts,
+    products: necklaceCatalog,
   },
   bracelets: { title: "Bracelets", products: braceletProducts },
   rings: { title: "Rings", products: ringProducts },

@@ -4,7 +4,7 @@ import Collection from "./ui/collection";
 import {
   braceletProducts,
   nymphProducts,
-  necklaceProducts,
+  necklacePreview,
   goddessProducts,
   ringProducts,
   warriorProducts,
@@ -91,7 +91,7 @@ export default function Home() {
         <Collection
           title="Necklaces"
           button="More Necklaces"
-          products={necklaceProducts}
+          products={necklacePreview}
         />
         {/* === BRACELETS === */}
         <Collection

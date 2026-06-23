@@ -413,29 +413,29 @@ export const products: Record<string, Product> = {
     materials: "Copper",
     productImages: [{ img: "images/flat-copper-spiral-ring-0.jpg", alt: "Hammered Spiral Ring" }],
   }),
-"copper-rose-ring": new Product({
-  slug: "copper-rose-ring",
-  title: "Copper Rose Ring",
-  description: "description",
-  paragraphs: ["paragraph"],
-  coverImage: "images/copper-rose-ring.jpg",
-  coverImageAlt: "Copper Rose Ring",
-  price: "$PRICE",
-  purchaseLink: "",
-  materials: "Copper Wire",
-  productImages: [
-    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-  ],
-}),
+  "copper-rose-ring": new Product({
+    slug: "copper-rose-ring",
+    title: "Copper Rose Ring",
+    description: "description",
+    paragraphs: ["paragraph"],
+    coverImage: "images/copper-rose-ring.jpg",
+    coverImageAlt: "Copper Rose Ring",
+    price: "$PRICE",
+    purchaseLink: "",
+    materials: "Copper Wire",
+    productImages: [
+      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+    ],
+  }),
 
 
 
 
-/* === NEW ITEM === */
+  /* === NEW ITEM === */
 
   "new-item": new Product({
     slug: "new-item",
@@ -470,7 +470,22 @@ export const productSet = (keys: Iterable<string>) => {
 
 export default products;
 
-export const necklaceProducts = productSet([
+export const necklacePreview = productSet([
+  "amethyst-whisper",
+  "copper-breath",
+  "cosmic-oasis",
+  "dragon-blood",
+  "eternal-current",
+  "golden-roots",
+  "faire-magic",
+  "forest-pearl",
+  // "rustic-breeze",
+  // "midas-touch",
+  // "oceanic-roots",
+  // "sacred-alignment",
+]);
+
+export const necklaceCatalog = productSet([
   "amethyst-whisper",
   "copper-breath",
   "cosmic-oasis",
