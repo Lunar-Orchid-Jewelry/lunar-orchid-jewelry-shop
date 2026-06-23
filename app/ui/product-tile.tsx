@@ -8,9 +8,9 @@ export type ProductTileProps = {
 export default function ProductTile({ product }: ProductTileProps) {
   return (
     <>
-      <div className="rounded-xl transition hover:shadow-lg hover:scale-105">
+      <div className="bg-primary-ogdarker rounded-xl transition hover:shadow-lg hover:scale-105">
         <a href={product.link()} className="block">
-          <div className="overflow-hidden rounded-sm">
+          <div className="overflow-hidden rounded-t-xl">
             <Image
               src={product.coverImg()}
               alt={product.coverImageAlt}
