@@ -61,8 +61,9 @@ export class Product {
     }));
   }
 }
-
 // prettier-ignore
+
+/* === NECKLACES === */
 export const products: Record<string, Product> = {
   "amethyst-whisper": new Product({
     slug: "copper-wrapped-amethyst-necklace-pendant",
@@ -85,7 +86,6 @@ export const products: Record<string, Product> = {
       { img: "images/amethyst-whisper-6.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "images/amethyst-whisper-7.jpg", alt: "Amethyst Whisper Pendant" },
     ],
-
   }),
   "copper-breath": new Product({
     slug: "copper-wrapped-jasper-heart-necklace-pendant",
@@ -320,24 +320,12 @@ export const products: Record<string, Product> = {
       { img: "images/sacred-alignment-7.jpg", alt: "Sacred Alignment Pendant" },
     ],
   }),
-  "copper-rose-ring": new Product({
-    slug: "copper-rose-ring",
-    title: "Copper Rose Ring",
-    description: "description",
-    paragraphs: ["paragraph"],
-    coverImage: "images/copper-rose-ring.jpg",
-    coverImageAlt: "Copper Rose Ring",
-    price: "$PRICE",
-    purchaseLink: "",
-    materials: "Copper Wire",
-    productImages: [
-      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-      { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
-    ],
-  }),
+
+
+
+
+  /* === BRACELETS === */
+
   "artemis-cuff": new Product({
     slug: "copper-amethyst-cuff",
     title: "Artemis Cuff",
@@ -354,19 +342,6 @@ export const products: Record<string, Product> = {
       { img: "images/copper-amethyst-cuff-2.jpg", alt: "Copper Amethyst Cuff" },
       { img: "images/copper-amethyst-cuff-3.jpg", alt: "Copper Amethyst Cuff" },
     ],
-  }),
-
-  "copper-spiral-ring": new Product({
-    slug: "copper-spiral-ring",
-    title: "Copper Spiral Ring",
-    description: "description",
-    paragraphs: ["paragraph"],
-    coverImage: "images/copper-spiral-ring.jpg",
-    coverImageAlt: "Copper Spiral Ring",
-    price: "$PRICE",
-    purchaseLink: "",
-    materials: "Copper",
-    productImages: [{ img: "images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
   }),
 
   "rainbow-pride-cuff": new Product({
@@ -409,6 +384,58 @@ export const products: Record<string, Product> = {
     ],
     purchaseLink: "",
   }),
+
+
+
+
+  /* === RINGS === */
+  "copper-spiral-ring": new Product({
+    slug: "copper-spiral-ring",
+    title: "Copper Spiral Ring",
+    description: "description",
+    paragraphs: ["paragraph"],
+    coverImage: "images/copper-spiral-ring.jpg",
+    coverImageAlt: "Copper Spiral Ring",
+    price: "$PRICE",
+    purchaseLink: "",
+    materials: "Copper",
+    productImages: [{ img: "images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
+  }),
+  "flat-copper-spiral-ring": new Product({
+    slug: "flat-hammered-copper-spiral-ring",
+    title: "Hammered Copper Spiral Ring",
+    description: "description",
+    paragraphs: ["Each ring is made to order and will have slight variations from product photo."],
+    coverImage: "images/flat-copper-spiral-ring.jpg",
+    coverImageAlt: "Hammered Copper Spiral Ring",
+    price: "$PRICE",
+    purchaseLink: "",
+    materials: "Copper",
+    productImages: [{ img: "images/flat-copper-spiral-ring-0.jpg", alt: "Hammered Spiral Ring" }],
+  }),
+"copper-rose-ring": new Product({
+  slug: "copper-rose-ring",
+  title: "Copper Rose Ring",
+  description: "description",
+  paragraphs: ["paragraph"],
+  coverImage: "images/copper-rose-ring.jpg",
+  coverImageAlt: "Copper Rose Ring",
+  price: "$PRICE",
+  purchaseLink: "",
+  materials: "Copper Wire",
+  productImages: [
+    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+    { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
+  ],
+}),
+
+
+
+
+/* === NEW ITEM === */
 
   "new-item": new Product({
     slug: "new-item",
@@ -463,16 +490,13 @@ export const braceletProducts = productSet([
   "goddess-cuff",
 ]);
 
-export const ringProducts = productSet([
-  "copper-rose-ring",
-  "copper-spiral-ring",
-]);
+export const ringProducts = productSet(["flat-copper-spiral-ring"]);
 
 export const goddessProducts = productSet(["oceanic-roots", "eternal-current"]);
 
-export const nymphProducts = productSet(["forest-pearl", "copper-rose-ring"]);
+export const nymphProducts = productSet(["forest-pearl"]);
 
-export const warriorProducts = productSet(["dragon-blood", "artemis-cuff"]);
+export const warriorProducts = productSet(["dragon-blood"]);
 
 export const queenProducts = productSet(["rainbow-pride-cuff"]);
 
