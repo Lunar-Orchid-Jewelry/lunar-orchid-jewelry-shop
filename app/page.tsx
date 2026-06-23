@@ -141,18 +141,13 @@ export default function Home() {
                 </h2>
                 <div className="text-gray-300 font-josefin leading-relaxed">
                   <p className="mb-4">
-                    Im the creative behind Lunar Orchid Jewelry!
+                    {intro1}
                   </p>
                   <p className="mb-4">
-                    I developed a love of making jewelry in my childhood. My
-                    great-grandmother was an artist, jeweler, and collector of
-                    stones, shells, and trinkets of the earth. She taught me the
-                    basic skills of jewelry crafting, which I continued to
-                    foster after she passed.
+                    {intro2}
                   </p>
                   <p>
-                    When Im not making jewelry, Im probably doing something
-                    ridiculous and you shouldnt ask too many questions.
+                    {intro3}
                   </p>
                 </div>
               </div>
@@ -166,6 +161,23 @@ export default function Home() {
     </>
   );
 }
+
+const intro1 = `
+I'm the creative behind Lunar Orchid Jewelry!
+`.trim()
+
+const intro2 = `
+I developed a love of making jewelry in my childhood. My
+great-grandmother was an artist, jeweler, and collector of
+stones, shells, and trinkets of the earth. She taught me the
+basic skills of jewelry crafting, which I continued to
+foster after she passed.
+`.trim();
+
+const intro3 = `
+When I'm not making jewelry, I'm probably doing something
+ridiculous and you shouldnt ask too many questions.
+`.trim();
 
 function Divider() {
   return (
