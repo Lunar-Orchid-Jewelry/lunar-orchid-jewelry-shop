@@ -73,7 +73,7 @@ export const products: Record<string, Product> = {
     coverImage: "images/amethyst-whisper-0.jpg",
     coverImageAlt: "Amethyst Whisper Pendant",
     price: "$68",
-    sale: "$38",
+    // sale: "$38",
     purchaseLink: "https://buy.stripe.com/dRmdRb2nl9eG9hp2YH7Re06",
     materials: "Copper Wire, Tear Drop Amethyst Stone",
     productImages: [
