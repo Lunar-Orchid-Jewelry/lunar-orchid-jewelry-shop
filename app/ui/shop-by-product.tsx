@@ -7,7 +7,7 @@ export type ShopByProductProps = {
 
 export default function ShopByProduct({ products }: ShopByProductProps) {
   return (
-    <section className="bg-secondary py-12 lg:py-16">
+    <section className="bg-accent py-12 lg:py-16">
       <div className="lg:max-w-4xl md:max-w-xl sm:max-w-xs xs:max-w-xs mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <p className="text-2xl sm:text-3xl font-josefin text-white">

@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <>
       {/* === NAVBAR === */}
-      <nav className="fixed top-2 left-0 right-0 z-50 container-main mx-auto px-2 rounded-md opacity-90 shadow-lg">
+      <nav className="fixed top-2 left-0 right-0 z-50 container-main mx-auto px-2 rounded-md lg:opacity-90 shadow-lg">
         <div className="bg-secondary rounded-md max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
