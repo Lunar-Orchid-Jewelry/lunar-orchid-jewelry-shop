@@ -55,43 +55,43 @@ export default function Navbar() {
             </div>
 
             {/* Social Icons (Desktop) */}
-            <div className="hidden lg:flex items-center space-x-1">
+            <div className="hidden lg:flex items-center gap-1">
               <a
                 href="#"
-                className="text-white p-2 hover:text-primary transition-colors"
+                className="text-white hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Image
                   src={basePath("images/lunar-orchid-logo-dark.png")}
                   alt="Lunar Orchid Jewelry Instagram"
-                  height={60}
-                  width={60}
+                  height={50}
+                  width={50}
                   className="fab fa-instagram text-lg"
                 />
               </a>
               <a
                 href="#"
-                className="text-white p-2 hover:text-primary transition-colors"
+                className="text-white hover:text-primary transition-colors"
                 aria-label="Pinterest"
               >
                 <Image
                   src={basePath("images/lunar-orchid-logo.png")}
                   alt="Lunar Orchid Jewelry Pinterest"
-                  height={60}
-                  width={60}
+                  height={50}
+                  width={50}
                   className="fab fa-pinterest text-lg"
                 />
               </a>
               <a
                 href="#"
-                className="text-white p-2 hover:text-primary transition-colors"
+                className="text-white hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Image
                   src={basePath("images/lunar-orchid-logo-dark.png")}
                   alt="Lunar Orchid Jewelry Facebook"
-                  height={60}
-                  width={60}
+                  height={50}
+                  width={50}
                   className="fab fa-facebook text-lg"
                 />{" "}
               </a>
@@ -169,6 +169,47 @@ export default function Navbar() {
                 >
                   Rings
                 </Link>
+              </li>
+              <li className="flex justify-center space-x-4 pt-4">
+                <a
+                  href="#"
+                  className="text-white p-2 hover:text-primary transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Image
+                    src={basePath("images/lunar-orchid-logo-dark.png")}
+                    alt="Lunar Orchid Jewelry Instagram"
+                    height={60}
+                    width={60}
+                    className="fab fa-instagram text-lg"
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="text-white p-2 hover:text-primary transition-colors"
+                  aria-label="Pinterest"
+                >
+                  <Image
+                    src={basePath("images/lunar-orchid-logo.png")}
+                    alt="Lunar Orchid Jewelry Pinterest"
+                    height={60}
+                    width={60}
+                    className="fab fa-pinterest text-lg"
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="text-white p-2 hover:text-primary transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Image
+                    src={basePath("images/lunar-orchid-logo-dark.png")}
+                    alt="Lunar Orchid Jewelry Facebook"
+                    height={60}
+                    width={60}
+                    className="fab fa-facebook text-lg"
+                  />
+                </a>
               </li>
             </ul>
           </div>

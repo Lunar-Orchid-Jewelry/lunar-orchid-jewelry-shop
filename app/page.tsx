@@ -68,7 +68,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Divider />
+        <div className="overflow-hidden object-cover w-full ">
+          <Image
+            src={basePath("images/lunar-orchid-banner.jpg")}
+            alt="Lunar Orchid Jewelry Banner"
+            height={40}
+            width={40}
+            className="w-full object-cover"
+          />
+        </div>
         {/* === NECKLACES === */}
         <Collection
           title="Necklaces"
@@ -113,7 +121,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
               <div className="w-full lg:w-1/2">
-                <div className="overflow-hidden rounded-full hover:scale-105 hover:shadow-2xl hover:rotate-180 active:rotate-180 transition">
+                <div className="overflow-hidden rounded-full hover:scale-105 hover:shadow-2xl hover:rotate-180 transition">
                   <Image
                     src={basePath("images/about-portrait.jpg")}
                     alt="Robin - Creator of Lunar Orchid Jewelry"
