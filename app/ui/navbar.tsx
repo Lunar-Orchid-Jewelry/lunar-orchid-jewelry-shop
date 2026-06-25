@@ -55,27 +55,45 @@ export default function Navbar() {
             </div>
 
             {/* Social Icons (Desktop) */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-1">
               <a
                 href="#"
                 className="text-white p-2 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
-                <i className="fab fa-instagram text-lg" />
+                <Image
+                  src={basePath("images/lunar-orchid-logo-dark.png")}
+                  alt="Lunar Orchid Jewelry Instagram"
+                  height={60}
+                  width={60}
+                  className="fab fa-instagram text-lg"
+                />
               </a>
               <a
                 href="#"
                 className="text-white p-2 hover:text-primary transition-colors"
                 aria-label="Pinterest"
               >
-                <i className="fab fa-pinterest text-lg" />
+                <Image
+                  src={basePath("images/lunar-orchid-logo.png")}
+                  alt="Lunar Orchid Jewelry Pinterest"
+                  height={60}
+                  width={60}
+                  className="fab fa-pinterest text-lg"
+                />
               </a>
               <a
                 href="#"
                 className="text-white p-2 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
-                <i className="fab fa-facebook text-lg" />
+                <Image
+                  src={basePath("images/lunar-orchid-logo-dark.png")}
+                  alt="Lunar Orchid Jewelry Facebook"
+                  height={60}
+                  width={60}
+                  className="fab fa-facebook text-lg"
+                />{" "}
               </a>
             </div>
 
@@ -85,11 +103,27 @@ export default function Navbar() {
               className="lg:hidden flex flex-col justify-center items-center w-10 h-10 text-white"
               aria-label="Toggle navigation"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 {menuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
