@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Product, productSet } from "../product/data";
+import Link from "next/link";
 
 export type FooterProps = {
   products: Record<string, Product>;
@@ -38,6 +39,7 @@ export default function Footer({ products }: FooterProps) {
                 </div>
                 <div className="md:w-sm justify-center">
                   <ul className="space-y-2 font-josefin">
+                    {/*
                     <li>
                       <a
                         href="index.html#About"
@@ -46,35 +48,38 @@ export default function Footer({ products }: FooterProps) {
                         About
                       </a>
                     </li>
+                    */}
                     <li>
-                      <a
-                        href="shop-necklace-pendants.html"
+                      <Link
+                        href="/catalog/necklaces"
                         className="text-white hover:text-primary transition-colors"
                       >
                         Necklaces
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="shop-all-bracelets.html"
+                      <Link
+                        href="/catalog/bracelets"
                         className="text-white hover:text-primary transition-colors"
                       >
                         Bracelets
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="shop-all-rings.html"
+                      <Link
+                        href="/catalog/rings"
                         className="text-white hover:text-primary transition-colors"
                       >
                         Rings
-                      </a>
+                      </Link>
                     </li>
+                    {/*
                     <li>
                       <a
                         href="help-and-policies.html"
                         className="text-white hover:text-primary transition-colors"
                       >
+
                         FAQ and Policies
                       </a>
                     </li>
@@ -86,6 +91,7 @@ export default function Footer({ products }: FooterProps) {
                         Contact
                       </a>
                     </li>
+                    */}
                   </ul>
                 </div>
               </div>

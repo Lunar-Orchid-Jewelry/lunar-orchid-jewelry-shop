@@ -20,18 +20,18 @@ export default function ProductTile({ product }: ProductTileProps) {
             />
           </div>
           <div className="p-2">
-            <h4 className="text-white text-base font-josefin text-center">
+            <h4 className="text-white text-xl font-bad-script text-center p-1">
               {product.title}
             </h4>
 
             {!product.description ? (
               <></>
             ) : (
-              <p className="text-white text-lg font-josefin text-center">
+              <p className="text-white text-lg font-josefin text-center p-1 whitespace-pre-line">
                 {product.description}
               </p>
             )}
-            <p className="text-white text-lg font-josefin text-center">
+            <p className="text-white text-2xl font-josefin text-center p-1">
               {product.price}
             </p>
           </div>

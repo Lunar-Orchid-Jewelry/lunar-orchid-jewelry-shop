@@ -10,7 +10,7 @@ type CollectionProps = {
 type CollectionButton = {
   text: string;
   link: string;
-}
+};
 
 export default function Collection(props: CollectionProps) {
   return (
@@ -18,12 +18,16 @@ export default function Collection(props: CollectionProps) {
       <section className="bg-primary py-8">
         <div className="max-w-7xl mx-auto px-10">
           <div className="category-line p-4 mb-8 text-center">
-            <p className="text-4xl font-bad-script text-white">{props.title}</p>
+            <p className="text-4xl font-cinzel  text-white">{props.title}</p>
           </div>
           {/*<div className="grid grid-cols-2 lg:grid-cols-4 gap-4">*/}
+
           <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
             {Object.entries(props.products).map(([key, item]) => (
-              <div key={key} className="h-full w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-2rem)]">
+              <div
+                key={key}
+                className="h-full w-[calc(50%-0.75rem)] lg:w-[calc(25%-2rem)]"
+              >
                 <ProductTile key={key} product={item} />
               </div>
             ))}
@@ -45,4 +49,4 @@ export default function Collection(props: CollectionProps) {
       </section>
     </>
   );
-};
+}
