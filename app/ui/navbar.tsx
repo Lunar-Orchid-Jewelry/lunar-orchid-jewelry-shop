@@ -57,12 +57,12 @@ export default function Navbar() {
             {/* Social Icons (Desktop) */}
             <div className="hidden lg:flex items-center gap-1">
               <a
-                href="#"
+                href="https://www.instagram.com/lunarorchidjewelry"
                 className="text-white hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Image
-                  src={basePath("images/lunar-orchid-logo-dark.png")}
+                  src={basePath("images/instagram-logo.png")}
                   alt="Lunar Orchid Jewelry Instagram"
                   height={50}
                   width={50}
@@ -70,30 +70,17 @@ export default function Navbar() {
                 />
               </a>
               <a
-                href="#"
+                href="https://www.pinterest.com/lunarorchidjewelry/"
                 className="text-white hover:text-primary transition-colors"
                 aria-label="Pinterest"
               >
                 <Image
-                  src={basePath("images/lunar-orchid-logo.png")}
+                  src={basePath("images/pinterest-logo.png")}
                   alt="Lunar Orchid Jewelry Pinterest"
                   height={50}
                   width={50}
                   className="fab fa-pinterest text-lg"
                 />
-              </a>
-              <a
-                href="#"
-                className="text-white hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Image
-                  src={basePath("images/lunar-orchid-logo-dark.png")}
-                  alt="Lunar Orchid Jewelry Facebook"
-                  height={50}
-                  width={50}
-                  className="fab fa-facebook text-lg"
-                />{" "}
               </a>
             </div>
 
