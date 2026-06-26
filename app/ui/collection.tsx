@@ -26,7 +26,7 @@ export default function Collection(props: CollectionProps) {
             {Object.entries(props.products).map(([key, item]) => (
               <div
                 key={key}
-                className="h-full w-[calc(50%-0.75rem)] lg:w-[calc(25%-2rem)]"
+                className="h-full w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(25%-2rem)]"
               >
                 <ProductTile key={key} product={item} />
               </div>
