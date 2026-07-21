@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       <section>
-        <div className="w-full h-10 bg-secondary text-center justify-center py-2">
-          <h1 className=" font-josephine text-white text-md">
-            Free Shipping on ALL Orders{" "}
+        <div className="w-full h-8 bg-secondary text-center justify-center py-2">
+          <h1 className=" font-josephine text-white text-xs">
+            FREE GROUND SHIPPING ON ALL U.S. ORDERS {" "}
           </h1>
         </div>
       </section>
