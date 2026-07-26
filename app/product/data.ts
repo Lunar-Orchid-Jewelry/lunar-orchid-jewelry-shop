@@ -592,7 +592,7 @@ export const products: Record<string, Product> = {
   }),
   "copper-spiral-woven-ring": new Product({
     slug: "copper-spiral-woven-ring",
-    title: "Copper Spiral Woven Ring",
+    title: "Copper Spiral",
     description: "",
     paragraphs: ["As each ring is made to order, no two rings are exactly the same. Please allow 2-4 days for processing in addition to shipping. Click 'Buy Now' and select your ring size under shipping information(don't ask me why it's there... I don't know)!"],
     coverImage: "images/copper-spiral-woven-ring-0.jpg",
@@ -630,7 +630,7 @@ export const products: Record<string, Product> = {
   }),
   "copper-rose-ring": new Product({
     slug: "copper-rose-ring",
-    title: "Copper Rose Ring",
+    title: "Copper Rose",
     description: "",
     paragraphs: ["As each ring is made to order, no two rings are exactly the same. Please allow 2-4 days for processing in addition to shipping. Click 'Buy Now' and select your ring size under shipping information(don't ask me why it's there... I don't know)!"],
     coverImage: "images/copper-rose-ring-0.jpg",
@@ -644,7 +644,7 @@ export const products: Record<string, Product> = {
   }),
   "silver-spiral-woven-ring": new Product({
     slug: "silver-spiral-woven-ring",
-    title: "Silver Spiral Woven Ring",
+    title: "Silver Spiral",
     description: "",
     paragraphs: ["As each ring is made to order, no two rings are exactly the same. Please allow 2-4 days for processing in addition to shipping. Click 'Buy Now' and select your ring size under shipping information(don't ask me why it's there... I don't know)!"],
     coverImage: "images/silver-spiral-woven-ring-0.jpg",
@@ -658,7 +658,7 @@ export const products: Record<string, Product> = {
   }),
   "silver-rose-ring": new Product({
     slug: "silver-plated-copper-rose-ring",
-    title: "Silver Rose Ring",
+    title: "Silver Rose",
     description: "",
     paragraphs: ["As each ring is made to order, no two rings are exactly the same. Please allow 2-4 days for processing in addition to shipping. Click 'Buy Now' and select your ring size under shipping information(don't ask me why it's there... I don't know)!"],
     coverImage: "images/silver-rose-ring-0.jpg",
@@ -761,11 +761,7 @@ export const necklacePreview = productSet([
   "reflection",
   "cosmic-oasis",
   "prismatic-tide",
-  "oceanic-roots",
-  "golden-roots",
-  "faire-magic",
-  "forest-pearl",
-  "amethyst-whisper",
+  "rustic-breeze",
 ]);
 
 export const ringPreview = productSet([

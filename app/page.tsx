@@ -15,35 +15,35 @@ import { basePath } from "./utils";
 export default function Home() {
   return (
     <>
+      {/* === Anouncement === */}
       <section>
-        <div className="w-full h-8 bg-secondary text-center justify-center py-2">
-          <h1 className=" font-josephine text-white text-xs">
+        <div className="w-full h-10 bg-black text-center justify-center py-3">
+          <h1 className=" font-josephine text-white text-sm">
             FREE GROUND SHIPPING ON ALL U.S. ORDERS {" "}
           </h1>
         </div>
       </section>
 
-      <div className="bg-primary pt-10 font-josefin text-white">
-        {/* === Anouncement === */}
-        <Navbar />
+      <div className="bg-primary pt-0 font-josefin text-white">
+
         {/* === HERO / HEADER === */}
         <section>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-12">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
               {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
                   src={basePath("images/lunar-orchid-logo.png")}
                   alt="Lunar Orchid Jewelry Logo"
-                  height={400}
-                  width={400}
+                  height={300}
+                  width={300}
                   className="max-w-full h-auto object-contain lg:max-w-md"
                 />
               </div>
 
               {/* Title & CTA */}
               <div className="w-full lg:w-[65%] text-center lg:text-left">
-                <h1 className="font-cinzel text-center text-3xl sm:text-4xl lg:text-4xl xl:text-5xl text-white mb-6">
+                <h1 className="font-beau-rivage text-center text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white mb-6">
                   Lunar Orchid Jewelry
                 </h1>
 
@@ -74,7 +74,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
         </section>
+        {/* === NECKLACES x2 ===
         <div className="overflow-hidden object-cover w-full px-10">
           <Image
             src={basePath("images/lunar-orchid-banner.jpg")}
@@ -84,8 +86,13 @@ export default function Home() {
             className="w-full object-cover"
           />
         </div>
-        {/* === NECKLACES x2 === */}
+
+      */}
+
+        <Navbar />
+
         {/* === NECKLACES === */}
+
         <Collection
           title="Necklaces"
           button={{

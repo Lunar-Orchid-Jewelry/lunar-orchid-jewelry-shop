@@ -20,7 +20,7 @@ export default function ProductTile({ product }: ProductTileProps) {
             />
           </div>
           <div className="p-2">
-            <h4 className="text-white text-xl font-bad-script text-center p-1">
+            <h4 className="text-white text-3xl font-beau-rivage text-center p-1">
               {product.title}
             </h4>
 {/*

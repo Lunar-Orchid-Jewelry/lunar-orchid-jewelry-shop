@@ -15,7 +15,7 @@ type HighlightButton = {
 export default function Highlight(props: HighlightProps) {
   return (
     <>
-      <section className="bg-secondary py-8">
+      <section className="bg-secondary pt-6 pb-10">
         <div className="max-w-7xl mx-auto px-10">
           <div className="category-line p-4 mb-8 text-center">
             <p className="text-4xl font-cinzel  text-white">{props.title}</p>

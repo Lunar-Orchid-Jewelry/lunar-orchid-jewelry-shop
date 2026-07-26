@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <>
       {/* === NAVBAR === */}
-      <nav className="sticky z-30 top-2 justify-center mx-auto px-10 rounded-md lg:opacity-90 py-0">
+      <nav className="sticky z-30 top-6 justify-center mx-auto px-10 rounded-md lg:opacity-90 py-0">
         <div className="bg-secondary rounded-md max-w-7xl mx-auto px-4 transition-all">
           <div className="flex items-center justify-between gap-5 h-16">
             {/* Logo */}
@@ -95,6 +95,29 @@ export default function Navbar() {
                 />
               </a>
             </div>
+
+            {/* Shopping Cart
+            <div className="relative cursor-pointer">
+              <Link href='/cart'>
+                <div>
+                  <Image
+                    src={basePath("images/instagram-logo.png")}
+                    alt="Lunar Orchid Jewelry Instagram"
+                    height={50}
+                    width={50}
+                    className="fab fa-instagram text-lg"
+                  />
+                  <span className="absolute -top-2 -right-2 text-lg  bg-red-600 h-5 w-5 rounded-full grid place-items-center text-white">0
+                  </span>
+                </div>
+              </Link>
+
+
+
+              </div>
+
+*/}
+
 
             {/* Hamburger Button (Mobile) */}
             <button

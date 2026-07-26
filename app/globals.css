@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Cinzel+Decorative&family=Josefin+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Cinzel+Decorative&family=Josefin+Slab&display=swap&family=Beau+Rivage&display=swap");
 
 @import "tailwindcss";
 
@@ -7,9 +7,11 @@
     --font-cinzel: "Cinzel Decorative", serif;
     --font-bad-script: "Bad Script", cursive;
     --font-josefin: "Josefin Slab", sans-serif;
+    --font-beau-rivage: "Beau Rivage", serif;
 
     /* Custom colors */
-    --color-primary: #252336;
+    --color-primary: #262738;
+    --color-primary-primary: #252336;
     --color-primary-ogdarker: #39364f;
     --color-primary-og: #42334e;
     --color-dark: #121212;
@@ -38,6 +40,10 @@ body {
 
 .font-bad-script {
     font-family: var(--font-bad-script);
+}
+
+.font-beau {
+    font-family: var(--font-beau-rivage);
 }
 
 .debug {
