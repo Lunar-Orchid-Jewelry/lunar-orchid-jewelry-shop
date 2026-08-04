@@ -24,13 +24,14 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-primary pt-0 font-josefin text-white">
+      <div className="bg-white pt-0 font-josefin text-primary">
 
         {/* === HERO / HEADER === */}
         <section>
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
               {/* Logo Image */}
+
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
                   src={basePath("images/lunar-orchid-logo.png")}
@@ -39,6 +40,7 @@ export default function Home() {
                   width={300}
                   className="max-w-full h-auto object-contain lg:max-w-md"
                 />
+
               </div>
 
               {/* Title & CTA */}
@@ -47,7 +49,7 @@ export default function Home() {
                   Lunar Orchid Jewelry
                 </h1>
 
-                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-100 mb-4 leading-relaxed">
+                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-400 mb-4 leading-relaxed">
                   <p>Earthly Inspired · Uniquely Imperfect</p>
 
                 </h3>
@@ -68,8 +70,22 @@ export default function Home() {
           }}
           products={necklacePreview}
         />
+
+        {/* ARTISAN JEWELRY */}
         <section>
-          <div className="bg-primary-ogdarker max-w-8xl h-auto mx-10">
+          <div className="max-w-8xl bg-accent mx-4 px-4 rounded-xl">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
+              {/* Title & CTA */}
+              <div className=" w-full lg:w-[65%] text-center lg:text-left">
+                <h1 className="font-bad-script text-center text-4xl lg:text-5xl xl:text-5xl text-black mb-6">
+                  Artisan Wire Wrapped Jewelry Using Natural Gemstones
+                </h1>
+                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-400 mb-4 leading-relaxed">
+                  <p>Earthly Inspired · Uniquely Imperfect</p>
+                </h3>
+              </div>
+
+              {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
                   src={basePath("images/lunar-orchid-logo.png")}
@@ -78,9 +94,10 @@ export default function Home() {
                   width={300}
                   className="max-w-full h-auto object-contain lg:max-w-md"
                 />
+              </div>
             </div>
           </div>
-</section>
+        </section>
 
 
 
@@ -93,6 +110,34 @@ export default function Home() {
           }}
           products={braceletProducts}
         />
+
+        {/* ARTISAN JEWELRY */}
+        <section>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
+              {/* Title & CTA */}
+              <div className="w-full lg:w-[65%] text-center lg:text-left">
+                <h1 className="font-bad-script text-center text-md sm:text-4xl lg:text-5xl xl:text-5xl text-black mb-6">
+                  Why Buy Handmade?
+                </h1>
+                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-400 mb-4 leading-relaxed">
+                  <p>Earthly Inspired · Uniquely Imperfect</p>
+                </h3>
+              </div>
+
+              {/* Logo Image */}
+              <div className="w-[30%] lg:w-[35%] flex justify-center">
+                <Image
+                  src={basePath("images/lunar-orchid-logo.png")}
+                  alt="Lunar Orchid Jewelry Logo"
+                  height={300}
+                  width={300}
+                  className="max-w-full h-auto object-contain lg:max-w-md"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* === RINGS === */}
         <Collection

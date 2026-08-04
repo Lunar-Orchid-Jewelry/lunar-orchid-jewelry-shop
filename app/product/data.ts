@@ -695,7 +695,7 @@ export const products: Record<string, Product> = {
   }),
   "trans-industrial-chain": new Product({
     slug: "trans-flag-industrial-bar-chain-accessory",
-    title: "Trans Flag Industrial Chain",
+    title: "Trans Industrial Chain",
     description: "Silver Blue Pink Industrial Bar Accessory",
     paragraphs: [],
     coverImage: "images/trans-industrial-chain-0.jpg",
@@ -874,3 +874,9 @@ export const prideProducts = productSet([
 export function getProductBySlug(slug: string): Product | undefined {
   return productsBySlug[slug];
 }
+
+
+
+const intro1 = `
+I'm the creative behind Lunar Orchid Jewelry!
+`.trim();

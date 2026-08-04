@@ -15,10 +15,10 @@ type CollectionButton = {
 export default function Collection(props: CollectionProps) {
   return (
     <>
-      <section className="bg-primary py-8">
-        <div className="max-w-7xl mx-auto px-10">
+      <section className="bg-primary py-8 max-w-8xl px-8 relative my-5">
+        <div className="max-w-5xl mx-auto">
           <div className="category-line p-4 mb-8 text-center">
-            <p className="text-4xl font-cinzel  text-white">{props.title}</p>
+            <p className="text-2xl font-cinzel  text-white">{props.title}</p>
           </div>
           {/*<div className="grid grid-cols-2 lg:grid-cols-4 gap-4">*/}
 
