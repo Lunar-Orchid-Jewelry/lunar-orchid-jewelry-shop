@@ -100,7 +100,7 @@ export const products: Record<string, Product> = {
     coverImageAlt: "Ancient Orthoceras Pendant",
     price: "$68",
     // sale: "$38",
-    purchaseLink: "",
+    purchaseLink: "https://buy.stripe.com/14A9AVaTR76yalt9n57Re0B",
     materials: "Copper Wire, Orthoceras Fossil",
     productImages: [
       { img: "images/ancient-orthoceras-0.jpg", alt: "Ancient Orthoceras Pendant" },
@@ -121,8 +121,8 @@ export const products: Record<string, Product> = {
     paragraphs: [],
     coverImage: "images/clementine-glow-0.jpg",
     coverImageAlt: "Clementine Glow Pendant",
-    price: "$58",
-    purchaseLink: "",
+    price: "$36",
+    purchaseLink: "https://buy.stripe.com/8x27sNgebaiK1OX1UD7Re0A",
     materials: "Silver Plated Copper Wire, Citrine Quartz Stone",
     productImages: [
       { img: "images/clementine-glow-0.jpg", alt: "Clementine Glow Pendant" },
@@ -227,7 +227,7 @@ export const products: Record<string, Product> = {
     paragraphs: [],
     coverImage: "images/eternal-current-0.jpg",
     coverImageAlt: "Eternal Current Pendant",
-    price: "$125",
+    price: "Sold Out",
     purchaseLink: "https://buy.stripe.com/00w6oJbXV8aCgJR8j17Re0b",
     materials: "Rose Gold Plated Copper, Ammonite Fossil",
     productImages: [
@@ -391,8 +391,8 @@ export const products: Record<string, Product> = {
 	paragraphs: [],
 	coverImage: "images/progressive-wisdom-0.jpg",
 	coverImageAlt: "Progressive Wisdom Pendant",
-	price: "$48",
-	purchaseLink: "",
+	price: "$58",
+	purchaseLink: "https://buy.stripe.com/bJebJ3gebbmObpx0Qz7Re0z",
 	materials: "Owl Charm, Preciosa Crystals, Silver Plated Copper Wire",
 	productImages: [
 		{ img: "images/progressive-wisdom-0.jpg", alt: "Progressive Wisdom Pendant" },
@@ -774,6 +774,8 @@ export const ringPreview = productSet([
 
 export const allProducts = productSet([
   "amethyst-whisper",
+  "ancient-orthoceras",
+  "clementine-glow",
   "copper-breath",
   "cosmic-oasis",
   "dragon-blood",
@@ -796,10 +798,13 @@ export const allProducts = productSet([
   "silver-spiral-woven-ring",
   "silver-rose-ring",
   "rainbow-industrial-chain",
+  "trans-industrial-chain"
 ]);
 
 export const necklaceProducts = productSet([
   "amethyst-whisper",
+  "ancient-orthoceras",
+  "clementine-glow",
   "copper-breath",
   "cosmic-oasis",
   "dragon-blood",
@@ -812,6 +817,7 @@ export const necklaceProducts = productSet([
   "oceanic-roots",
   "sacred-alignment",
   "prismatic-tide",
+  "progressive-wisdom",
   "reflection",
 
 ]);
@@ -834,6 +840,7 @@ export const earringProducts = productSet([]);
 
 export const industrialChainProducts = productSet([
   "rainbow-industrial-chain",
+  "trans-industrial-chain",
 ]);
 
 export const goddessProducts = productSet([

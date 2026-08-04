@@ -15,7 +15,7 @@ export type CatalogItem = {
 
 const catalogItems: Record<string, CatalogItem> = {
   necklaces: {
-    title: "Necklaces",
+    title: "Necklaces and Pendants",
     products: necklaceProducts,
   },
   bracelets: { title: "Bracelets", products: braceletProducts },

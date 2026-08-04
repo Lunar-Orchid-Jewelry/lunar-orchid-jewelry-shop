@@ -17,7 +17,7 @@ export default function Home() {
     <>
       {/* === Anouncement === */}
       <section>
-        <div className="w-full h-10 bg-black text-center justify-center py-3">
+        <div className="w-full h-10 bg-primary-ogdarker text-center justify-center py-3">
           <h1 className=" font-josephine text-white text-sm">
             FREE GROUND SHIPPING ON ALL U.S. ORDERS {" "}
           </h1>
@@ -43,7 +43,7 @@ export default function Home() {
 
               {/* Title & CTA */}
               <div className="w-full lg:w-[65%] text-center lg:text-left">
-                <h1 className="font-beau-rivage text-center text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white mb-6">
+                <h1 className="font-beau-rivage text-center text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-black mb-6">
                   Lunar Orchid Jewelry
                 </h1>
 
@@ -51,48 +51,15 @@ export default function Home() {
                   <p>Earthly Inspired · Uniquely Imperfect</p>
 
                 </h3>
-{/*
-                <h4 className="font-bad-script text-base text-center sm:text-lg text-gray-100 mb-8 leading-relaxed">
-                  <p>Float among the mystical and the magical</p>
-                </h4>
-
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a
-                    href="#"
-                    className="inline-block bg-secondary text-white px-5 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
-                  >
-                    Shop by Product
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-block bg-secondary text-white px-5 py-3 font-josefin text-base hover:bg-accent transition-colors rounded-sm"
-                  >
-                    Shop by Collection
-                  </a>
-                </div>
-               */}
               </div>
             </div>
           </div>
 
         </section>
-        {/* === NECKLACES x2 ===
-        <div className="overflow-hidden object-cover w-full px-10">
-          <Image
-            src={basePath("images/lunar-orchid-banner.jpg")}
-            alt="Lunar Orchid Jewelry Banner"
-            height={40}
-            width={40}
-            className="w-full object-cover"
-          />
-        </div>
-
-      */}
 
         <Navbar />
 
         {/* === NECKLACES === */}
-
         <Collection
           title="Necklaces"
           button={{
@@ -101,6 +68,21 @@ export default function Home() {
           }}
           products={necklacePreview}
         />
+        <section>
+          <div className="bg-primary-ogdarker max-w-8xl h-auto mx-10">
+              <div className="w-[30%] lg:w-[35%] flex justify-center">
+                <Image
+                  src={basePath("images/lunar-orchid-logo.png")}
+                  alt="Lunar Orchid Jewelry Logo"
+                  height={300}
+                  width={300}
+                  className="max-w-full h-auto object-contain lg:max-w-md"
+                />
+            </div>
+          </div>
+</section>
+
+
 
         {/* === BRACELETS === */}
         <Collection
@@ -111,23 +93,28 @@ export default function Home() {
           }}
           products={braceletProducts}
         />
+
         {/* === RINGS === */}
         <Collection
           title="Rings"
           button={{ text: "More Rings", link: basePath("catalog/rings") }}
           products={ringPreview}
         />
+
         {/* === INDUSTRIAL CHAINS === */}
         <Collection
           title="Industrial Chains"
           button={{ text: "More Chains", link: basePath("catalog/earrings") }}
           products={industrialChainProducts}
         />
+
         <Highlight
           title="Pride Collection"
           products={prideProducts}
         />
+
         <Divider />
+
         {/* === EARRINGS ===
         <Collection
           title="Earrings"
@@ -148,6 +135,8 @@ export default function Home() {
         {/* === QUEEN COLLECTION ===
         <Collection title="Queen Collection" products={queenProducts} />
         <Divider />*/}
+
+
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -179,6 +168,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* === FOOTER === */}
         <Footer products={footerProducts} />{" "}
       </div>
