@@ -56,10 +56,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </section>
 
-        <Navbar />
+        <Navbar>
+        </Navbar>
+
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-16">
+            <h2 className="font-bad-script text-center text-3xl lg:text-4xl xl:text-5xl text-black mb-8">Shop By Collection</h2>
+            <div className="flex flex-wrap justify-center gap-6">
+                {/* We use the general categories as main tags */}
+                <a href={basePath("catalog/necklaces")} className="category-pill">Necklaces</a>
+                <a href={basePath("catalog/bracelets")} className="category-pill">Bracelets</a>
+                <a href={basePath("catalog/rings")} className="category-pill">Rings</a>
+                <a href={basePath("catalog/earrings")} className="category-pill">Earrings</a>
+                {/* Example of a product type tag */}
+                <a href="/search?tag=stone" className="category-pill bg-primary-ogdarker hover:bg-secondary border border-gray-700">Gemstones</a>
+                <a href="/search?tag=industrial" className="category-pill bg-primary-ogdarker hover:bg-secondary border border-gray-700">Industrial</a>
+            </div>
+        </div>
 
         {/* === NECKLACES === */}
         <Collection
@@ -128,7 +143,7 @@ export default function Home() {
               {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
-                  src={basePath("images/lunar-orchid-logo.png")}
+                  src={basePath("images/labradorite-collection.jpg")}
                   alt="Lunar Orchid Jewelry Logo"
                   height={300}
                   width={300}

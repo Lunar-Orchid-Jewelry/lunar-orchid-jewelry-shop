@@ -30,3 +30,18 @@ To build for production, run
 npm run build
 npx serve out
 ```
+
+Set up NVM
+
+```
+cat << EOF > ~/.zshrc
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+EOF
+```
+
+Then to check
+
+```
+cat ~/.zshrc
+```

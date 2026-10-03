@@ -15,7 +15,7 @@ type CollectionButton = {
 export default function Collection(props: CollectionProps) {
   return (
     <>
-      <section className="bg-primary py-8 max-w-8xl px-8 relative my-5">
+      <section className="bg-primary py-4 max-w-8xl px-8 relative my-2">
         <div className="max-w-5xl mx-auto">
           <div className="category-line p-4 mb-8 text-center">
             <p className="text-2xl font-cinzel  text-white">{props.title}</p>
