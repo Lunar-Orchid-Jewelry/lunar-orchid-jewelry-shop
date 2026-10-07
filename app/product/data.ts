@@ -83,7 +83,7 @@ export const products: Record<string, Product> = {
     // sale: "$38",
     purchaseLink: "https://buy.stripe.com/dRmdRb2nl9eG9hp2YH7Re06",
     materials: "Copper Wire, Tear Drop Amethyst Stone",
-    tags: ["Copper", "Necklace", "Pendant"],
+    tags: ["copper", "Necklace", "Pendant"],
     productImages: [
       { img: "images/amethyst-whisper-0.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "images/amethyst-whisper-1.jpg", alt: "Amethyst Whisper Pendant" },
@@ -106,7 +106,7 @@ export const products: Record<string, Product> = {
     // sale: "$38",
     purchaseLink: "https://buy.stripe.com/14A9AVaTR76yalt9n57Re0B",
     materials: "Copper Wire, Orthoceras Fossil",
-    tags: ["Copper", "Necklace", "Pendant"],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/ancient-orthoceras-0.jpg", alt: "Ancient Orthoceras Pendant" },
       { img: "images/ancient-orthoceras-1.jpg", alt: "Ancient Orthoceras Pendant" },
@@ -129,7 +129,7 @@ export const products: Record<string, Product> = {
     price: "$36",
     purchaseLink: "https://buy.stripe.com/8x27sNgebaiK1OX1UD7Re0A",
     materials: "Silver Plated Copper Wire, Citrine Quartz Stone",
-    tags: ["Silver", "Necklace", "Pendant"],
+    tags: ["silver", "necklace", "pendant"],
     productImages: [
       { img: "images/clementine-glow-0.jpg", alt: "Clementine Glow Pendant" },
       { img: "images/clementine-glow-1.jpg", alt: "Clementine Glow Pendant" },
@@ -149,7 +149,7 @@ export const products: Record<string, Product> = {
     price: "$78",
     purchaseLink: "https://buy.stripe.com/5kQ00l9PN3Um1OX0Qz7Re0j",
     materials: "Copper Wire, Peach Jasper Heart Stone",
-    tags: ["Copper", "Necklace", "Pendant"],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/copper-breath-0.jpg", alt: "Copper Breath Pendant" },
       { img: "images/copper-breath-1.jpg", alt: "Copper Breath Pendant" },
@@ -173,7 +173,7 @@ export const products: Record<string, Product> = {
     price: "$349",
     purchaseLink: "https://buy.stripe.com/6oU6oJfa7aiKctBbvd7Re0a",
     materials: "Sterling Silver, Bello Opal",
-    tags: ["Sterling Silver", "Necklace", "Pendant"],
+    tags: ["sterling", "necklace", "pendant"],
 
     productImages: [
       { img: "images/cosmic-oasis-0.jpg", alt: "Cosmic Oasis Pendant" },
@@ -196,7 +196,7 @@ export const products: Record<string, Product> = {
     price: "$72",
     purchaseLink: "https://buy.stripe.com/dRm4gB6DBez0gJR2YH7Re0k",
     materials: "Copper Wire, Red Tiger's Eye(Dragon's Eye) Stone",
-    tags: ["Copper", "Necklace", "Pendant"],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/dragon-blood-0.jpg", alt: "Dragon Blood Pendant" },
       { img: "images/dragon-blood-1.jpg", alt: "Dragon Blood Pendant" },
@@ -218,7 +218,7 @@ export const products: Record<string, Product> = {
   	price: "$46",
   	purchaseLink: "",
     materials: "Silver Plated Copper Wire, Agate Stone",
-    tags: ["Silver", "Necklace", "Pendant"],
+    tags: ["silver", "necklace", "pendant"],
   	productImages: [
   		{ img: "images/druid-moon-0.jpg", alt: "Druid Moon Pendant" },
   		{ img: "images/druid-moon-1.jpg", alt: "Druid Moon Pendant" },
@@ -241,7 +241,7 @@ export const products: Record<string, Product> = {
     price: "Sold Out",
     purchaseLink: "https://buy.stripe.com/00w6oJbXV8aCgJR8j17Re0b",
     materials: "Rose Gold Plated Copper, Ammonite Fossil",
-    tags: [],
+    tags: ["rose-gold", "necklace", "pendant", "sold-out"],
     productImages: [
       { img: "images/eternal-current-0.jpg", alt: "Eternal Current Pendant" },
       { img: "images/eternal-current-1.jpg", alt: "Eternal Current Pendant" },
@@ -263,7 +263,7 @@ export const products: Record<string, Product> = {
   	price: "$64",
   	purchaseLink: "",
   	materials: "Rose Gold Plated Copper Wire, Flourite Stone",
-   tags: [],
+   tags: ["rose-gold", "necklace", "pendant", "sold-out"],
   	productImages: [
   		{ img: "images/everglow-0.jpg", alt: "Everglow Pendant" },
   		{ img: "images/everglow-1.jpg", alt: "Everglow Pendant" },
@@ -288,7 +288,7 @@ export const products: Record<string, Product> = {
     price: "$55",
     purchaseLink: "https://buy.stripe.com/eVqfZj7HFduWfFNgPx7Re0g",
     materials: "Patina Copper Wire, Frosted Sea Glass",
-    tags: [],
+    tags: ["copper", "patina", "necklace", "pendant"],
     productImages: [
       { img: "images/faire-magic-0.jpg", alt: "Faire Magic Pendant" },
       { img: "images/faire-magic-1.jpg", alt: "Faire Magic Pendant" },
@@ -310,7 +310,7 @@ export const products: Record<string, Product> = {
     price: "$65",
     purchaseLink: "https://buy.stripe.com/14AaEZe632Qibpx56P7Re0i",
     materials: "Copper Wire, Purple Glass Stone, Chain Included",
-    tags: [],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/forest-pearl-0.jpg", alt: "Forest Pearl Pendant" },
       { img: "images/forest-pearl-1.jpg", alt: "Forest Pearl Pendant" },
@@ -332,7 +332,7 @@ export const products: Record<string, Product> = {
     price: "$82",
     purchaseLink: "https://buy.stripe.com/6oU00l8LJduWbpx0Qz7Re0h",
     materials: "Gold Plated Copper Wire, Heart Tiger's Eye Stone",
-    tags: [],
+    tags: ["gold", "necklace", "pendant"],
     productImages: [
       { img: "images/golden-roots-0.jpg", alt: "Golden Roots Pendant" },
       { img: "images/golden-roots-1.jpg", alt: "Golden Roots Pendant" },
@@ -354,7 +354,7 @@ export const products: Record<string, Product> = {
     price: "$75",
     purchaseLink: "https://buy.stripe.com/4gM14pd1Z2Qialt7eX7Re0y",
     materials: "Gold Plated Copper Wire, Tiger's Eye Stone",
-    tags: [],
+    tags: ["gold", "necklace", "pendant"],
     productImages: [
       { img: "images/midas-touch-0.jpg", alt: "Midas Touch Pendant" },
       { img: "images/midas-touch-1.jpg", alt: "Midas Touch Pendant" },
@@ -376,7 +376,7 @@ export const products: Record<string, Product> = {
     price: "$80",
     purchaseLink: "https://buy.stripe.com/dRm8wRbXVbmO1OXdDl7Re08",
     materials: "Rose Gold Plated Copper Wire, Blue Agate Stone",
-    tags: [],
+    tags: ["rose-gold", "necklace", "pendant", "sold-out"],
     productImages: [
       { img: "images/oceanic-roots-0.jpg", alt: "Oceanic Roots Pendant" },
       { img: "images/oceanic-roots-1.jpg", alt: "Oceanic Roots Pendant" },
@@ -398,7 +398,7 @@ export const products: Record<string, Product> = {
     price: "$90",
     purchaseLink: "https://buy.stripe.com/14A7sNbXV9eGbpx2YH7Re07",
     materials: "Silver Plated Copper Wire, Rainbow Preciosa Crystal Beads, Chesapeake Bay Seaglass",
-    tags: [],
+    tags: ["silver", "necklace", "pendant", "seaglass"],
     productImages: [
       { img: "images/prismatic-tide-0.jpg", alt: "Prismatic Tide Pendant" },
     ],
@@ -413,7 +413,7 @@ export const products: Record<string, Product> = {
 	price: "$58",
 	purchaseLink: "https://buy.stripe.com/bJebJ3gebbmObpx0Qz7Re0z",
 	materials: "Owl Charm, Preciosa Crystals, Silver Plated Copper Wire",
-	tags: [],
+	tags: ["silver", "necklace", "pendant"],
 	productImages: [
 		{ img: "images/progressive-wisdom-0.jpg", alt: "Progressive Wisdom Pendant" },
 		{ img: "images/progressive-wisdom-1.jpg", alt: "Progressive Wisdom Pendant" },
@@ -433,7 +433,7 @@ export const products: Record<string, Product> = {
     price: "$75",
     purchaseLink: "https://buy.stripe.com/aFa14pfa73Um0KT8j17Re0x",
     materials: "Copper Wire, Raw Edged Agate Stone",
-    tags: [],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/rustic-breeze-0.jpg", alt: "Rustic Breeze Pendant" },
       { img: "images/rustic-breeze-1.jpg", alt: "Rustic Breeze Pendant" },
@@ -455,7 +455,7 @@ export const products: Record<string, Product> = {
     price: "$60",
     purchaseLink: "https://buy.stripe.com/5kQ14pd1Z0IactBgPx7Re09",
     materials: "Copper Wire, Chakra Stone",
-    tags: [],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/sacred-alignment-0.jpg", alt: "Sacred Alignment Pendant" },
       { img: "images/sacred-alignment-1.jpg", alt: "Sacred Alignment Pendant" },
@@ -477,7 +477,7 @@ export const products: Record<string, Product> = {
     price: "$58",
     purchaseLink: "",
     materials: "Silver Plated Copper Wire, Titanium Coated Black Kyanite Stone, Preciosa Crystals",
-    tags: [],
+    tags: ["silver", "necklace", "pendant"],
     productImages: [
       { img: "images/radiance-0.jpg", alt: "Radiance Pendant" },
       { img: "images/radiance-1.jpg", alt: "Radiance Pendant" },
@@ -498,7 +498,7 @@ export const products: Record<string, Product> = {
       price: "$64",
       purchaseLink: "https://buy.stripe.com/cNi4gBe63ez0gJR42L7Re0t",
       materials: "Silver Plated Copper Wire, Agate Stone",
-      tags: [],
+      tags: ["silver", "necklace", "pendant"],
       productImages: [
         { img: "images/reflection-0.jpg", alt: "Reflection Pendant" },
         { img: "images/reflection-1.jpg", alt: "Reflection Pendant" },
@@ -518,7 +518,7 @@ export const products: Record<string, Product> = {
       price: "$64",
       purchaseLink: "",
       materials: "Silver Plated Copper Wire, Coper Wire, White and Blue Agate Stones",
-      tags: [],
+      tags: ["silver", "copper", "necklace", "pendant"],
       productImages: [
         { img: "images/yin-yang-0.jpg", alt: "Yin Yang Pendant" },
         { img: "images/yin-yang-1.jpg", alt: "Yin Yang Pendant" },
@@ -544,7 +544,7 @@ export const products: Record<string, Product> = {
     price: "$54",
     purchaseLink: "https://buy.stripe.com/aFa9AV1jh0Ia65dbvd7Re0u",
     materials: "Copper Wire, Orange Agate Stone",
-    tags: [],
+    tags: ["copper", "bracelet"],
     productImages: [
       { img: "images/apollo-cuff-0.jpg", alt: "Copper Orange Agate Cuff" },
       { img: "images/apollo-cuff-1.jpg", alt: "Copper Orange Agate Cuff" },
@@ -568,7 +568,7 @@ export const products: Record<string, Product> = {
     price: "$34",
     purchaseLink: "https://buy.stripe.com/9B6dRbaTR4Yq3X5dDl7Re0w",
     materials: "Silver Plated Copper Wire, Rainbow Assortment of Preciosa Crystal Beads",
-    tags: [],
+    tags: ["silver", "bracelet"],
     productImages: [
       { img: "images/rainbow-pride-cuff-0.jpg", alt: "Rainbow Pride Cuff" },
       { img: "images/rainbow-pride-cuff-1.jpg", alt: "Rainbow Pride Cuff" },
@@ -590,7 +590,7 @@ export const products: Record<string, Product> = {
     price: "$45",
     purchaseLink: "https://buy.stripe.com/4gMbJ33rp1MedxFbvd7Re0v",
     materials: "Silver Plated Copper Wire",
-    tags: [],
+    tags: ["silver", "bracelet"],
     productImages: [
       { img: "images/goddess-cuff-0.jpg", alt: "Silver Goddess Cuff" },
       { img: "images/goddess-cuff-1.jpg", alt: "Silver Goddess Cuff" },
@@ -616,7 +616,7 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "",
     materials: "Copper Wire",
-    tags: [],
+    tags: ["copper", "ring"],
     productImages: [{ img: "images/copper-spiral-ring-0.jpg", alt: "Copper Spiral Ring" }],
   }),
   "copper-spiral-woven-ring": new Product({
@@ -629,7 +629,7 @@ export const products: Record<string, Product> = {
     price: "$28",
     purchaseLink: "https://buy.stripe.com/14A5kFbXV2Qi0KT6aT7Re0s",
     materials: "Copper Wire",
-    tags: [],
+    tags: ["copper", "ring"],
     productImages: [{ img: "images/copper-spiral-woven-ring-0.jpg", alt: "Copper Spiral Woven Ring" },
       { img: "images/copper-spiral-woven-ring-1.jpg", alt: "Copper Spiral Woven Ring" },
       { img: "images/copper-spiral-woven-ring-2.jpg", alt: "Copper Spiral Woven Ring" },
@@ -650,7 +650,7 @@ export const products: Record<string, Product> = {
     price: "$22",
     purchaseLink: "https://buy.stripe.com/7sYcN79PN0IagJRczh7Re0p",
     materials: "Hammered Copper Wire",
-    tags: [],
+    tags: ["copper", "ring"],
     productImages: [{ img: "images/flat-copper-spiral-ring-0.jpg", alt: "Hammered Spiral Ring" },
       { img: "images/flat-copper-spiral-ring-1.jpg", alt: "Hammered Spiral Ring" },
       { img: "images/flat-copper-spiral-ring-2.jpg", alt: "Hammered Spiral Ring" },
@@ -669,7 +669,7 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "https://buy.stripe.com/28E3cx1jhfD42T11UD7Re0o",
     materials: "Copper Wire",
-    tags: [],
+    tags: ["copper", "ring"],
     productImages: [
       { img: "images/copper-rose-ring-0.jpg", alt: "Copper Rose Ring" },
     ],
@@ -684,7 +684,7 @@ export const products: Record<string, Product> = {
     price: "$28",
     purchaseLink: "https://buy.stripe.com/6oUcN75zxez0ctBgPx7Re0q",
     materials: "Silver Plated Copper Wire",
-    tags: [],
+    tags: ["silver", "ring"],
     productImages: [{ img: "images/silver-spiral-woven-ring-0.jpg", alt: "Silver Spiral Woven Ring" },
       { img: "images/silver-spiral-woven-ring-1.jpg", alt: "Silver Spiral Woven Ring" },
     ],
@@ -699,7 +699,7 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "https://buy.stripe.com/dRm00le63ez01OX0Qz7Re0r",
     materials: "Silver Plated Copper Wire",
-    tags: [],
+    tags: ["silver", "ring"],
     productImages: [
       { img: "images/silver-rose-ring-0.jpg", alt: "Silver Rose Ring" },
       { img: "images/silver-rose-ring-1.jpg", alt: "Silver Rose Ring" },
@@ -717,7 +717,7 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "https://buy.stripe.com/6oU5kF7HFfD479h0Qz7Re0l",
     materials: "Stainless Steel Wire, Preciosa Crystal Beads",
-    tags: [],
+    tags: ["silver", "industrial-chain"],
     productImages: [
       { img: "images/rainbow-industrial-chain-0.jpg", alt: "Rainbow Industrial Chain" },
       { img: "images/rainbow-industrial-chain-1.jpg", alt: "Rainbow Industrial Chain" },
@@ -738,7 +738,7 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "https://buy.stripe.com/14A14p1jhcqS5190Qz7Re0m",
     materials: "",
-    tags: [],
+    tags: ["silver", "industrial-chain"],
     productImages: [
       { img: "images/trans-industrial-chain-0.jpg", alt: "Trans Industrial Chain" },
       { img: "images/trans-industrial-chain-1.jpg", alt: "Trans Industrial Chain" },
@@ -754,7 +754,7 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "",
     materials: "",
-    tags: [],
+    tags: ["silver", "industrial-chain"],
     productImages: [
       { img: "images/lesbian-industrial-chain-0.jpg", alt: "Lesbian Industrial Chain" },
       { img: "images/lesbian-industrial-chain-1.jpg", alt: "Lesbian Industrial Chain" },
@@ -770,13 +770,47 @@ export const products: Record<string, Product> = {
     price: "$18",
     purchaseLink: "",
     materials: "",
-    tags: [],
+    tags: ["silver", "industrial-chain"],
     productImages: [
       { img: "images/bisexual-industrial-chain-0.jpg", alt: "Bisexual Industrial Chain" },
       { img: "images/bisexual-industrial-chain-1.jpg", alt: "Bisexual Industrial Chain" },
     ],
   }),
-  };
+}; // const product
+
+export type ProductTag = {
+  name: string;
+}
+
+const productTags: Record<string, ProductTag> = {
+  "copper": { name: "Copper" },
+  "silver": { name: "Silver" },
+  "sterling": { name: "Sterling" },
+  "patina": { name: "Patina" },
+  "rose-gold": { name: "Rose Gold" },
+  "gold": { name: "Gold" },
+  "necklace": { name: "Necklace" },
+  "pendant": { name: "Pendant" },
+  "bracelet": { name: "Bracelet" },
+  "ring": { name: "Ring" },
+  "industrial-chain": { name: "Industrial Chain" },
+  "earring-cuff": { name: "Earring Cuff" },
+  "sold-out": { name: "Sold Out" },
+  "sale": { name: "Sale" },
+  "seaglass": { name: "Seaglass" },
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Index of the products keyed by their slug, for fast lookup
 const productsBySlug = Object.fromEntries(

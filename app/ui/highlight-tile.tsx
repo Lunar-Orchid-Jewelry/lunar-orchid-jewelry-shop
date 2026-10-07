@@ -8,7 +8,7 @@ export type HighlightTileProps = {
 export default function HighlightTile({ product }: HighlightTileProps) {
   return (
     <>
-      <div className="bg-primary-ogdarker rounded-xl transition hover:shadow-lg hover:scale-105">
+      <div className="bg-primary rounded-xl transition hover:shadow-lg hover:scale-105">
         <a href={product.link()} className="block">
           <div className="overflow-hidden rounded-t-xl">
             <Image

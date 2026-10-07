@@ -40,7 +40,7 @@ export default function Collection(props: CollectionProps) {
           <div className="text-center mt-8">
             <a
               href={props.button.link}
-              className="inline-block bg-secondary text-white px-6 py-2 font-josefin text-xl hover:bg-primary-hover transition-colors rounded-sm"
+              className="inline-block bg-primary text-white px-6 py-2 font-josefin text-xl hover:bg-primary-hover transition-colors rounded-sm"
             >
               {props.button.text}
             </a>

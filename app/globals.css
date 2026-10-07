@@ -10,13 +10,10 @@
     --font-beau-rivage: "Beau Rivage", serif;
 
     /* Custom colors */
-    --color-primary: #262738;
-    --color-primary-primary: #252336;
-    --color-primary-ogdarker: #39364f;
-    --color-primary-og: #42334e;
-    --color-dark: #121212;
-    --color-secondary: #627f98;
-    --color-accent: #92a7b9;
+    --color-primary: #2E2E44;
+    --color-secondary: #4D4D6D;
+    --color-accent: #708090;
+    --color-dark: #708090;
 
     /* Custom shadows */
     --shadow-card: 0 2px 15px rgba(0, 0, 0, 0.08);

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { basePath } from "../utils";
 
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,6 +41,11 @@ export default function Navbar() {
               >
                 All Products
               </Link>
+              <Link
+                href="/gallery/"
+                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
+              >
+                Gallery              </Link>
               <Link
                 href="/catalog/necklaces"
                 className="text-white text-sm font-cinzel hover:text-primary transition-colors"
