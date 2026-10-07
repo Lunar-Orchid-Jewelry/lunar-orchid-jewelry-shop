@@ -14,16 +14,16 @@ export const footerProducts = productSet([
   "midas-touch",
   "eternal-current",
 ]);
-
+// prettier-ignore
 export default function Footer({ products }: FooterProps) {
   return (
     <>
-      <footer className="bg-secondary text-white py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-10 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-12">
-            <div className="w-full lg:w-lg">
-              <div className="flex flex-col md:flex-row gap-8">
-                <div className="md:w-lg sm:justify-center">
+      <footer className=" bg-secondary text-white p-6 lg:p-8">
+        <div className="max-w-8xl mx-auto">
+          <div className="w-full flex flex-col lg:flex-row">
+
+                {/* === LOJ & Contact === */}
+                <div className="bg-mauve-300 w-full lg:w-[30%] ">
                   <h3
                     className="font-cinzel text-center text-3xl leading-relaxed"
                     style={{ fontWeight: "normal" }}
@@ -31,28 +31,22 @@ export default function Footer({ products }: FooterProps) {
                     Lunar Orchid Jewelry
                   </h3>
                   <h3
-                    className="font-bad-script text-center text-lg leading-relaxed"
+                    className="font-josefin text-center text-lg leading-relaxed"
                     style={{ fontWeight: "normal" }}
                   >
                     Contact: lunarorchidjewelry@gmail.com with any questions.
                   </h3>
                 </div>
-                <div className="md:w-sm justify-center">
-                  <ul className="space-y-2 font-josefin">
-                    {/*
-                    <li>
-                      <a
-                        href="index.html#About"
-                        className="text-white hover:text-primary transition-colors"
-                      >
-                        About
-                      </a>
-                    </li>
-                    */}
+
+                {/* === Info Columns === */}
+                <div className="bg-pink-200 w-full md:w-[30%] flex flex-row items-center p-8">
+                    {/* === Product Column === */}
+                  <div className="w-full items-center">
+                  <ul className="bg-emerald-400 space-y-2 font-josefin">
                     <li>
                       <Link
                         href="/catalog/necklaces"
-                        className="text-white hover:text-primary transition-colors"
+                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         Necklaces
                       </Link>
@@ -60,7 +54,7 @@ export default function Footer({ products }: FooterProps) {
                     <li>
                       <Link
                         href="/catalog/bracelets"
-                        className="text-white hover:text-primary transition-colors"
+                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         Bracelets
                       </Link>
@@ -68,62 +62,73 @@ export default function Footer({ products }: FooterProps) {
                     <li>
                       <Link
                         href="/catalog/rings"
-                        className="text-white hover:text-primary transition-colors"
+                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         Rings
                       </Link>
                     </li>
-                    {/*
                     <li>
-                      <a
-                        href="help-and-policies.html"
-                        className="text-white hover:text-primary transition-colors"
+                      <Link
+                        href="/catalog/industrial-chains"
+                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
+                        Industrial Chains
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
 
-                        FAQ and Policies
-                      </a>
+              {/* === FAQ Column === */}
+                <div className="bg-orange-200 w-full justify-center">
+                  <ul className="space-y-2 font-josefin">
+                    <li>
+                      <Link
+                        href="/policies/"
+                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                      >
+                        About                        </Link>
                     </li>
                     <li>
-                      <a
-                        href="index.html#help"
-                        className="text-white hover:text-primary transition-colors"
+                      <Link
+                        href="/policies/"
+                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
-                        Contact
-                      </a>
+                      Shipping and Policies
+                      </Link>
                     </li>
-                    */}
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="w-full lg:w-1/2">
-              <h6 className="font-cinzel text-lg mb-4">
-                <a
-                  href="gallery.html"
-                  className="text-white hover:text-primary transition-colors"
-                >
-                  Gallery
-                </a>
-              </h6>
-              <div className="grid grid-cols-6 gap-4">
-                {Object.values(products).map((product, i) => (
-                  <div
-                    key={i}
-                    className="rounded-lg hover:scale-105 transition"
-                  >
-                    <a href={product.link()}>
-                      <Image
-                        className="aspect-square object-cover rounded-lg"
-                        src={product.coverImg()}
-                        alt="Jewelry Gallery Item"
-                        height={400}
-                        width={400}
-                      />
-                    </a>
+
+                  {/* === Gallery === */}
+                  <div className="bg-blue-300 w-full lg:w-[50%] mx-auto">
+                    <h6 className=" font-cinzel text-lg mb-4 text-center">
+                      <a
+                        href="gallery.html"
+                        className="text-white text-lg"
+                      >
+                        Gallery
+                      </a>
+                    </h6>
+                    <div className="grid grid-cols-3 gap-4 mx-auto">
+                      {Object.values(products).map((product, i) => (
+                        <div
+                          key={i}
+                          className="rounded-lg hover:scale-105 transition"
+                        >
+                          <a href={product.link()}>
+                            <Image
+                              className="object-cover rounded-lg"
+                              src={product.coverImg()}
+                              alt="Jewelry Gallery Item"
+                              height={400}
+                              width={400}
+                            />
+                          </a>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </footer>

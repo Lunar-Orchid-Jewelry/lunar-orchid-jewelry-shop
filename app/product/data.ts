@@ -801,17 +801,6 @@ const productTags: Record<string, ProductTag> = {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Index of the products keyed by their slug, for fast lookup
 const productsBySlug = Object.fromEntries(
   Object.values(products).map((item) => [item.slug, item]),
@@ -829,7 +818,6 @@ export const productSet = (keys: Iterable<string>) => {
 export default products;
 
 export const necklacePreview = productSet([
-
   "reflection",
   "cosmic-oasis",
   "prismatic-tide",
@@ -841,7 +829,6 @@ export const ringPreview = productSet([
   "copper-spiral-woven-ring",
   "copper-rose-ring",
   "silver-spiral-woven-ring",
-
 ]);
 
 export const allProducts = productSet([
@@ -851,13 +838,11 @@ export const allProducts = productSet([
   "copper-breath",
   "cosmic-oasis",
   "dragon-blood",
-  "eternal-current",
   "golden-roots",
   "faire-magic",
   "forest-pearl",
   "rustic-breeze",
   "midas-touch",
-  "oceanic-roots",
   "sacred-alignment",
   "prismatic-tide",
   "reflection",
@@ -880,18 +865,15 @@ export const necklaceProducts = productSet([
   "copper-breath",
   "cosmic-oasis",
   "dragon-blood",
-  "eternal-current",
   "golden-roots",
   "faire-magic",
   "forest-pearl",
   "rustic-breeze",
   "midas-touch",
-  "oceanic-roots",
   "sacred-alignment",
   "prismatic-tide",
   "progressive-wisdom",
   "reflection",
-
 ]);
 
 export const braceletProducts = productSet([
@@ -946,8 +928,6 @@ export const prideProducts = productSet([
 export function getProductBySlug(slug: string): Product | undefined {
   return productsBySlug[slug];
 }
-
-
 
 const intro1 = `
 I'm the creative behind Lunar Orchid Jewelry!

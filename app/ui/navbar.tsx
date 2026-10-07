@@ -28,47 +28,35 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center text-center space-x-6 px-5">
+            <div className="hidden  lg:flex justify-center text-center space-x-3 w-[80%] h-[60%]">
               <Link
                 href="/"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
+                className="px-6 py-2 text-center rounded-md text-white text-sm font-cinzel hover:bg-highlight transition-colors" >
                 Home
               </Link>
               <Link
                 href="/catalog/all"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
-                All Products
+                className="px-6 py-2 text-center rounded-md text-white text-sm font-cinzel hover:bg-highlight transition-colors" >
+                Shop All
               </Link>
               <Link
                 href="/gallery/"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
+                className="px-6 py-2 text-center rounded-md text-white text-sm font-cinzel hover:bg-highlight transition-colors" >
                 Gallery              </Link>
               <Link
                 href="/catalog/necklaces"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
-                Necklaces
+                className="px-6 py-2 text-center rounded-md text-white text-sm font-cinzel hover:bg-highlight transition-colors" >
+                FAQ
               </Link>
               <Link
-                href="/catalog/bracelets"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
-                Bracelets
+                href="/policies/"
+                className="px-6 py-2 text-center rounded-md text-white text-sm font-cinzel hover:bg-highlight transition-colors" >
+                Contact
               </Link>
               <Link
                 href="/catalog/rings"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
-                Rings
-              </Link>
-              <Link
-                href="/catalog/earrings"
-                className="text-white text-sm font-cinzel hover:text-primary transition-colors"
-              >
-                Earrings
+                className="px-6 py-2 text-center rounded-md text-white text-sm font-cinzel hover:bg-highlight transition-colors" >
+                About
               </Link>
             </div>
 

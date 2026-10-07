@@ -12,9 +12,10 @@
     /* Custom colors */
     --color-primary: #2E2E44;
     --color-secondary: #4D4D6D;
-    --color-highlight: #4a3a5c;
-    --color-accent: #708090;
-    --color-dark: #708090;
+    --color-tertiary: #605e7a;
+    --color-highlight: #7e7a95;
+    --color-dark: #181824;
+    --color-accent: #ced4da;
 
     /* Custom shadows */
     --shadow-card: 0 2px 15px rgba(0, 0, 0, 0.08);

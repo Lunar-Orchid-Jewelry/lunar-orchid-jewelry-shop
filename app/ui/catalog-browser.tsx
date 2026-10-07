@@ -109,10 +109,10 @@ export default function CatalogBrowser({ title, products }: CatalogBrowserProps)
           <button
             key={tag}
             onClick={() => toggleTag(tag)}
-            className={`px-4 py-1 mx-6 rounded-sm text-md  font-josefin  ${
+            className={`px-4 py-1 mx-6  rounded-sm text-md text-white font-josefin hover:bg-primary ${
               selected.has(tag)
-                ? "bg-highlight text-white border-white w-[70%]"
-                : "bg-transparent text-white border-white/40 hover:border-white"
+                ? " bg-highlight w-[70%]"
+                : "bg-transparent"
             }`}
           >
             {tag}
@@ -178,7 +178,7 @@ export default function CatalogBrowser({ title, products }: CatalogBrowserProps)
         </div>
 
       {/* === PRODUCT GRID === */}
-      <section className=" w-full lg:w-[80%] flex justify-end mx-auto p-4 bg-secondary">
+      <section className=" w-full lg:w-[80%] flex justify-end mx-auto bg-primary">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8 transition">
           {Object.entries(visible).map(([slug, product]) => (
             <ProductTile key={slug} product={product} />
