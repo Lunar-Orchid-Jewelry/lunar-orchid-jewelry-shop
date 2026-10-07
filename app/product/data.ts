@@ -83,7 +83,7 @@ export const products: Record<string, Product> = {
     // sale: "$38",
     purchaseLink: "https://buy.stripe.com/dRmdRb2nl9eG9hp2YH7Re06",
     materials: "Copper Wire, Tear Drop Amethyst Stone",
-    tags: ["copper", "Necklace", "Pendant"],
+    tags: ["copper", "necklace", "pendant"],
     productImages: [
       { img: "images/amethyst-whisper-0.jpg", alt: "Amethyst Whisper Pendant" },
       { img: "images/amethyst-whisper-1.jpg", alt: "Amethyst Whisper Pendant" },
@@ -783,18 +783,18 @@ export type ProductTag = {
 }
 
 const productTags: Record<string, ProductTag> = {
-  "copper": { name: "Copper" },
-  "silver": { name: "Silver" },
-  "sterling": { name: "Sterling" },
-  "patina": { name: "Patina" },
-  "rose-gold": { name: "Rose Gold" },
-  "gold": { name: "Gold" },
   "necklace": { name: "Necklace" },
   "pendant": { name: "Pendant" },
   "bracelet": { name: "Bracelet" },
   "ring": { name: "Ring" },
   "industrial-chain": { name: "Industrial Chain" },
   "earring-cuff": { name: "Earring Cuff" },
+  "copper": { name: "Copper" },
+  "patina": { name: "Patina" },
+  "silver": { name: "Silver" },
+  "sterling": { name: "Sterling Silver" },
+  "rose-gold": { name: "Rose Gold" },
+  "gold": { name: "Gold" },
   "sold-out": { name: "Sold Out" },
   "sale": { name: "Sale" },
   "seaglass": { name: "Seaglass" },

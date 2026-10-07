@@ -1,7 +1,11 @@
+import { basePath } from "./utils";
 import Image from "next/image";
+import Announcement from "./ui/announcement";
+import Header from "./ui/header";
 import Navbar from "./ui/navbar";
 import Collection from "./ui/collection";
 import Highlight from "./ui/highlight";
+import CatalogBrowser from "./ui/catalog-browser";
 import {
   necklacePreview,
   braceletProducts,
@@ -10,9 +14,7 @@ import {
   prideProducts,
 } from "./product/data";
 import Footer, { footerProducts } from "./ui/footer";
-import { basePath } from "./utils";
-import Header from "./ui/header";
-import Announcement from "./ui/announcement";
+
 
 export default function Home() {
   return (
@@ -22,20 +24,6 @@ export default function Home() {
       <Announcement></Announcement>
       <Header></Header>
       <Navbar></Navbar>
-
-{/*
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-16">
-            <h2 className="font-bad-script text-center text-3xl lg:text-4xl xl:text-5xl text-black mb-8">Shop By Collection</h2>
-            <div className="flex flex-wrap justify-center gap-6">
-                <a href={basePath("catalog/necklaces")} className="category-pill">Necklaces</a>
-                <a href={basePath("catalog/bracelets")} className="category-pill">Bracelets</a>
-                <a href={basePath("catalog/rings")} className="category-pill">Rings</a>
-                <a href={basePath("catalog/earrings")} className="category-pill">Earrings</a>
-                <a href="/search?tag=stone" className="category-pill bg-primary-ogdarker hover:bg-secondary border border-gray-700">Gemstones</a>
-                <a href="/search?tag=industrial" className="category-pill bg-primary-ogdarker hover:bg-secondary border border-gray-700">Industrial</a>
-            </div>
-          </div>
-        */}
 
         {/* ARTISAN JEWELRY */}
         <section>
@@ -64,6 +52,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
         {/* === NECKLACES === */}
         <Collection
