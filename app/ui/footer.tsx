@@ -23,7 +23,7 @@ export default function Footer({ products }: FooterProps) {
           <div className="w-full flex flex-col lg:flex-row">
 
                 {/* === LOJ & Contact === */}
-                <div className="bg-mauve-300 w-full lg:w-[30%] ">
+                <div className=" w-full lg:w-[30%] p-4">
                   <h3
                     className="font-cinzel text-center text-3xl leading-relaxed"
                     style={{ fontWeight: "normal" }}
@@ -39,14 +39,14 @@ export default function Footer({ products }: FooterProps) {
                 </div>
 
                 {/* === Info Columns === */}
-                <div className="bg-pink-200 w-full md:w-[30%] flex flex-row items-center p-8">
+                <div className="w-full lg:w-[35%] flex flex-row p-2">
                     {/* === Product Column === */}
                   <div className="w-full items-center">
-                  <ul className="bg-emerald-400 space-y-2 font-josefin">
+                  <ul className="space-y-2 py-4 w-full font-josefin">
                     <li>
                       <Link
                         href="/catalog/necklaces"
-                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                        className="px-2 py-2 rounded-sm text-white hover:bg-highlight transition-colors "
                       >
                         Necklaces
                       </Link>
@@ -54,7 +54,7 @@ export default function Footer({ products }: FooterProps) {
                     <li>
                       <Link
                         href="/catalog/bracelets"
-                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                        className="px-2 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         Bracelets
                       </Link>
@@ -62,7 +62,7 @@ export default function Footer({ products }: FooterProps) {
                     <li>
                       <Link
                         href="/catalog/rings"
-                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                        className="px-2 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         Rings
                       </Link>
@@ -70,7 +70,7 @@ export default function Footer({ products }: FooterProps) {
                     <li>
                       <Link
                         href="/catalog/industrial-chains"
-                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                        className="px-2 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         Industrial Chains
                       </Link>
@@ -79,21 +79,21 @@ export default function Footer({ products }: FooterProps) {
                 </div>
 
               {/* === FAQ Column === */}
-                <div className="bg-orange-200 w-full justify-center">
+                <div className="py-4 w-full items-center">
                   <ul className="space-y-2 font-josefin">
                     <li>
                       <Link
                         href="/policies/"
-                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                        className="px-2 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
                         About                        </Link>
                     </li>
                     <li>
                       <Link
                         href="/policies/"
-                        className="px-4 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
+                        className="px-2 py-2 rounded-sm text-white hover:bg-highlight transition-colors"
                       >
-                      Shipping and Policies
+                      Shipping & Policies
                       </Link>
                     </li>
                   </ul>
@@ -101,7 +101,7 @@ export default function Footer({ products }: FooterProps) {
               </div>
 
                   {/* === Gallery === */}
-                  <div className="bg-blue-300 w-full lg:w-[50%] mx-auto">
+                  <div className="w-full lg:w-[45%] mx-auto">
                     <h6 className=" font-cinzel text-lg mb-4 text-center">
                       <a
                         href="gallery.html"

@@ -822,6 +822,8 @@ export const necklacePreview = productSet([
   "cosmic-oasis",
   "prismatic-tide",
   "rustic-breeze",
+  "forest-pearl",
+
 ]);
 
 export const ringPreview = productSet([
@@ -895,6 +897,8 @@ export const earringProducts = productSet([]);
 export const industrialChainProducts = productSet([
   "rainbow-industrial-chain",
   "trans-industrial-chain",
+  "lesbian-industrial-chain",
+  "bisexual-industrial-chain",
 ]);
 
 export const goddessProducts = productSet([

@@ -16,7 +16,7 @@ export default function ShopByProduct({ products }: ShopByProductProps) {
         </div>
         <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
           {Object.values(products).map((product, i) => (
-            <div key={i} className="h-full w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+            <div key={i} className="h-full w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
               <ShopByProductTile product={product} />
             </div>
           ))}

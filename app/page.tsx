@@ -25,33 +25,6 @@ export default function Home() {
       <Header></Header>
       <Navbar></Navbar>
 
-        {/* ARTISAN JEWELRY */}
-        <section>
-          <div className="max-w-6xl bg-accent opacity-70 mx-auto m-4 p-4 rounded-xl">
-            <div className="flex flex-col lg:flex-row items-center bg-amber-200 gap-8 lg:gap-16 py-8">
-              {/* Title & CTA */}
-              <div className=" w-full lg:w-[65%] text-center lg:text-left px-20 bg-emerald-100">
-                <h1 className="font-bad-script text-center text-4xl lg:text-5xl xl:text-5xl text-black mb-6">
-                  Artisan Wire Wrapped Jewelry Using Natural Gemstones
-                </h1>
-                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-400 mb-4 leading-relaxed">
-                  <p>Earthly Inspired · Uniquely Imperfect</p>
-                </h3>
-              </div>
-
-              {/* Logo Image */}
-              <div className="w-[30%] lg:w-[35%] flex justify-center bg-mauve-500">
-                <Image
-                  src={basePath("images/lunar-orchid-logo.png")}
-                  alt="Lunar Orchid Jewelry Logo"
-                  height={300}
-                  width={300}
-                  className="max-w-full h-auto object-contain lg:max-w-md"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
 
 
         {/* === NECKLACES === */}
@@ -63,6 +36,36 @@ export default function Home() {
           }}
           products={necklacePreview}
         />
+
+
+        {/* ARTISAN JEWELRY */}
+        <section>
+          <div className="max-w-5xl bg-secondary mx-auto m-8 p-8">
+            <div className="flex flex-col md:flex-row items-center p-2 gap-2">
+              {/* Title & CTA */}
+              <div className="w-full md:w-[55%] text-center px-8 items-center text-white">
+                <h1 className="p-6 font-bad-script text-center justify-center text-2xl lg:text-3xl  mb-6">
+                  Artisan Wire Wrapped Labradorite Necklace Pendants                </h1>
+                <h3 className="font-bad-script text-xl text-center mb-4">
+                  <p>All jewelry is handmade</p>
+                </h3>
+              </div>
+
+              {/* Image */}
+              <div className=" w-full md:w-[45%] flex justify-center">
+                <Image
+                  src={basePath("images/artisan-collage.jpg")}
+                  alt="Lunar Orchid Jewelry Logo"
+                  height={500}
+                  width={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
         {/* === BRACELETS === */}
         <Collection
@@ -76,7 +79,7 @@ export default function Home() {
 
         {/* ARTISAN JEWELRY */}
         <section>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl bg-accent rounded-sm mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
               {/* Title & CTA */}
               <div className="w-full lg:w-[65%] text-center lg:text-left">

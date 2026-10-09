@@ -90,18 +90,18 @@ export default function Navbar() {
               </a>
             </div>
 
-            {/* Shopping Cart
+            {/* Shopping Cart */}
             <div className="relative cursor-pointer">
               <Link href='/cart'>
                 <div>
                   <Image
-                    src={basePath("images/instagram-logo.png")}
-                    alt="Lunar Orchid Jewelry Instagram"
+                    src={basePath("images/bag.png")}
+                    alt="Shopping Cart"
                     height={50}
                     width={50}
                     className="fab fa-instagram text-lg"
                   />
-                  <span className="absolute -top-2 -right-2 text-lg  bg-red-600 h-5 w-5 rounded-full grid place-items-center text-white">0
+                  <span className="bg-highlight h-6 w-6 absolute -top-3 -right-3 rounded-full text-lg text-center text-white">0
                   </span>
                 </div>
               </Link>
@@ -110,7 +110,6 @@ export default function Navbar() {
 
               </div>
 
-*/}
 
 
             {/* Hamburger Button (Mobile) */}
