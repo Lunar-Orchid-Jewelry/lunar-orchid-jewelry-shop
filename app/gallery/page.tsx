@@ -1,87 +1,21 @@
 import Image from "next/image";
 import { basePath } from "../utils";
 import Navbar from "../ui/navbar";
+import Header from "../ui/header";
 
 export default function Home() {
   return (
     <>
-      <div className="bg-white pt-0 font-josefin text-primary">
-        {/* === HERO / HEADER === */}
-        <section>
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
-              {/* Logo Image */}
-
-              <div className="w-[20%] lg:w-[25%] flex justify-right">
-                <Image
-                  src={basePath("images/lunar-orchid-logo.png")}
-                  alt="Lunar Orchid Jewelry Logo"
-                  height={100}
-                  width={100}
-                  className="max-w-full h-auto object-contain lg:max-w-md"
-                />
-              </div>
-
-              {/* Title & CTA */}
-              <div className="w-full text-center lg:text-left">
-                <h1 className="font-beau-rivage text-center text-4xl sm:text-5xl lg:text-5xl xl:text-6xl text-black mb-6">
-                  Lunar Orchid Jewelry
-                </h1>
-              </div>
-            </div>
-          </div>
-        </section>
-
+      <div className="bg-primary pt-0 font-josefin text-white">
+        <Header></Header>
         <Navbar></Navbar>
 
-        {/* Flex Grid x4 */}
-        <section className="max-w-7xl bg-accent mx-auto my-20">
-          <div className="grid grid-cols-4 items-center gap-8 p-8">
-            <div>
-              <Image
-                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
-                src={basePath("images/cosmic-oasis-0.jpg")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
-                src={basePath("images/cosmic-oasis-0.jpg")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
-                src={basePath("images/lunar-orchid-logo.png")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div>
-              <Image
-                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
-                src={basePath("images/lunar-orchid-logo.png")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-            </div>
-          </div>
-        </section>
-
         {/* Masonry Grid x4 */}
-        <section className="max-w-5xl bg-emerald-200 mx-auto">
+        <section className="max-w-7xl my-10 mx-auto">
           <div className="flex flex-row space-x-4">
-            <div className="flex flex-col space-y-4">
 
-              {/*{
+            <div className="flex flex-col space-y-4">
+              {
                 [
                   { path: "images/lunar-orchid-logo.png" },
                   { path: "images/lunar-orchid-logo.png" },
@@ -90,38 +24,40 @@ export default function Home() {
                 ].map((productImage, i) => (
                   <Image
                     key={i}
-                    className="bg-amber-600 rounded-lg object-cover"
+                    className="rounded-lg object-cover"
                     src={basePath(productImage.path)}
                     alt="gallery-photo"
                     height={300}
                     width={300}
                   />
                 ))
-              }*/}
+              }
+            </div>
 
+            <div className="flex flex-col space-y-4">
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
@@ -130,28 +66,28 @@ export default function Home() {
             </div>
             <div className="flex flex-col space-y-4">
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
@@ -160,58 +96,28 @@ export default function Home() {
             </div>
             <div className="flex flex-col space-y-4">
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
-                src={basePath("images/cosmic-oasis-0.jpg")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-              <Image
-                className="bg-amber-600 rounded-lg object-cover"
-                src={basePath("images/lunar-orchid-logo.png")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-            </div>
-            <div className="flex flex-col space-y-4">
-              <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
               <Image
-                className="bg-amber-600 rounded-lg object-cover"
-                src={basePath("images/cosmic-oasis-0.jpg")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-              <Image
-                className="bg-amber-600 rounded-lg object-cover"
-                src={basePath("images/lunar-orchid-logo.png")}
-                alt="gallery-photo"
-                height={300}
-                width={300}
-              />
-              <Image
-                className="bg-amber-600 rounded-lg object-cover"
+                className="rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
