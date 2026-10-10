@@ -2,15 +2,10 @@ import Image from "next/image";
 import { basePath } from "../utils";
 import Navbar from "../ui/navbar";
 
-
-
 export default function Home() {
   return (
     <>
-
-
       <div className="bg-white pt-0 font-josefin text-primary">
-
         {/* === HERO / HEADER === */}
         <section>
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,10 +20,7 @@ export default function Home() {
                   width={100}
                   className="max-w-full h-auto object-contain lg:max-w-md"
                 />
-
               </div>
-
-
 
               {/* Title & CTA */}
               <div className="w-full text-center lg:text-left">
@@ -40,15 +32,14 @@ export default function Home() {
           </div>
         </section>
 
-<Navbar></Navbar>
+        <Navbar></Navbar>
 
-
-      {/* Flex Grid x4 */}
+        {/* Flex Grid x4 */}
         <section className="max-w-7xl bg-accent mx-auto my-20">
           <div className="grid grid-cols-4 items-center gap-8 p-8">
-
-        <div>
-              <Image className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
+            <div>
+              <Image
+                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
@@ -56,7 +47,8 @@ export default function Home() {
               />
             </div>
             <div>
-              <Image className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
+              <Image
+                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
@@ -64,7 +56,8 @@ export default function Home() {
               />
             </div>
             <div>
-              <Image className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
+              <Image
+                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
@@ -72,92 +65,161 @@ export default function Home() {
               />
             </div>
             <div>
-              <Image className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
+              <Image
+                className="bg-amber-600 h-auto w-full rounded-lg object-cover object-center"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
             </div>
-        </div>
+          </div>
         </section>
 
-
-
         {/* Masonry Grid x4 */}
-        <section className="max-w-5xl bg-emerald-200 mx-auto my-40">
-          <div className="grid grid-cols-4">
-            <div className="grid gap-4">
-              <div>
-                <Image className="bg-amber-600 w-full rounded-lg object-cover"
-                  src={basePath("images/lunar-orchid-logo.png")}
-                  alt="gallery-photo"
-                  height={300}
-                  width={300}
-                />
-              </div>
-              <div>
-                <Image className="bg-amber-600 w-full rounded-lg object-cover"
-                  src={basePath("images/cosmic-oasis-0.jpg")}
-                  alt="gallery-photo"
-                  height={300}
-                  width={300}
-                />
-              </div>
-              <div className="bg-amber-200 m-0 p-0 w-full h-auto">
-              <Image className="bg-amber-600 w-full rounded-lg object-cover"
-                src={basePath("images/cosmic-oasis-0.jpg")}
+        <section className="max-w-5xl bg-emerald-200 mx-auto">
+          <div className="flex flex-row space-x-4">
+            <div className="flex flex-col space-y-4">
+
+              {/*{
+                [
+                  { path: "images/lunar-orchid-logo.png" },
+                  { path: "images/lunar-orchid-logo.png" },
+                  { path: "images/lunar-orchid-logo.png" },
+                  { path: "images/lunar-orchid-logo.png" },
+                ].map((productImage, i) => (
+                  <Image
+                    key={i}
+                    className="bg-amber-600 rounded-lg object-cover"
+                    src={basePath(productImage.path)}
+                    alt="gallery-photo"
+                    height={300}
+                    width={300}
+                  />
+                ))
+              }*/}
+
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
-                height={200}
+                height={300}
                 width={300}
               />
-            </div>
-            <div>
-              <Image className="bg-amber-600 w-full rounded-lg object-cover"
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/cosmic-oasis-0.jpg")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/cosmic-oasis-0.jpg")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
                 src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
             </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <Image className="bg-amber-600 w-full rounded-lg object-cover"
-                  src={basePath("images/lunar-orchid-logo.png")}
-                  alt="gallery-photo"
-                  height={300}
-                  width={300}
-                />
-              </div>
-              <div>
-                <Image className="bg-amber-600 w-full rounded-lg object-cover"
-                  src={basePath("images/cosmic-oasis-0.jpg")}
-                  alt="gallery-photo"
-                  height={300}
-                  width={300}
-                />
-              </div>
-              <div className="bg-amber-200 m-0 p-0 w-full h-auto">
-              <Image className="bg-amber-600 w-full rounded-lg object-cover"
-                src={basePath("images/cosmic-oasis-0.jpg")}
+            <div className="flex flex-col space-y-4">
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
                 alt="gallery-photo"
-                height={200}
+                height={300}
                 width={300}
               />
-            </div>
-            <div>
-              <Image className="bg-amber-600 w-full rounded-lg object-cover"
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
                 src={basePath("images/cosmic-oasis-0.jpg")}
                 alt="gallery-photo"
                 height={300}
                 width={300}
               />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/cosmic-oasis-0.jpg")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
             </div>
+            <div className="flex flex-col space-y-4">
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/cosmic-oasis-0.jpg")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/cosmic-oasis-0.jpg")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
             </div>
-        </div>
-    </section>
-
+            <div className="flex flex-col space-y-4">
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/cosmic-oasis-0.jpg")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+              <Image
+                className="bg-amber-600 rounded-lg object-cover"
+                src={basePath("images/lunar-orchid-logo.png")}
+                alt="gallery-photo"
+                height={300}
+                width={300}
+              />
+            </div>
+          </div>
+        </section>
 
         {/* ARTISAN JEWELRY */}
         <section>
@@ -187,8 +249,6 @@ export default function Home() {
           </div>
         </section>
 
-
-
         {/* ARTISAN JEWELRY */}
         <section>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -198,8 +258,10 @@ export default function Home() {
                 <h1 className="font-bad-script text-center text-md sm:text-4xl lg:text-5xl xl:text-5xl text-black mb-6">
                   Why Buy Handmade?
                 </h1>
-                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-400 mb-4 leading-relaxed"> </h3>
-                  <p>Earthly Inspired · Uniquely Imperfect</p>
+                <h3 className="font-bad-script text-xl text-center sm:text-2xl text-gray-400 mb-4 leading-relaxed">
+                  {" "}
+                </h3>
+                <p>Earthly Inspired · Uniquely Imperfect</p>
               </div>
 
               {/* Logo Image */}
@@ -215,8 +277,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
 
         {/* === ABOUT THE CREATOR === */}
         <section className="bg-primary py-16 lg:py-24">
@@ -249,8 +309,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
       </div>
     </>
   );
