@@ -800,7 +800,6 @@ export const productTags: Record<string, ProductTag> = {
   "seaglass": { name: "Seaglass" },
 };
 
-
 // Index of the products keyed by their slug, for fast lookup
 const productsBySlug = Object.fromEntries(
   Object.values(products).map((item) => [item.slug, item]),

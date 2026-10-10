@@ -52,6 +52,16 @@ export default function CatalogBrowser({ title, products }: CatalogBrowserProps)
   }, [products]);
 
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Derive the tag list from the products shown on THIS page.
+  const pageTags = useMemo(() => {
+    const set = new Set<string>();
+    for (const product of Object.values(productInstances)) {
+      for (const tag of product.tags) set.add(tag);
+    }
+    return set;
+  }, [productInstances]);
+
   const [selected, setSelected] = useState<Set<string>>(new Set());
 
   const toggleTag = (tag: string) => {
@@ -86,18 +96,20 @@ export default function CatalogBrowser({ title, products }: CatalogBrowserProps)
         <div className="  hidden lg:flex flex-col w-[15%] align-top bg-secondary py-4 items-start">
           <h2 className=" text-xl mx-auto text-white font-bold font-josefin">Filter Products</h2>
           {/* Tag chips */}
-          {Object.entries(productTags).map(([tagKey, tag]) => (
-            <button
-              key={tagKey}
-              onClick={() => toggleTag(tagKey)}
-              className={`px-4 py-1 mx-6  rounded-sm text-md text-white font-josefin hover:bg-primary ${
-                selected.has(tagKey)
-                  ? " bg-highlight w-[70%]"
-                  : "bg-transparent"
-              }`}
-            >
-              {tag.name}
-            </button>
+          {Object.entries(productTags)
+            .filter(([tagKey, tag]) => pageTags.has(tagKey))
+            .map(([tagKey, tag]) => (
+              <button
+                key={tagKey}
+                onClick={() => toggleTag(tagKey)}
+                className={`px-4 py-1 mx-6  rounded-sm text-md text-white font-josefin hover:bg-primary ${
+                  selected.has(tagKey)
+                    ? " bg-highlight w-[70%]"
+                    : "bg-transparent"
+                }`}
+              >
+                {productTags[tagKey].name}
+              </button>
           ))}
         </div>
 
@@ -129,8 +141,10 @@ export default function CatalogBrowser({ title, products }: CatalogBrowserProps)
               d="M4 6h16M4 12h16M4 18h16"
                 />
             )}
+
           </svg>
           <h2 className="text-xl mx-4 text-white font-bold font-josefin">Filter Products</h2>
+
       </button>
 
         {/* === TAG FILTER BAR MOBILE === */}
@@ -138,20 +152,23 @@ export default function CatalogBrowser({ title, products }: CatalogBrowserProps)
         className={`${menuOpen ? "max-h-96" : "max-h-0"} transition-all duration-300 overflow-hidden lg:hidden bg-secondary`}
       >
         <ul className="py-4 space-y-4 text-center">
+
           {/* Tag chips */}
-          {Object.entries(productTags).map(([tagKey, tag]) => (
-            <button
-              key={tagKey}
-              onClick={() => toggleTag(tagKey)}
-              className={`px-4 py-1 rounded-sm text-sm font-josefin  ${
-                selected.has(tagKey)
-                  ? "bg-secondary text-white border-white"
-                  : "bg-transparent text-white border-white/40 hover:border-white"
-              }`}
-            >
-              {tag.name}
-            </button>
-          ))}
+            {Object.entries(productTags)
+              .filter(([tagKey, tag]) => pageTags.has(tagKey))
+              .map(([tagKey, tag]) => (
+                <button
+                  key={tagKey}
+                  onClick={() => toggleTag(tagKey)}
+                  className={`px-4 py-1 rounded-sm text-sm font-josefin  ${
+                    selected.has(tagKey)
+                      ? "bg-secondary text-white border-white"
+                      : "bg-transparent text-white border-white/40 hover:border-white"
+                  }`}
+                >
+                  {productTags[tagKey].name}
+                </button>
+              ))}
         </ul>
         </div>
 
