@@ -782,7 +782,7 @@ export type ProductTag = {
   name: string;
 }
 
-const productTags: Record<string, ProductTag> = {
+export const productTags: Record<string, ProductTag> = {
   "necklace": { name: "Necklace" },
   "pendant": { name: "Pendant" },
   "bracelet": { name: "Bracelet" },
