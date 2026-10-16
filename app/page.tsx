@@ -5,7 +5,6 @@ import Header from "./ui/header";
 import Navbar from "./ui/navbar";
 import Collection from "./ui/collection";
 import Highlight from "./ui/highlight";
-import CatalogBrowser from "./ui/catalog-browser";
 import {
   necklacePreview,
   braceletProducts,
@@ -29,9 +28,9 @@ export default function Home() {
 
         {/* === NECKLACES === */}
         <Collection
-          title="Necklaces"
+          title="One-of-a-Kind Pendants"
           button={{
-            text: "More Necklaces",
+            text: "More Pendants",
             link: basePath("catalog/necklaces"),
           }}
           products={necklacePreview}
@@ -77,23 +76,21 @@ export default function Home() {
           products={braceletProducts}
         />
 
-        {/* ARTISAN JEWELRY */}
+        {/* ARTISAN JEWELRY
         <section>
           <div className="max-w-6xl bg-accent rounded-sm mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8">
-              {/* Title & CTA */}
               <div className="w-full lg:w-[65%] text-center lg:text-left">
                 <h1 className="font-bad-script text-center text-md sm:text-4xl lg:text-5xl xl:text-5xl text-black mb-6">
-                  Why Buy Handmade?
+                  Theirs!
                 </h1>
 
-                  <p>Earthly Inspired · Uniquely Imperfect</p>
+                  <p>Yin & Yang Inspired Agate Pendant Set</p>
               </div>
 
-              {/* Logo Image */}
               <div className="w-[30%] lg:w-[35%] flex justify-center">
                 <Image
-                  src={basePath("images/labradorite-collection.jpg")}
+                  src={basePath("images/resonance-0.jpg")}
                   alt="Lunar Orchid Jewelry Logo"
                   height={300}
                   width={300}
@@ -102,7 +99,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* === RINGS === */}
         <Collection

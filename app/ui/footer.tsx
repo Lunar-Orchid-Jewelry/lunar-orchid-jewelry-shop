@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Product, productSet } from "../product/data";
 import Link from "next/link";
+import { basePath } from "../utils";
 
 export type FooterProps = {
   products: Record<string, Product>;
@@ -111,25 +112,63 @@ export default function Footer({ products }: FooterProps) {
                       </a>
                     </h6>
                     <div className="grid grid-cols-3 gap-4 mx-auto">
-                      {Object.values(products).map((product, i) => (
-                        <div
-                          key={i}
-                          className="rounded-lg hover:scale-105 transition"
-                        >
-                          <a href={product.link()}>
-                            <Image
-                              className="object-cover rounded-lg"
-                              src={product.coverImg()}
-                              alt="Jewelry Gallery Item"
-                              height={400}
-                              width={400}
-                            />
-                          </a>
-                        </div>
-                      ))}
+                      <a href="/gallery/">
+                        <Image
+                          className="object-cover items-center rounded-lg w-full h-30"
+                          src={basePath("images/gallery-collage-0.jpg")}
+                          alt="Jewelry Gallery Item"
+                          height={400}
+                          width={400}
+                        />
+                </a>
+                <a href="/gallery/">
+                  <Image
+                  className="object-cover items-center rounded-lg w-full h-30"
+                    src={basePath("images/gallery-ring-0-prev.jpg")}
+                    alt="Jewelry Gallery Item"
+                    height={400}
+                    width={400}
+                  />
+                </a>
+                <a href="/gallery/">
+                  <Image
+                  className="object-cover items-center rounded-lg w-full h-30"
+                    src={basePath("images/gallery-booth.jpg")}
+                    alt="Jewelry Gallery Item"
+                    height={400}
+                    width={400}
+                  />
+                </a>
+                <a href="/gallery/">
+                  <Image
+                  className="object-cover items-center rounded-lg w-full h-30"
+                    src={basePath("images/gallery-lunar-moon.jpg")}
+                    alt="Jewelry Gallery Item"
+                    height={400}
+                    width={400}
+                  />
+                </a>
+                <a href="/gallery/">
+                  <Image
+                  className="object-cover items-center rounded-lg w-full h-30"
+                    src={basePath("images/gallery-process-0-prev.jpg")}
+                    alt="Jewelry Gallery Item"
+                    height={400}
+                    width={400}
+                  />
+                </a>
+                <a href="/gallery/">
+                  <Image
+                  className="object-cover items-center rounded-lg w-full h-30"
+                    src={basePath("images/gallery-aztec.jpg")}
+                    alt="Jewelry Gallery Item"
+                    height={400}
+                    width={400}
+                  />
+                </a>
                     </div>
                   </div>
-          </div>
+                </div>
         </div>
       </footer>
     </>
